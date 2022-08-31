@@ -293,4 +293,44 @@ body .revival .line__text {
     line-height: 64px;
     margin-bottom: 96px;
   }
+}
+@media only screen and (max-width: 768px) {
+  body .revival .intro_landing {
+    height: 550px;
+  }
+  body .revival h1 {
+    font-size: 44px;
+    line-height: 52px;
+  }
+  body .revival .intro__header {
+    margin-bottom: 70px;
+  }
+  body .revival .line {
+    padding: 60px 0;
+  }
+  body .revival .line__pic {
+    width: 260px;
+    min-width: 260px;
+    height: 310px;
+    margin-right: 40px;
+  }
+  body .revival .line__title {
+    font-size: 38px;
+    line-height: 46px;
+  }
+  body .revival * {
+    font-size: 20px;
+    line-height: 23px;
+  }
+  body .revival .line::after {
+    width: 160px;
+    height: 160px;
+    top: -80px;
+  }
+  body .revival .intro_footer {
+    height: 400px;
+  }
+  body .revival .intro__header_footer {
+    margin-bottom: 50px;
+  }
 }/*# sourceMappingURL=revival.css.map */

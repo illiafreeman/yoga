@@ -65,3 +65,51 @@
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    body .revival{
+        .intro_landing{
+            height: 550px;
+        }
+        h1 {
+            font-size: 44px;
+            line-height: 52px;
+        }
+        .intro__header {
+            margin-bottom: 70px;
+        }
+        .line {
+            padding: 60px 0;
+        }
+        .line__pic {
+            width: 260px;
+            min-width: 260px;
+            height: 310px;
+            margin-right: 40px;
+        }
+        .line__title {
+            font-size: 38px;
+            line-height: 46px;
+        }
+        * {
+            font-size: 20px;
+            line-height: 23px;
+        }
+        .line::after {
+            width: 160px;
+            height: 160px;
+            top: -80px;
+        }
+        .intro_footer {
+            height: 400px;
+        }
+        .intro__header_footer{
+            margin-bottom: 50px;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    
+}
