@@ -1,23 +1,62 @@
-
-body .revival{
 @font-face {
-    font-family: 'L15';
+    font-family: 'medium';
     src: url('../fonts/L15-Medium.woff2') format('woff2'),
     url('../fonts/L15-Medium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'mediumwide';
+    src: url('../fonts/L15-MediumWide.woff2') format('woff2'),
+    url('../fonts/L15-MediumWide.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'regular';
+    src: url('../fonts/L15-Regular.woff2') format('woff2'),
+    url('../fonts/L15-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'regularwide';
+    src: url('../fonts/L15-RegularWide.woff2') format('woff2'),
+    url('../fonts/L15-RegularWide.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'semibold';
+    src: url('../fonts/L15-SemiBold.woff2') format('woff2'),
+    url('../fonts/L15-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body .revival{
+
+
+
 $transition: all 0.2s ease-in-out;
 $transition05: all 0.5s ease-in-out;
-$font: 'L15', Helvetica;
 
-$font-color: #111111;
-$color-gray: #969696;
+$font-medium: 'medium', Helvetica;
+$font-medium-wide: 'mediumwide', Helvetica;
+$font-regular: 'regular', Helvetica;
+$font-regular-wide: 'regularwide', Helvetica;
+$font-semibold: 'semibold', Helvetica;
+
+$font-color: #394531;
+$bg-green: #CFDDC7;
+$bg-light: #F5F1ED;
 
 *{
-    font-family: $font;
+    font-family: $font-regular-wide;
+    color: $font-color;
+    font-size: 24px;
+    line-height: 32px;
 }
-font-family: $font;
+
 a:active,
 a:focus,
 input:active,
@@ -34,21 +73,20 @@ label:focus{
     text-decoration: none !important;
 }
 
-h1{font-size: 48px;}
-h2{font-size: 26px;}
+h1{font-size: 72px; line-height: 80px;}
+h2{font-size: 72px; line-height: 80px;}
 h3{font-size: 24px;}
 h4{font-size: 18px;}
 
 h1, h2, h3, h4, h5, h6{
-    font-weight: 300;
+    font-family: $font-medium;
     margin: 0 0 20px;
-    line-height: 130%;
 }
 
 input,
 select,
 textarea {
-    font-family: $font;
+    font-family: $font-regular;
 }
 
 p{
@@ -119,21 +157,6 @@ table th, table td{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .intro {
 
     &_landing {
@@ -145,20 +168,151 @@ table th, table td{
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
+    }
+    &_footer {
+        background-image: url(../images/landing_3.jpg);
     }
 
     &__header {
+        color: #fff;
+        margin-bottom: 100px;
+        width: 1100px;
+        text-align: center;
+        &_footer{
+            font-size: 128px;
+            line-height: 144px;
+            margin-bottom: 48px;
+        }
     }
 }
 .containr {
     margin: 0 auto !important;
-    &_landing {
+    &_full {
         width: 100%;
         max-width: 1920px;
     }
 }
 .btn {
+    height: 52px;
+    padding: 0 48px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    transition: $transition;
+    background: #fff;
+    font-family: $font-medium;
+    &:hover{
+        background: #f1ffe9;
+    }
+    &_green{
+        background: #CFDDC7;
+        &:hover{
+            background: #fff;
+        }
+    }
 }
+.line {
+    background: $bg-green;
+    padding: 96px 0;
+    display: flex;
+    position: relative;
+    &:after{
+        content: '';
+        display: block;
+        width: 300px;
+        height: 300px;
+        background-image: url(../images/sun.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: -150px;
+        right: 300px;
+    }
+    &_reverse{
+        justify-content: flex-end;
+        &:after{
+            right: auto;
+            left: 300px;
+        }
+    }
+    &_green{
+        background: $bg-green;
+    }
+    &_light{
+        background: $bg-light;
+    }
+    &__pic {
+        width: 47%;
+        height: 480px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 0 16px 16px 0;
+        margin-right: 60px;
+        &_reverse{
+            border-radius: 16px 0 0 16px;
+            margin: 0 0 0 60px;
+        }
+        &_landing-1{
+            background-image: url(../images/landing_1.jpg);
+        }
+        &_landing-2{
+            background-image: url(../images/landing_2.jpg);
+        }
+    }
+
+    &__desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 650px;
+    }
+
+    &__title {
+        font-family: $font-medium;
+    }
+
+    &__text {
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
