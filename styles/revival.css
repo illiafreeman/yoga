@@ -333,4 +333,54 @@ body .revival .line__text {
   body .revival .intro__header_footer {
     margin-bottom: 50px;
   }
+}
+@media only screen and (max-width: 600px) {
+  body .revival .intro_landing {
+    height: 432px;
+    margin-bottom: 20px;
+  }
+  body .revival h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  body .revival .line_green {
+    background: #fff;
+  }
+  body .revival .line {
+    padding: 24px 0;
+    flex-direction: column;
+  }
+  body .revival .line__desc {
+    order: 1;
+    padding: 0 16px;
+    margin-bottom: 36px;
+  }
+  body .revival .btn {
+    background: #CFDDC7;
+  }
+  body .revival .line__pic {
+    order: 2;
+    width: calc(100% - 16px);
+    min-width: calc(100% - 16px);
+    margin: 0;
+  }
+  body .revival .line::after {
+    display: none;
+  }
+  body .revival .line_reverse .line__desc {
+    padding: 0 16px;
+  }
+  body .revival .line__pic_reverse {
+    align-self: flex-end;
+  }
+  body .revival .line_light {
+    background: #fff;
+  }
+  body .revival .intro__header_footer {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  body .revival .intro_footer {
+    margin-bottom: 0;
+  }
 }/*# sourceMappingURL=revival.css.map */

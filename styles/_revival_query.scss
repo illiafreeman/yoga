@@ -110,6 +110,63 @@
 }
 
 
-@media only screen and (max-width: 480px) {
-    
+@media only screen and (max-width: 600px) {
+    body .revival{
+        .intro_landing{
+            height: 432px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 32px;
+            line-height: 36px;
+        }
+        .line_green {
+            background: #fff;
+        }
+        .line {
+            padding: 24px 0;
+            flex-direction: column;
+        }
+        .line__desc{
+            order: 1;
+            padding: 0 16px;
+            margin-bottom: 36px;
+        }
+        .btn{
+            background: #CFDDC7;
+        }
+        .line__pic {
+            order: 2;
+            width: calc(100% - 16px);
+            min-width: calc(100% - 16px);
+            margin: 0;
+        }
+        .line::after{
+            display: none;
+        }
+        .line_reverse{
+            .line__desc {
+                padding: 0 16px;
+            }
+            
+        }
+        .line__pic_reverse{
+            align-self: flex-end;
+        }
+        .line_light {
+            background: #fff;
+        }
+        .intro__header_footer {
+            font-size: 32px;
+            line-height: 36px;
+        }
+        .intro_footer{
+            margin-bottom: 0;
+        }
+
+
+
+
+
+    }
 }
