@@ -73,7 +73,7 @@ body .revival textarea {
   font-family: "regular", Helvetica;
 }
 body .revival p {
-  margin: 0 0 16px;
+  margin: 0 0 20px;
 }
 body .revival img {
   line-height: 100%;
@@ -239,4 +239,58 @@ body .revival .line__title {
 }
 body .revival .line__text {
   margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1440px) {
+  body .revival .line__pic {
+    width: 500px;
+    min-width: 500px;
+    height: 380px;
+  }
+  body .revival .line__desc {
+    width: auto;
+    padding-right: 32px;
+  }
+  body .revival .line_reverse .line__desc {
+    padding: 0 0 0 32px;
+  }
+  body .revival .line::after {
+    right: 10px;
+  }
+  body .revival .line_reverse::after {
+    left: 10px;
+  }
+  body .revival .intro__header {
+    width: 100%;
+    padding: 0 40px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  body .revival h1 {
+    font-size: 56px;
+    line-height: 64px;
+  }
+  body .revival .line__pic {
+    width: 346px;
+    min-width: 346px;
+    height: 310px;
+  }
+  body .revival .line__title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  body .revival * {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  body .revival .line::after {
+    width: 200px;
+    height: 200px;
+    top: -100px;
+  }
+  body .revival .intro__header_footer {
+    font-size: 56px;
+    line-height: 64px;
+    margin-bottom: 96px;
+  }
 }/*# sourceMappingURL=revival.css.map */

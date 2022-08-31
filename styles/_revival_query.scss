@@ -1,0 +1,67 @@
+
+
+@media only screen and (max-width: 1440px) {
+    body .revival{
+        .line__pic{
+            width: 500px;
+            min-width: 500px;
+            height: 380px;
+        }
+        .line__desc{
+            width: auto;
+            padding-right: 32px;
+        }
+        .line_reverse{
+            .line__desc{
+                padding: 0 0 0 32px;
+            }
+        }
+        .line::after{
+            right: 10px;
+        }
+        .line_reverse::after {
+            left: 10px;
+        }
+          .intro__header {
+            width: 100%;
+            padding: 0 40px;
+        }
+
+
+
+
+
+
+    } 
+}
+@media only screen and (max-width: 1024px) {
+    body .revival{
+        h1 {
+            font-size: 56px;
+            line-height: 64px;
+        }
+        .line__pic {
+            width: 346px;
+            min-width: 346px;
+            height: 310px;
+        }
+        .line__title{
+            font-size: 48px;
+            line-height: 56px;
+        }
+        * {
+            font-size: 22px;
+            line-height: 28px;
+        }
+        .line::after {
+            width: 200px;
+            height: 200px;
+            top: -100px
+        }
+        .intro__header_footer {
+            font-size: 56px;
+            line-height: 64px;
+            margin-bottom: 96px;
+        }
+    }
+}
