@@ -1,0 +1,119 @@
+body .revival {
+  font-family: "L15", Helvetica;
+}
+@font-face {
+  body .revival {
+    font-family: "L15";
+    src: url("../fonts/L15-Medium.woff2") format("woff2"), url("../fonts/L15-Medium.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+body .revival * {
+  font-family: "L15", Helvetica;
+}
+body .revival a:active,
+body .revival a:focus,
+body .revival input:active,
+body .revival input:focus,
+body .revival textarea:active,
+body .revival textarea:focus,
+body .revival button:active,
+body .revival button:focus,
+body .revival label:active,
+body .revival label:focus {
+  outline: none !important;
+  outline-style: none !important;
+  -moz-outline-style: none !important;
+  text-decoration: none !important;
+}
+body .revival h1 {
+  font-size: 48px;
+}
+body .revival h2 {
+  font-size: 26px;
+}
+body .revival h3 {
+  font-size: 24px;
+}
+body .revival h4 {
+  font-size: 18px;
+}
+body .revival h1, body .revival h2, body .revival h3, body .revival h4, body .revival h5, body .revival h6 {
+  font-weight: 300;
+  margin: 0 0 20px;
+  line-height: 130%;
+}
+body .revival input,
+body .revival select,
+body .revival textarea {
+  font-family: "L15", Helvetica;
+}
+body .revival p {
+  margin: 0 0 16px;
+}
+body .revival img {
+  line-height: 100%;
+  max-width: 100%;
+  display: block;
+}
+body .revival a,
+body .revival a:hover,
+body .revival a:focus,
+body .revival a:visited,
+body .revival a:active {
+  color: #111111;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+body .revival ul {
+  list-style-type: none;
+  list-style-position: inside;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+body .revival ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+  display: block;
+  margin: 16px 0;
+  padding: 0;
+}
+body .revival b, body .revival strong {
+  font-weight: bold;
+}
+body .revival i {
+  font-style: italic;
+}
+body .revival table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 12px 0 12px;
+  width: 100%;
+}
+body .revival table th {
+  font-weight: bold;
+}
+body .revival table th, body .revival table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+body .revival .intro_landing {
+  background-image: url(../images/landing_intro.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 758px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .revival .containr {
+  margin: 0 auto !important;
+}
+body .revival .containr_landing {
+  width: 100%;
+  max-width: 1920px;
+}/*# sourceMappingURL=revival.css.map */

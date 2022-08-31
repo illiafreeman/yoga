@@ -1,3 +1,5 @@
+
+body .revival{
 @font-face {
     font-family: 'L15';
     src: url('../fonts/L15-Medium.woff2') format('woff2'),
@@ -11,6 +13,11 @@ $font: 'L15', Helvetica;
 
 $font-color: #111111;
 $color-gray: #969696;
+
+*{
+    font-family: $font;
+}
+font-family: $font;
 a:active,
 a:focus,
 input:active,
@@ -107,23 +114,6 @@ table th, table td{
 
 
 
-/*fixed footer*/
-body{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    overflow-x: hidden;
-    color: $font-color;
-    font-family: $font;
-    line-height: 140%;
-    font-size: 16px;
-    box-sizing: border-box;
-    *{
-        font-family: $font;
-    }
-}
-
-
 
 
 
@@ -169,7 +159,7 @@ body{
 }
 .btn {
 }
-
+}
 
 
 
