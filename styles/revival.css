@@ -312,7 +312,7 @@ body .revival .line__text {
     width: 260px;
     min-width: 260px;
     height: 310px;
-    margin-right: 40px;
+    margin: 0 0 0 40px;
   }
   body .revival .line__title {
     font-size: 38px;
