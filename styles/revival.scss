@@ -573,7 +573,7 @@ table th, table td{
 }
 .class-row{
     .container{
-        padding: 0;
+        //padding: 0;
         .row{
             //margin: 0;
             padding: 15px 0;
@@ -1420,19 +1420,24 @@ table th, table td{
 .ui-menu .ui-menu-item-wrapper{
     padding: 0 16px !important;
     font-size: 16px !important;
-    line-height: 24px;
+    line-height: 40px;
     font-family: 'medium';
     //transition: all 0.2s ease-in-out;
+    height: 40px;
     &.ui-state-active{
         background: #CFDDC7;
         color: #394531;
-        border-color: transparent;
+        border: 0;
         padding: 0 16px !important;
         font-size: 16px !important;
-        line-height: 24px;
+        line-height: 40px;
+        height: 40px;
+        font-family: 'medium';
     }
 }
-
+.ui-menu .ui-state-active, .ui-menu .ui-state-focus {
+    margin: 0;
+}
 
 
 
