@@ -170,6 +170,16 @@ table th, table td{
         align-items: center;
         flex-direction: column;
     }
+    &_studio {
+        background-image: url(../images/landing_3.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 680px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     &_footer {
         background-image: url(../images/landing_3.jpg);
     }
@@ -185,9 +195,30 @@ table th, table td{
             margin-bottom: 48px;
         }
     }
+    &_studio {
+    }
+
+    &__studio-header {
+    }
+
+    &__header {
+    }
+
+    &__info {
+    }
+
+    &__info-address {
+    }
+
+    &__info-contacts {
+    }
+
+    &__studio-poster {
+    }
 }
 .containr {
     margin: 0 auto !important;
+    width: 1376px;
     &_full {
         width: 100%;
         max-width: 1920px;
@@ -239,12 +270,7 @@ table th, table td{
             left: 300px;
         }
     }
-    &_green{
-        background: $bg-green;
-    }
-    &_light{
-        background: $bg-light;
-    }
+    
     &__pic {
         width: 47%;
         height: 480px;
@@ -281,6 +307,15 @@ table th, table td{
         margin-bottom: 30px;
     }
 }
+.bg{
+    &_green{
+        background: $bg-green;
+    }
+    &_light{
+        background: $bg-light;
+    }
+}
+
 
 
 

@@ -134,6 +134,16 @@ body .revival .intro_landing {
   align-items: center;
   flex-direction: column;
 }
+body .revival .intro_studio {
+  background-image: url(../images/landing_3.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 680px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 body .revival .intro_footer {
   background-image: url(../images/landing_3.jpg);
 }
@@ -150,6 +160,7 @@ body .revival .intro__header_footer {
 }
 body .revival .containr {
   margin: 0 auto !important;
+  width: 1376px;
 }
 body .revival .containr_full {
   width: 100%;
@@ -202,12 +213,6 @@ body .revival .line_reverse:after {
   right: auto;
   left: 300px;
 }
-body .revival .line_green {
-  background: #CFDDC7;
-}
-body .revival .line_light {
-  background: #F5F1ED;
-}
 body .revival .line__pic {
   width: 47%;
   height: 480px;
@@ -239,6 +244,12 @@ body .revival .line__title {
 }
 body .revival .line__text {
   margin-bottom: 30px;
+}
+body .revival .bg_green {
+  background: #CFDDC7;
+}
+body .revival .bg_light {
+  background: #F5F1ED;
 }
 
 @media only screen and (max-width: 1440px) {
