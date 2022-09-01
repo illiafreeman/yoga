@@ -239,6 +239,12 @@ body .revival .btn_green {
 body .revival .btn_green:hover {
   background: #fff;
 }
+body .revival .btn_schedule {
+  background: #CFDDC7;
+}
+body .revival .btn_schedule:hover {
+  background: #f1ffe9;
+}
 body .revival .line {
   background: #CFDDC7;
   padding: 96px 0;
@@ -441,13 +447,84 @@ body .revival .print {
   padding-right: 46px;
   cursor: pointer;
 }
-body .revival .tooltip-text {
+body .revival .container {
+  max-width: 1376px;
+}
+body .revival .schedule-day .class-row {
+  border-bottom: 1px solid #dfdbd6;
+  transition: all 0.2s ease-in-out;
+}
+body .revival .schedule-day .class-row:not(.day-header):hover {
+  background: #f0f0f0;
+}
+body .revival .btn.focus, body .revival .btn:focus {
+  box-shadow: none;
+}
+body .revival .class-actions-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+body .revival .day-copy {
+  padding: 30px 0 15px;
+  font-size: 40px;
+  line-height: 48px;
+  font-family: "medium", Helvetica;
+}
+body .revival .day-copy .day-of-week {
+  color: #666C63;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-family: "medium", Helvetica;
+  margin-left: 20px;
+}
+body .revival .class-row .container {
+  padding: 0;
+}
+body .revival .class-row .container .row {
+  margin: 0;
+  padding: 15px 0;
+}
+body .revival .class-time-desc, body .revival .class-teacher-name {
+  color: #666C63;
+  font-size: 16px;
+  line-height: 24px;
+}
+body .revival .class-title {
+  display: flex;
+  align-items: center;
+}
+body .revival .class-title .info-tooltip {
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/pic_info.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin-left: 10px;
+  position: relative;
+}
+body .revival .class-title .info-tooltip .tooltip-text {
   opacity: 0;
   visibility: hidden;
   position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 470px;
+  border-radius: 8px;
+  background: #CFDDC7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 14px;
+  line-height: 20px;
+  padding: 16px;
+  z-index: 100;
+  transition: all 0.2s ease-in-out;
 }
-body .revival .container, body .revival .container-lg, body .revival .container-md, body .revival .container-sm, body .revival .container-xl {
-  max-width: 100%;
+body .revival .class-title .info-tooltip:hover .tooltip-text {
+  opacity: 1;
+  visibility: visible;
+  top: 30px;
 }
 body .revival .container-fluid {
   margin-right: auto;

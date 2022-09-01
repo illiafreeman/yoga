@@ -298,6 +298,12 @@ table th, table td{
             background: #fff;
         }
     }
+    &_schedule{
+        background: #CFDDC7;
+        &:hover{
+            background: #f1ffe9;
+        }
+    }
 }
 .line {
     background: $bg-green;
@@ -531,21 +537,92 @@ table th, table td{
     padding-right: 46px;
     cursor: pointer;
 }
-.tooltip-text{
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
+
+.container{
+    max-width: 1376px;
 }
-.container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 100%;
+.schedule-day{
+    .class-row{
+        border-bottom: 1px solid #dfdbd6;
+        transition: $transition;
+        &:not(.day-header):hover{
+            background: #f0f0f0;
+        }
+    }
 }
-
-
-
-
-
-
-
+.btn.focus, .btn:focus{
+    box-shadow: none;
+}
+.class-actions-wrap{
+    display: flex;
+    justify-content: flex-end;
+}
+.day-copy{
+    padding: 30px 0 15px;
+    font-size: 40px;
+    line-height: 48px;
+    font-family: $font-medium;
+    .day-of-week{
+        color: #666C63;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        font-family: $font-medium;
+        margin-left: 20px;
+    }
+}
+.class-row{
+    .container{
+        padding: 0;
+        .row{
+            margin: 0;
+            padding: 15px 0;
+        }
+    }
+}
+.class-time-desc, .class-teacher-name{
+    color: #666C63;
+    font-size: 16px;
+    line-height: 24px;
+}
+.class-title{
+    display: flex;
+    align-items: center;
+    .info-tooltip{
+        width: 20px;
+        height: 20px;
+        background-image: url(../images/pic_info.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        margin-left: 10px;
+        position: relative;
+        .tooltip-text{
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 470px;
+            border-radius: 8px;
+            background: #CFDDC7;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-size: 14px;
+            line-height: 20px;
+            padding: 16px;
+            z-index: 100;
+            transition: $transition;
+        }
+        &:hover{
+            .tooltip-text{
+                opacity: 1;
+                visibility: visible;
+                top: 30px;
+            }
+        }
+    }
+}
 
 
 
