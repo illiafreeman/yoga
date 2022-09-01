@@ -561,7 +561,7 @@
 							</div>
 
 						</div>
-						<div class="tab-pane fade  show active" id="pricing" role="tabpanel" aria-labelledby="tab_pricing">
+						<div class="tab-pane fade " id="pricing" role="tabpanel" aria-labelledby="tab_pricing">
 							<article class="article bg_light">
 								<div class="containr">
 									<h6 class="article__sup">Subscription</h6>
@@ -593,7 +593,52 @@
 								</div>
 							</article>
 						</div>
-						<div class="tab-pane fade" id="teachers" role="tabpanel" aria-labelledby="tab_teachers">...
+						<div class="tab-pane fade show active" id="teachers" role="tabpanel" aria-labelledby="tab_teachers">
+							<article class="article bg_light">
+								<div class="containr">
+									<h6 class="article__sup">Teachers</h6>
+									<h2 class="article__title">Santa Monica Instructors</h2>
+									<h4 class="article__sub">Only highly qualified specialists work in our studio, so you can be sure of the success of your classses</h4>
+									<div class="search-wrap">
+										<div class="date-filter-wrap">
+											<input name="filter-instructor-auto" id="filter-instructor-auto-2"
+												class="ui-autocomplete-input pick pick_search" autocomplete="off"
+												type="text" placeholder="Start typing a name">
+										</div>
+										<div class="sort-wrap">
+											<div class="sort">
+												<div class="sort__list">
+													<div class="sort__item">
+														<div class="sort__prev">First Name(A to Z)</div>
+														<div class="sort__item-drop">
+															<div class="sort__item-item">
+																First Name(A to Z)
+															</div>
+															<div class="sort__item-item">
+																First Name(Z to A)
+															</div>
+														</div>
+													</div>
+													<div class="sort__item">
+														<div class="sort__prev">View</div>
+														<div class="sort__item-drop">
+															<div class="sort__item-item">
+																12
+															</div>
+															<div class="sort__item-item">
+																24
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="result">
+												63 Results Match the Search
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
 						</div>
 					</div>
 				</div>
@@ -786,7 +831,7 @@
 					"Scala",
 					"Scheme"
 				];
-				$( "#filter-instructor-auto" ).autocomplete({
+				$( "#filter-instructor-auto, #filter-instructor-auto-2" ).autocomplete({
 					source: availableTags
 				});
 			});

@@ -600,6 +600,13 @@ body .revival .btn_card {
   width: 100%;
   justify-content: center;
 }
+body .revival .pick_search {
+  padding-right: 40px;
+  background-image: url(../images/pic_search.png);
+  background-position: calc(100% - 15px) center;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+}
 
 .ui-menu .ui-menu-item-wrapper {
   padding: 0 16px !important;

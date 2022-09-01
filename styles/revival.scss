@@ -790,7 +790,13 @@ body .revival {
             justify-content: center;
         }
     }
-
+    .pick_search{
+        padding-right: 40px;
+        background-image: url(../images/pic_search.png);
+        background-position: calc(100% - 15px) center;
+        background-repeat: no-repeat;
+        margin-bottom: 30px;
+    }
 
 
 
