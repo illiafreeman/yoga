@@ -369,8 +369,47 @@ table th, table td{
         background: $bg-light;
     }
 }
+.nav-tabs{
+    display: flex;
+    justify-content: center;
+    border: 0;
+}
+.nav-link{
+    padding: 0;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 40px;
+    border: 0;
+    background: transparent;
+    border-bottom: 2px solid transparent;
+    color: #394531;
+    font-family: $font-regular;
+    &.active{
+        border-color: #FF7A00;
+        font-family: $font-medium;
+    }
+}
+.infobanner-wrap {
+}
+.infobanner {
+    &__pic {
+    }
 
+    &__inner {
+    }
 
+    &__title {
+    }
+
+    &__text {
+    }
+}
+.about-banner{
+    
+}
 
 
 

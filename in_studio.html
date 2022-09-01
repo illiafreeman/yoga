@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en-US">
+
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="x-ua-compatible" content="ie=edge" />
-	<meta
-		name="viewport"
-		content="width=device-width, initial-scale=1, user-scalable=0"
-	/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
 	<title>In Studio</title>
 	<link rel="stylesheet" href="styles/main.css" />
 	<link rel="stylesheet" href="styles/revival.css" />
@@ -14,6 +12,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/detectizr/2.2.0/detectizr.min.js"></script>
 </head>
+
 <body>
 	<div class="redesigned-wrapper">
 		<!-- <header>
@@ -175,14 +174,14 @@
 			);
 
 
-			showMenu1.click( function () {
-					secondaryMenu1.show();
-					secondaryMenu2.hide();
-					secondaryMenu3.hide();
-					// if ( secondaryMenu.css( 'display' ) !== 'none' || secondaryMenu1.css( 'display' ) !== 'none' ) {
-					secondaryMenu.slideToggle(500);
-					// }
-				}, 
+			showMenu1.click(function () {
+				secondaryMenu1.show();
+				secondaryMenu2.hide();
+				secondaryMenu3.hide();
+				// if ( secondaryMenu.css( 'display' ) !== 'none' || secondaryMenu1.css( 'display' ) !== 'none' ) {
+				secondaryMenu.slideToggle(500);
+				// }
+			},
 
 			);
 
@@ -211,49 +210,107 @@
 							<div class="intro__info">
 								<h1 class="intro__studio-title">Santa Monica Main Street</h1>
 								<div class="intro__info-address">
-									2215 Main Street, Santa Monica, CA 90405 
+									2215 Main Street, Santa Monica, CA 90405
 								</div>
 								<div class="intro__info-contacts">
-									<a href="mailto:santamonicamain@yogaworks.com">santamonicamain@yogaworks.com</a> | <a href="callto:+4243220229">(424) 322-0229</a> 
+									<a href="mailto:santamonicamain@yogaworks.com">santamonicamain@yogaworks.com</a> |
+									<a href="callto:+4243220229">(424) 322-0229</a>
 								</div>
 							</div>
 						</div>
 						<div class="intro__studio-poster">
 							<h4>We are open!</h4>
 							<h3>Join Us this Summer for Student and Teacher Membership Specials</h3>
-							<p>Please take a look at the studio schedule for any teacher or time changes. 
-								We will continue to monitor new developments related to COVID-19 and any new variants, 
-								If you're not ready to come back into the studio, our in-person classes will continue 
-								to be streamed live from our digital platform, which can be accessed <a href="">here</a>. 
+							<p>Please take a look at the studio schedule for any teacher or time changes.
+								We will continue to monitor new developments related to COVID-19 and any new variants,
+								If you're not ready to come back into the studio, our in-person classes will continue
+								to be streamed live from our digital platform, which can be accessed <a
+									href="">here</a>.
 								See you in Class!</p>
 						</div>
 					</div>
 				</article>
-			</div>
-			<div class="containr containr_full">
-				<article class="line bg_green">
-					<div class="line__pic line__pic_landing-1"></div>
-					<div class="line__desc">
-						<h2 class="line__title">You have a problem?</h2>
-						<p class="line__text">Contact us and we’ll answer all your questions and help to solve your problems.</p>
-						<a href="" class="btn">Contact us</a>	
+				<div class="containr containr_full">
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+						<li class="nav-item" role="presentation">
+							<button class="nav-link active" id="tab_about" data-toggle="tab" data-target="#about"
+								type="button" role="tab" aria-controls="about" aria-selected="true">About the studio</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="tab_schedule" data-toggle="tab" data-target="#schedule"
+								type="button" role="tab" aria-controls="schedule" aria-selected="false">Class Schedule</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="tab_pricing" data-toggle="tab" data-target="#pricing"
+								type="button" role="tab" aria-controls="pricing" aria-selected="false">Pricing</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="tab_teachers" data-toggle="tab" data-target="#teachers"
+								type="button" role="tab" aria-controls="teachers" aria-selected="false">Teachers</button>
+						</li>
+					</ul>
+					<div class="tab-content" id="myTabContent">
+						<div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="tab_about">
+							<div class="infobanner-wrap bg_green">
+								<div class="containr">
+									<div class="infobanner">
+										<img src="" alt="" class="infobanner__pic">
+										<div class="infobanner__inner">
+											<h4 class="infobanner__title">
+												Your Safety is Important to Us
+											</h4>
+											<div class="infobanner__text">
+												Your health and safety are a top priority, so we ask that those who are not vaccinated, 
+												please wear a face covering while in studio. Those with medical and religious exemptions will be honored,
+												 please contact us directly for more information. 
+												 As always, if you aren’t feeling well, have a cough, fever or other symptoms of COVID-19, 
+												 please refrain from coming in to the studio. Thanks for your help keeping this community safe!
+											</div>
+										</div>
+									</div>
+								</div>	
+							</div>
+							<div class="containr containr_full">
+								div.about-banner
+							</div>
+							<div class="about">
+								<div class="about__desc">
+									<h6 class="about__sup">our heritage</h6>
+									<h2 class="about__title">About the Studio</h2>
+									<div class="about__sub">Studio Amenities</div>
+									<div class="about__add">
+										<div class="about__add-shower">Showers</div>
+										<div class="about__add-shop">Boutique</div>
+									</div>
+								</div>
+								<div class="about__text">
+									<p>YogaWorks Main Street is one of the world’s pre-eminent yoga studio locations. Offering some of the best yoga classes available by yoga’s most recognized instructors for 30+ years. A yoga institution, be part of the magic that makes Main Street home to incredible classes by incredible teachers. Now livestreaming classes so you can take them from the comfort of your home even when you can’t make it into the studio.</p>
+									<p>YogaWorks Main Street is one of the world’s pre-eminent yoga studio locations. Offering some of the best yoga classes available by yoga’s most recognized instructors for 30+ years. A yoga institution, be part of the magic that makes Main Street home to incredible classes by incredible teachers. Now livestreaming classes so you can take them from the comfort of your home even when you can’t make it into the studio.</p>
+								</div>
+							</div>
+
+
+
+
+
+						</div>
+						<div class="tab-pane fade" id="schedule" role="tabpanel" aria-labelledby="tab_schedule">
+							<p>zxcXDBdbn</p>
+							<p>zxcXDBdbn</p>
+							<p>zxcXDBdbn</p>
+							<p>zxcXDBdbn</p>
+							<p>zxcXDBdbn</p>
+							<p>zxcXDBdbn</p>
+							<p>zxcXDBdbn</p>
+							<p>zxcXDBdbn</p>
+							<p>zxcXDBdbn</p>
+						</div>
+						<div class="tab-pane fade" id="pricing" role="tabpanel" aria-labelledby="tab_pricing">...</div>
+						<div class="tab-pane fade" id="teachers" role="tabpanel" aria-labelledby="tab_teachers">...</div>
 					</div>
-				</article>
-				<article class="line line_reverse bg_light">
-					<div class="line__desc">
-						<h2 class="line__title">From India to Santa Monica</h2>
-						<p class="line__text">Contact us and we’ll answer all your questions and help to solve your problems.</p>
-						<a href="" class="btn">Contact us</a>	
-					</div>
-					<div class="line__pic line__pic_reverse line__pic_landing-2"></div>
-				</article>
+				</div>
 			</div>
-			<div class="containr containr_full">
-				<article class="intro intro_landing intro_footer">
-					<h1 class="intro__header intro__header_footer">Practice with us</h1>
-					<a href="" class="btn btn_green">Try for free</a>
-				</article>
-			</div>
+
 		</main>
 
 
@@ -279,7 +336,7 @@
 
 
 
-			<!--<footer>>
+		<!--<footer>>
 			<div class="footer-internal">
 			<div class="footer-internal-item">
 				<h6 class="subTitle1">YogaWorks at Home</h6>
@@ -404,4 +461,5 @@
 		<script src="scripts/main.js"></script>
 	</div>
 </body>
+
 </html>
