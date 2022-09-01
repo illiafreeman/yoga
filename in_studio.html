@@ -7,7 +7,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
 	<title>In Studio</title>
 	<link rel="stylesheet" href="styles/main.css" />
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 	<link rel="stylesheet" href="styles/revival.css" />
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -705,8 +704,6 @@
 		<script src="scripts/main.js"></script>
 
 		<!-- start revival scripts -->
-		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-		<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 		<script>
 			$( function() {
 			  	$( "#datepicker" ).datepicker();
@@ -714,34 +711,34 @@
 		</script>
 		<script>
 			$( function() {
-			var availableTags = [
-				"ActionScript",
-				"AppleScript",
-				"Asp",
-				"BASIC",
-				"C",
-				"C++",
-				"Clojure",
-				"COBOL",
-				"ColdFusion",
-				"Erlang",
-				"Fortran",
-				"Groovy",
-				"Haskell",
-				"Java",
-				"JavaScript",
-				"Lisp",
-				"Perl",
-				"PHP",
-				"Python",
-				"Ruby",
-				"Scala",
-				"Scheme"
-			];
-			$( "#filter-instructor-auto" ).autocomplete({
-				source: availableTags
+				var availableTags = [
+					"ActionScript",
+					"AppleScript",
+					"Asp",
+					"BASIC",
+					"C",
+					"C++",
+					"Clojure",
+					"COBOL",
+					"ColdFusion",
+					"Erlang",
+					"Fortran",
+					"Groovy",
+					"Haskell",
+					"Java",
+					"JavaScript",
+					"Lisp",
+					"Perl",
+					"PHP",
+					"Python",
+					"Ruby",
+					"Scala",
+					"Scheme"
+				];
+				$( "#filter-instructor-auto" ).autocomplete({
+					source: availableTags
+				});
 			});
-			} );
 			</script>
 		
 		<!-- end revival scripts -->
