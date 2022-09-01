@@ -510,18 +510,35 @@ table th, table td{
         &_nomargin{
             margin-bottom: 0;
         }
+        &_schedule{
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+        }
     }
+    
 }
 .about-info {
     display: flex
 }
-.article-sup {
+.print{
+    display: flex;
+    font-size: 16px;
+    line-height: 20px;
+    background-image: url(../images/pic_print.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding-right: 46px;
+    cursor: pointer;
 }
-.article-title {
+.tooltip-text{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
 }
-
-
-
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 100%;
+}
 
 
 

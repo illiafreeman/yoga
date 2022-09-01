@@ -371,179 +371,193 @@
 							<div class="containr">
 								<article class="article schedule">
 									<h6 class="article__sup">Studio</h6>
-									<h2 class="article__title">Schedule</h2>
-								</article>
-								<div class="schedule-filters-wrap">
-									<form class="form">
+									<h2 class="article__title article__title_schedule">
+										Schedule
+										<span class="print">Print schedule</span>
+									</h2>
+									<div class="schedule-filters-wrap">
+										<form class="form">
+											<div class="row">
+												<div class="col-sm-5 col-md-4">
+													<div class="form-group">
+														<label class="form-label" for="filter-date">Start Date</label>
+														<div class="date-filter-wrap">
+															<input type="text" id="datepicker" class="" autocomplete="off" readonly="">
+														</div>
+													</div>
+												</div>
+												<div class="col-sm-7 col-md-8">
+													<div class="select-group">
+														<label class="form-label" for="filter-instructor-auto">INSTRUCTOR</label>
+														<div class="date-filter-wrap">
+															<input name="filter-instructor-auto" id="filter-instructor-auto"
+																class="ui-autocomplete-input" autocomplete="off"
+																type="text" placeholder="Choose or typing an Instructor Name">
+														</div>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+									<div class="schedule-actions-wrap" style="margin-bottom: 100px;">
 										<div class="row">
-											<div class="col-sm-5 col-md-4">
-												<div class="form-group">
-													<label class="form-label" for="filter-date">Start Date</label>
-													<div class="date-filter-wrap">
-														<input type="text" id="datepicker" class="" autocomplete="off" readonly="">
-													</div>
-												</div>
+											<div class="col-xs-12 col-md-6">
+												<div class="result-total-wrap"><span>2</span> Results Match the Search</div>
 											</div>
-											<div class="col-sm-7 col-md-8">
-												<div class="select-group">
-													<label class="form-label"
-														for="filter-instructor-auto">INSTRUCTOR</label>
-													<div class="sr-only">Selection will refresh the page with new
-														results
-													</div>
-													<input name="filter-instructor-auto" id="filter-instructor-auto"
-														class="form-control ui-autocomplete-input" autocomplete="off"
-														type="text" placeholder="Choose or typing an Instructor Name">
-													
-												</div>
-											</div>
-											<div class="col-md-12 text-right">
-												<button class="btn btn-clear btn-reset" type="button"
-													data-reset-button="">
-													<span>Reset</span> <i class="ico ico-reset"></i>
-												</button>
-											</div>
-										</div>
-									</form>
-								</div>
-								<div class="schedule-actions-wrap" style="">
-									<div class="row">
-										<div class="col-xs-12 col-md-6">
-											<div class="result-total-wrap"><span>2</span> Results Match the Search</div>
-										</div>
-										<div class="col-xs-12 col-md-6 text-right hidden-xs hidden-sm">
-											<button class="btn btn-secondary btn-print">
-												<span>Print Schedule</span> <i class="ico ico-print"></i>
-											</button>
+
 										</div>
 									</div>
-								</div>
-								<div class="schedule-classes-wrap">
-									<div class="schedule-day" data-date="2022-09-01">
-										<div class="class-row day-header">
-											<div class="container">
-												<div class="row">
-													<div class="col-xs-12">
-														<div class="day-copy">September 01 <span
-																class="day-of-week">Thursday | PDT</span></div>
+									<div class="schedule-classes-wrap">
+										<div class="schedule-day" data-date="2022-09-01">
+											<div class="class-row day-header">
+												<div class="container">
+													<div class="row">
+														<div class="col-xs-12">
+															<div class="day-copy">September 01
+																<span class="day-of-week">Thursday | PDT</span>
+															</div>
+														</div>
 													</div>
 												</div>
 											</div>
-										</div>
-										<div class="class-row" data-mt-class-id="26318">
-											<div class="container">
-												<div class="row">
-													<div class="col-xs-3 col-sm-2 col-md-2 class-time-wrap">
-														<div class="class-time"> 7:00<span class="midday">am</span>
-															<span class="end-time"> -8:00<span
-																	class="midday">am</span></span> </div>
-														<div class="class-time-desc hidden-xs">Starts</div>
-													</div>
-													<div class="col-xs-3 col-sm-2 col-md-2 class-time-wrap hidden-xs">
-														<div class="class-time ">8:00<span class="midday">am</span>
+											<div class="class-row" data-mt-class-id="26318">
+												<div class="container">
+													<div class="row">
+														<div class="col-xs-3 col-sm-2 col-md-2 class-time-wrap">
+															<div class="class-time">7:00</div>
+															<div class="class-time-desc hidden-xs">Starts</div>
 														</div>
-														<div class="class-time-desc">Ends</div>
-													</div>
-													<div class="col-xs-8 col-sm-5 col-md-5 class-title-wrap">
-														<div class="class-title">Vinyasa Flow<div
-																class="info-tooltip hidden-xs"> <span
-																	class="ico-info"></span>
-																<div class="tooltip-text-wrap">
+														<div class="col-xs-3 col-sm-2 col-md-2 class-time-wrap hidden-xs">
+															<div class="class-time ">8:00</div>
+															<div class="class-time-desc">Ends</div>
+														</div>
+														<div class="col-xs-8 col-sm-5 col-md-5 class-title-wrap">
+															<div class="class-title">
+																Vinyasa Flow
+																<div class="info-tooltip">
 																	<div class="tooltip-text">These popular classes keep
 																		you moving, linking breath with sequences of sun
 																		salutes and other postures creating a
-																		beautifully sweaty yoga experience.</div>
+																		beautifully sweaty yoga experience.
+																	</div>
 																</div>
 															</div>
+															<div class="class-teacher-name hidden-xs">Bree Zellis</div>
 														</div>
-														<div class="class-teacher-name hidden-xs">Bree Zellis</div>
-													</div>
-													<div class="col-xs-12 col-sm-3 col-md-3 class-actions-wrap"> <button
-															class="btn btn-reserve hidden-xs" data-mt-reserve-btn=""
-															data-class-session-id="26318">Reserve</button> </div>
-													<div class="visible-xs arrow-wrap" data-class-collapse-button="">
-														<span class="ico-arrow"></span></div>
-												</div>
-												<div class="row class-details-wrap">
-													<div class="col-xs-12">
-														<div class="class-title">Vinyasa Flow</div>
-														<div class="class-teacher-name">Bree Zellis</div>
-														<div class="class-desc">These popular classes keep you moving,
-															linking breath with sequences of sun salutes and other
-															postures creating a beautifully sweaty yoga experience.
-														</div> <button class="btn btn-reserve" data-mt-reserve-btn=""
-															data-class-session-id="26318">Reserve</button>
+														<div class="col-xs-12 col-sm-3 col-md-3 class-actions-wrap">
+															<button	class="btn btn-reserve hidden-xs" data-mt-reserve-btn="" data-class-session-id="26318">Reserve</button>
+														</div>
 													</div>
 												</div>
 											</div>
-										</div>
-									</div>
-									<div class="schedule-day" data-date="2022-09-06">
-										<div class="class-row day-header">
-											<div class="container">
-												<div class="row">
-													<div class="col-xs-12">
-														<div class="day-copy">September 06 <span
-																class="day-of-week">Tuesday | PDT</span></div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="class-row" data-mt-class-id="26485">
-											<div class="container">
-												<div class="row">
-													<div class="col-xs-3 col-sm-2 col-md-2 class-time-wrap">
-														<div class="class-time"> 7:00<span class="midday">am</span>
-															<span class="end-time"> -8:00<span
-																	class="midday">am</span></span> </div>
-														<div class="class-time-desc hidden-xs">Starts</div>
-													</div>
-													<div class="col-xs-3 col-sm-2 col-md-2 class-time-wrap hidden-xs">
-														<div class="class-time ">8:00<span class="midday">am</span>
+											<div class="class-row" data-mt-class-id="26318">
+												<div class="container">
+													<div class="row">
+														<div class="col-xs-3 col-sm-2 col-md-2 class-time-wrap">
+															<div class="class-time">17:00</div>
+															<div class="class-time-desc hidden-xs">Starts</div>
 														</div>
-														<div class="class-time-desc">Ends</div>
-													</div>
-													<div class="col-xs-8 col-sm-5 col-md-5 class-title-wrap">
-														<div class="class-title">Vinyasa Flow<div
-																class="info-tooltip hidden-xs"> <span
-																	class="ico-info"></span>
-																<div class="tooltip-text-wrap">
+														<div class="col-xs-3 col-sm-2 col-md-2 class-time-wrap hidden-xs">
+															<div class="class-time ">88:00</div>
+															<div class="class-time-desc">Ends</div>
+														</div>
+														<div class="col-xs-8 col-sm-5 col-md-5 class-title-wrap">
+															<div class="class-title">
+																Sound Bath Meditation
+																<div class="info-tooltip">
 																	<div class="tooltip-text">These popular classes keep
 																		you moving, linking breath with sequences of sun
 																		salutes and other postures creating a
-																		beautifully sweaty yoga experience.</div>
+																		beautifully sweaty yoga experience.
+																	</div>
 																</div>
 															</div>
+															<div class="class-teacher-name hidden-xs">Heather Nevell</div>
 														</div>
-														<div class="class-teacher-name hidden-xs">Bree Zellis</div>
+														<div class="col-xs-12 col-sm-3 col-md-3 class-actions-wrap">
+															<button	class="btn btn-reserve hidden-xs" data-mt-reserve-btn="" data-class-session-id="26318">Reserve</button>
+														</div>
 													</div>
-													<div class="col-xs-12 col-sm-3 col-md-3 class-actions-wrap"> <button
-															class="btn btn-reserve hidden-xs" data-mt-reserve-btn=""
-															data-class-session-id="26485">Reserve</button> </div>
-													<div class="visible-xs arrow-wrap" data-class-collapse-button="">
-														<span class="ico-arrow"></span></div>
 												</div>
-												<div class="row class-details-wrap">
-													<div class="col-xs-12">
-														<div class="class-title">Vinyasa Flow</div>
-														<div class="class-teacher-name">Bree Zellis</div>
-														<div class="class-desc">These popular classes keep you moving,
-															linking breath with sequences of sun salutes and other
-															postures creating a beautifully sweaty yoga experience.
-														</div> <button class="btn btn-reserve" data-mt-reserve-btn=""
-															data-class-session-id="26485">Reserve</button>
+											</div>
+										</div>
+										<div class="schedule-day" data-date="2022-09-01">
+											<div class="class-row day-header">
+												<div class="container">
+													<div class="row">
+														<div class="col-xs-12">
+															<div class="day-copy">May 9
+																<span class="day-of-week">Thursday | PDT</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="class-row" data-mt-class-id="26318">
+												<div class="container">
+													<div class="row">
+														<div class="col-xs-3 col-sm-2 col-md-2 class-time-wrap">
+															<div class="class-time">7:00</div>
+															<div class="class-time-desc hidden-xs">Starts</div>
+														</div>
+														<div class="col-xs-3 col-sm-2 col-md-2 class-time-wrap hidden-xs">
+															<div class="class-time ">8:00</div>
+															<div class="class-time-desc">Ends</div>
+														</div>
+														<div class="col-xs-8 col-sm-5 col-md-5 class-title-wrap">
+															<div class="class-title">
+																Vinyasa Flow
+																<div class="info-tooltip">
+																	<div class="tooltip-text">These popular classes keep
+																		you moving, linking breath with sequences of sun
+																		salutes and other postures creating a
+																		beautifully sweaty yoga experience.
+																	</div>
+																</div>
+															</div>
+															<div class="class-teacher-name hidden-xs">Bree Zellis</div>
+														</div>
+														<div class="col-xs-12 col-sm-3 col-md-3 class-actions-wrap">
+															<button	class="btn btn-reserve hidden-xs" data-mt-reserve-btn="" data-class-session-id="26318">Reserve</button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="class-row" data-mt-class-id="26318">
+												<div class="container">
+													<div class="row">
+														<div class="col-xs-3 col-sm-2 col-md-2 class-time-wrap">
+															<div class="class-time">17:00</div>
+															<div class="class-time-desc hidden-xs">Starts</div>
+														</div>
+														<div class="col-xs-3 col-sm-2 col-md-2 class-time-wrap hidden-xs">
+															<div class="class-time ">18:00</div>
+															<div class="class-time-desc">Ends</div>
+														</div>
+														<div class="col-xs-8 col-sm-5 col-md-5 class-title-wrap">
+															<div class="class-title">
+																Flow & Restore
+																<div class="info-tooltip">
+																	<div class="tooltip-text">These popular classes keep
+																		you moving, linking breath with sequences of sun
+																		salutes and other postures creating a
+																		beautifully sweaty yoga experience.
+																	</div>
+																</div>
+															</div>
+															<div class="class-teacher-name hidden-xs">Dan Ward</div>
+														</div>
+														<div class="col-xs-12 col-sm-3 col-md-3 class-actions-wrap">
+															<button	class="btn btn-reserve hidden-xs" data-mt-reserve-btn="" data-class-session-id="26318">Reserve</button>
+														</div>
 													</div>
 												</div>
 											</div>
 										</div>
 									</div>
-								</div>
 
-
-
-
-
-
+								</article>
+								
 							</div>
 
 						</div>

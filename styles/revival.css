@@ -423,8 +423,31 @@ body .revival .article__title {
 body .revival .article__title_nomargin {
   margin-bottom: 0;
 }
+body .revival .article__title_schedule {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
 body .revival .about-info {
   display: flex;
+}
+body .revival .print {
+  display: flex;
+  font-size: 16px;
+  line-height: 20px;
+  background-image: url(../images/pic_print.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+  padding-right: 46px;
+  cursor: pointer;
+}
+body .revival .tooltip-text {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+body .revival .container, body .revival .container-lg, body .revival .container-md, body .revival .container-sm, body .revival .container-xl {
+  max-width: 100%;
 }
 body .revival .container-fluid {
   margin-right: auto;
