@@ -326,6 +326,103 @@ body .revival .nav-link.active {
   border-color: #FF7A00;
   font-family: "medium", Helvetica;
 }
+body .revival .infobanner-wrap {
+  padding: 32px 0;
+}
+body .revival .infobanner {
+  background: #fff;
+  border-radius: 8px;
+  padding: 24px 32px;
+  display: flex;
+}
+body .revival .infobanner__pic {
+  width: 94px;
+  min-width: 94px;
+  height: 100px;
+  background-image: url(../images/safe.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 32px;
+}
+body .revival .infobanner__title {
+  font-size: 24px;
+  line-height: 32px;
+  color: #B9C5B2;
+  margin-bottom: 12px;
+  font-family: "semibold", Helvetica;
+}
+body .revival .infobanner__text {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "regular", Helvetica;
+  font-weight: 400;
+}
+body .revival .about-banner {
+  width: 100%;
+  height: 548px;
+  background-image: url(../images/studio.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body .revival .about .containr {
+  display: flex;
+}
+body .revival .about__desc {
+  min-width: 50%;
+  padding-right: 60px;
+}
+body .revival .about__sub {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "semibold", Helvetica;
+  margin-bottom: 32px;
+}
+body .revival .about__add {
+  display: flex;
+}
+body .revival .about__add-shower {
+  margin-right: 52px;
+  background-image: url(../images/pic_shower.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-left: 46px;
+}
+body .revival .about__add-shop {
+  background-image: url(../images/pic_shop.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-left: 46px;
+}
+body .revival .about__text p {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 34px;
+}
+body .revival .about__text p:last-child {
+  margin: 0;
+}
+body .revival .article {
+  padding: 100px 0;
+}
+body .revival .article__sup {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+body .revival .article__title {
+  font-size: 72px;
+  line-height: 80px;
+  font-family: "medium", Helvetica;
+  margin-bottom: 56px;
+}
+body .revival .article__title_nomargin {
+  margin-bottom: 0;
+}
+body .revival .about-info {
+  display: flex;
+}
 @media only screen and (max-width: 1440px) {
   body .revival .line__pic {
     width: 500px;

@@ -393,47 +393,92 @@ table th, table td{
     }
 }
 .infobanner-wrap {
+    padding: 32px 0;
 }
 .infobanner {
+    background: #fff;
+    border-radius: 8px;
+    padding: 24px 32px;
+    display: flex;
     &__pic {
+        width: 94px;
+        min-width: 94px;
+        height: 100px;
+        background-image: url(../images/safe.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-right: 32px;
     }
-
     &__inner {
     }
-
     &__title {
+        font-size: 24px;
+        line-height: 32px;
+        color: #B9C5B2;
+        margin-bottom: 12px;
+        font-family: $font-semibold;
     }
-
     &__text {
+        font-size: 16px;
+        line-height: 24px;
+        font-family: $font-regular;
+        font-weight: 400;
     }
 }
 .about-banner{
-
+    width: 100%;
+    height: 548px;
+    background-image: url(../images/studio.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .about {
-
+    .containr{
+        display: flex;
+    }
     &__desc {
-    }
-
-    &__sup {
-    }
-
-    &__title {
+        min-width: 50%;
+        padding-right: 60px;
     }
 
     &__sub {
+        font-size: 24px;
+        line-height: 32px;
+        font-family: $font-semibold;
+        margin-bottom: 32px;
     }
 
     &__add {
+        display: flex;
     }
 
     &__add-shower {
+        margin-right: 52px;
+        background-image: url(../images/pic_shower.png);
+        background-position: left center;
+        background-repeat: no-repeat;
+        padding-left: 46px;
     }
 
     &__add-shop {
+        background-image: url(../images/pic_shop.png);
+        background-position: left center;
+        background-repeat: no-repeat;
+        padding-left: 46px;
     }
 
     &__text {
+        p{
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 34px;
+            &:last-child{
+                margin: 0;
+            }
+        }
+        
     }
 }
 .about-info {
@@ -448,8 +493,24 @@ table th, table td{
     }
 }
 .article {
+    padding: 100px 0;
+    &__sup{
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+    }
+    &__title{
+        font-size: 72px;
+        line-height: 80px;
+        font-family: $font-medium;
+        margin-bottom: 56px;
+        &_nomargin{
+            margin-bottom: 0;
+        }
+    }
 }
 .about-info {
+    display: flex
 }
 .article-sup {
 }
