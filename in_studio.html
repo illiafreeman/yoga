@@ -382,7 +382,7 @@
 													<div class="form-group">
 														<label class="form-label label-title" for="filter-date">Choose the date</label>
 														<div class="date-filter-wrap">
-															<input type="text" id="datepicker" class="pick" autocomplete="off" readonly="">
+															<input type="text" id="datepicker" class="pick" value="09/16/2022" autocomplete="off" readonly="">
 														</div>
 													</div>
 												</div>
@@ -722,6 +722,12 @@
 			$( function() {
 			  	$( "#datepicker" ).datepicker();
 			});
+			$('#datepicker').click(function() {
+				w = $(this).outerWidth();
+				$('.ui-datepicker').css('width', w)
+				console.log(w);
+			});
+			
 		</script>
 		<script>
 			$( function() {

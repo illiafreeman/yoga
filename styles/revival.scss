@@ -1438,7 +1438,80 @@ table th, table td{
 .ui-menu .ui-state-active, .ui-menu .ui-state-focus {
     margin: 0;
 }
-
+.ui-datepicker{
+    font-family: 'regular';
+    
+    .ui-widget-header{
+        font-weight: 400;
+        text-transform: uppercase;
+        border: 0;
+        background: transparent;
+        color: #394531;
+    }
+    .ui-datepicker-next{
+        .ui-icon{
+            border-left: 8px solid #394531;
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+            border-right: 0;
+        }
+        &.ui-datepicker-next-hover{
+            right: 2px;
+            top: 2px;
+        }
+    }
+    .ui-datepicker-prev{
+        .ui-icon{
+            border-right: 8px solid #394531;
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+            border-left: 0;
+        }
+        &.ui-datepicker-prev-hover{
+            left: 2px;
+            top: 2px;
+        }
+    }
+    .ui-datepicker-next, .ui-datepicker-prev{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover{
+            cursor: pointer;
+        }
+        .ui-icon{
+            position: static;
+            margin: 0;
+            background-image: none;
+            width: 0;
+            height: 0;
+        }
+        &.ui-state-hover{
+            border: 0;
+            background: transparent;
+        }
+    }
+    .ui-datepicker-calendar{
+        th{
+            color: #B4B6B3;
+            font-weight: 400;
+        }
+        td{
+            a{
+                text-align: center;
+            } 
+        }
+        .ui-state-default{
+            border: 0;
+            background: transparent;
+            font-weight: 400;
+            color: #394531;
+            &.ui-state-highlight{
+                color: #FF7A00;
+            }
+        }
+    }
+}
 
 
 
