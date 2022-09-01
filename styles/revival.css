@@ -57,13 +57,7 @@ body .revival h2 {
   font-size: 72px;
   line-height: 80px;
 }
-body .revival h3 {
-  font-size: 24px;
-}
-body .revival h4 {
-  font-size: 18px;
-}
-body .revival h1, body .revival h2, body .revival h3, body .revival h4, body .revival h5, body .revival h6 {
+body .revival h1, body .revival h2 {
   font-family: "medium", Helvetica;
   margin: 0 0 20px;
 }
@@ -141,7 +135,7 @@ body .revival .intro_studio {
   background-size: cover;
   height: 680px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 body .revival .intro_footer {
@@ -158,6 +152,56 @@ body .revival .intro__header_footer {
   line-height: 144px;
   margin-bottom: 48px;
 }
+body .revival .intro_studio * {
+  color: #fff;
+}
+body .revival .intro__studio-header {
+  width: 800px;
+  max-width: 800px;
+  margin-right: 80px;
+}
+body .revival .intro__studio-title {
+  font-size: 128px;
+  line-height: 144px;
+}
+body .revival .intro__header_studio {
+  width: auto;
+}
+body .revival .intro__info-contacts a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+body .revival .intro__studio-poster {
+  padding: 32px;
+  background: #99A592;
+  border-radius: 8px;
+  max-width: 417px;
+}
+body .revival .intro__studio-poster h4 {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 24px;
+  font-family: "regular", Helvetica;
+}
+body .revival .intro__studio-poster h3 {
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 16px;
+}
+body .revival .intro__studio-poster p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+body .revival .intro__studio-poster p a {
+  font-size: 16px;
+  line-height: 24px;
+  color: #FF7A00;
+}
+body .revival .intro__studio-poster p a:hover {
+  color: #FF7A00;
+  text-decoration: underline;
+}
 body .revival .containr {
   margin: 0 auto !important;
   width: 1376px;
@@ -165,6 +209,14 @@ body .revival .containr {
 body .revival .containr_full {
   width: 100%;
   max-width: 1920px;
+}
+body .revival .containr_studio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .revival .df {
+  display: flex;
 }
 body .revival .btn {
   height: 52px;
