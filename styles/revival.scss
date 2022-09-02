@@ -788,6 +788,10 @@ body .revival {
             border: 1px solid #394531;
             width: 100%;
             justify-content: center;
+            &:hover{
+                background: #394531;
+                color: #fff;
+            }
         }
     }
     .pick_search{
@@ -856,11 +860,13 @@ body .revival {
             opacity: 0;
             visibility: hidden;
             transition: $transition;
+            padding-top: 8px;
         }
 
         &__item-option {
             color: #878f84;
             transition: $transition;
+            font-size: 20px;
             &:hover{
                 color: #394531;
             }

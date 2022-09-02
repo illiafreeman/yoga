@@ -600,6 +600,10 @@ body .revival .btn_card {
   width: 100%;
   justify-content: center;
 }
+body .revival .btn_card:hover {
+  background: #394531;
+  color: #fff;
+}
 body .revival .pick_search {
   padding-right: 40px;
   background-image: url(../images/pic_search.png);
@@ -659,10 +663,12 @@ body .revival .sort__item-drop {
   opacity: 0;
   visibility: hidden;
   transition: all 0.2s ease-in-out;
+  padding-top: 8px;
 }
 body .revival .sort__item-option {
   color: #878f84;
   transition: all 0.2s ease-in-out;
+  font-size: 20px;
 }
 body .revival .sort__item-option:hover {
   color: #394531;
