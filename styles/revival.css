@@ -607,6 +607,66 @@ body .revival .pick_search {
   background-repeat: no-repeat;
   margin-bottom: 30px;
 }
+body .revival .sort-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+body .revival .sort-group {
+  display: flex;
+  justify-content: space-between;
+}
+body .revival .sort {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 90px;
+}
+body .revival .sort__name {
+  color: #666C63;
+  margin-right: 42px;
+}
+body .revival .sort__item-val {
+  padding-right: 30px;
+  cursor: pointer;
+  position: relative;
+}
+body .revival .sort__item-val:hover .sort__item-drop {
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+}
+body .revival .sort__item-val:hover:after {
+  transform: rotate(180deg);
+}
+body .revival .sort__item-val:after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 6px;
+  right: 0;
+  background-image: url(../images/pic_chevron.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: all 0.2s ease-in-out;
+}
+body .revival .sort__item-drop {
+  position: absolute;
+  top: 140%;
+  left: 0;
+  right: 0;
+  background: #F5F1ED;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+}
+body .revival .sort__item-option {
+  color: #878f84;
+  transition: all 0.2s ease-in-out;
+}
+body .revival .sort__item-option:hover {
+  color: #394531;
+}
 .ui-menu .ui-menu-item-wrapper {
   padding: 0 16px !important;
   font-size: 16px !important;

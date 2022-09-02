@@ -798,24 +798,72 @@ body .revival {
         margin-bottom: 30px;
     }
     .sort-wrap {
+        display: flex;
+        justify-content: space-between;
     }
     .sort-group {
+        display: flex;
+        justify-content: space-between;
     }
     .sort {
-
+        display: flex;
+        justify-content: space-between;
+        margin-right: 90px;
         &__name {
+            color: #666C63;
+            margin-right: 42px;
         }
 
         &__item {
+            
         }
 
         &__item-val {
+            padding-right: 30px;
+            cursor: pointer;
+            position: relative;
+            &:hover{
+                .sort__item-drop{
+                    opacity: 1;
+                    visibility: visible;
+                    top: 100%;
+                }
+                &:after{
+                    transform: rotate(180deg);
+                }
+            }
+            &:after{
+                content: '';
+                display: block;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                top: 6px;
+                right: 0;
+                background-image: url(../images/pic_chevron.png);
+                background-position: center center;
+                background-repeat: no-repeat;
+                transition: $transition;
+            }
         }
 
         &__item-drop {
+            position: absolute;
+            top: 140%;
+            left: 0;
+            right: 0;
+            background: #F5F1ED;
+            opacity: 0;
+            visibility: hidden;
+            transition: $transition;
         }
 
-        &__item-item {
+        &__item-option {
+            color: #878f84;
+            transition: $transition;
+            &:hover{
+                color: #394531;
+            }
         }
     }
     .result {
