@@ -905,8 +905,9 @@
 			$( function() {
 			  	$( "#datepicker" ).datepicker();
 			});
+			
 			$('#datepicker').click(function() {
-				w = $(this).outerWidth();
+				w = $('#datepicker').outerWidth();
 				$('.ui-datepicker').css('width', w)
 				console.log(w);
 			});
