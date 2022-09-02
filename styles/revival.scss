@@ -829,13 +829,13 @@ body .revival {
             cursor: pointer;
             position: relative;
             &:hover{
-                box-shadow: 0px -8px 21px 2px rgba(255, 122, 0, 0.3);
+                box-shadow: 0px -8px 21px 2px rgba(255, 122, 0, 0.15);
                 border-radius: 8px 8px 0 0;
                 .sort__item-drop{
                     opacity: 1;
                     visibility: visible;
                     top: 100%;
-                    box-shadow: 0px 8px 21px 2px rgba(255, 122, 0, 0.3)
+                    box-shadow: 0px 8px 21px 2px rgba(255, 122, 0, 0.15)
                 }
                 &:after{
                     transform: rotate(180deg);
@@ -891,7 +891,7 @@ body .revival {
         overflow: hidden;
         width: calc(25% - 12px);
         &:hover{
-            box-shadow: 0px 8px 21px 2px rgba(255, 122, 0, 0.3)
+            box-shadow: 0px 8px 21px 2px rgba(255, 122, 0, 0.15)
         }
         &__pic {
         }
@@ -909,7 +909,65 @@ body .revival {
             width: calc(100% - 32px);
         }
     }
-    
+    .pagination {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 40px 0;
+		&__el {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            font-size: 16px;
+            line-height: 20px;
+            cursor: pointer;
+            position: relative;
+            color: #666C63;
+            transition: $transition;
+            &.act{
+                color: #FF7A00;
+            }
+			&_start, &_prev, &_next, &_end {
+                &:after{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                }
+			}
+            &_start{
+                background-image: url(../images/pic_doubleright.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+                transform: rotate(180deg);
+            }
+
+			&_prev {
+                background-image: url(../images/pic_right.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+                transform: rotate(180deg);
+			}
+
+			&_next {
+                background-image: url(../images/pic_right.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+			}
+
+			&_end {
+                background-image: url(../images/pic_doubleright.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+			}
+		}
+    }   
+
     
     
 

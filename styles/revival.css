@@ -636,14 +636,14 @@ body .revival .sort__item-val {
   position: relative;
 }
 body .revival .sort__item-val:hover {
-  box-shadow: 0px -8px 21px 2px rgba(255, 122, 0, 0.3);
+  box-shadow: 0px -8px 21px 2px rgba(255, 122, 0, 0.15);
   border-radius: 8px 8px 0 0;
 }
 body .revival .sort__item-val:hover .sort__item-drop {
   opacity: 1;
   visibility: visible;
   top: 100%;
-  box-shadow: 0px 8px 21px 2px rgba(255, 122, 0, 0.3);
+  box-shadow: 0px 8px 21px 2px rgba(255, 122, 0, 0.15);
 }
 body .revival .sort__item-val:hover:after {
   transform: rotate(180deg);
@@ -695,7 +695,7 @@ body .revival .instructor {
   width: calc(25% - 12px);
 }
 body .revival .instructor:hover {
-  box-shadow: 0px 8px 21px 2px rgba(255, 122, 0, 0.3);
+  box-shadow: 0px 8px 21px 2px rgba(255, 122, 0, 0.15);
 }
 body .revival .instructor__name {
   height: 96px;
@@ -708,6 +708,59 @@ body .revival .instructor__name {
 body .revival .instructor .btn {
   margin: 0 16px 16px;
   width: calc(100% - 32px);
+}
+body .revival .pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+}
+body .revival .pagination__el {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+  position: relative;
+  color: #666C63;
+  transition: all 0.2s ease-in-out;
+}
+body .revival .pagination__el.act {
+  color: #FF7A00;
+}
+body .revival .pagination__el_start:after, body .revival .pagination__el_prev:after, body .revival .pagination__el_next:after, body .revival .pagination__el_end:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+body .revival .pagination__el_start {
+  background-image: url(../images/pic_doubleright.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  transform: rotate(180deg);
+}
+body .revival .pagination__el_prev {
+  background-image: url(../images/pic_right.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  transform: rotate(180deg);
+}
+body .revival .pagination__el_next {
+  background-image: url(../images/pic_right.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+body .revival .pagination__el_end {
+  background-image: url(../images/pic_doubleright.png);
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .ui-menu .ui-menu-item-wrapper {
