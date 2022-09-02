@@ -141,6 +141,17 @@ body .revival .intro_studio {
   justify-content: space-between;
   align-items: center;
 }
+body .revival .intro_teachers {
+  background-image: url(../images/intro_teachers.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 602px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 body .revival .intro_footer {
   background-image: url(../images/landing_3.jpg);
 }
@@ -1690,6 +1701,35 @@ body .revival .pagination__el_end {
   body .revival .intro__header {
     width: 100%;
     padding: 0 40px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  body .revival h1 {
+    font-size: 56px;
+    line-height: 64px;
+  }
+  body .revival .line__pic {
+    width: 346px;
+    min-width: 346px;
+    height: 310px;
+  }
+  body .revival .line__title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  body .revival * {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  body .revival .line::after {
+    width: 200px;
+    height: 200px;
+    top: -100px;
+  }
+  body .revival .intro__header_footer {
+    font-size: 56px;
+    line-height: 64px;
+    margin-bottom: 96px;
   }
 }
 @media only screen and (max-width: 768px) {

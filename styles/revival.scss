@@ -199,6 +199,17 @@ body .revival {
             justify-content: space-between;
             align-items: center;
         }
+        &_teachers{
+            background-image: url(../images/intro_teachers.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 602px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
 
         &_footer {
             background-image: url(../images/landing_3.jpg);
