@@ -804,6 +804,7 @@ body .revival {
     .sort-wrap {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 60px;
     }
     .sort-group {
         display: flex;
@@ -815,7 +816,8 @@ body .revival {
         margin-right: 90px;
         &__name {
             color: #666C63;
-            margin-right: 42px;
+            margin-right: 20px;
+            padding: 5px 0;
         }
 
         &__item {
@@ -823,14 +825,17 @@ body .revival {
         }
 
         &__item-val {
-            padding-right: 30px;
+            padding: 5px 30px 5px 8px;
             cursor: pointer;
             position: relative;
             &:hover{
+                box-shadow: 0px -8px 21px 2px rgba(255, 122, 0, 0.3);
+                border-radius: 8px 8px 0 0;
                 .sort__item-drop{
                     opacity: 1;
                     visibility: visible;
                     top: 100%;
+                    box-shadow: 0px 8px 21px 2px rgba(255, 122, 0, 0.3)
                 }
                 &:after{
                     transform: rotate(180deg);
@@ -842,8 +847,8 @@ body .revival {
                 width: 20px;
                 height: 20px;
                 position: absolute;
-                top: 6px;
-                right: 0;
+                top: 10px;
+                right: 5px;
                 background-image: url(../images/pic_chevron.png);
                 background-position: center center;
                 background-repeat: no-repeat;
@@ -860,20 +865,52 @@ body .revival {
             opacity: 0;
             visibility: hidden;
             transition: $transition;
-            padding-top: 8px;
+            padding: 8px 0;
+            border-radius: 0 0 8px 8px;
         }
 
         &__item-option {
             color: #878f84;
             transition: $transition;
             font-size: 20px;
+            padding: 0 10px;
             &:hover{
                 color: #394531;
             }
         }
     }
-    .result {
+    .instructor-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
     }
+    .instructor {
+        background: #fff;
+        border-radius: 8px;
+        transition: $transition;
+        overflow: hidden;
+        width: calc(25% - 12px);
+        &:hover{
+            box-shadow: 0px 8px 21px 2px rgba(255, 122, 0, 0.3)
+        }
+        &__pic {
+        }
+
+        &__name {
+            height: 96px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 16px 32px;
+            text-align: center;
+        }
+        .btn {
+            margin: 0 16px 16px;
+            width: calc(100% - 32px);
+        }
+    }
+    
+    
     
 
 
