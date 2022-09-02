@@ -210,6 +210,41 @@ body .revival {
             align-items: center;
             flex-direction: column;
         }
+        &_history{
+            background-image: url(../images/intro_history.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 724px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .article {
+
+                &__sup {
+                    color: #fff;
+                }
+        
+                &__title {
+                    color: #fff;
+                    font-size: 128px;
+                    line-height: 144px;
+                    max-width: 1376px;
+                    font-family: $font-medium-wide;
+                    letter-spacing: -4px;
+                    font-weight: 500;
+                }
+        
+                &__sub {
+                    color: #fff;
+                    margin: 0;
+                    max-width: 1376px;
+                }
+            }
+        
+        }
+
 
         &_footer {
             background-image: url(../images/landing_3.jpg);
