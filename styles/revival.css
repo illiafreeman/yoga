@@ -120,6 +120,9 @@ body .revival table td {
   border: 1px solid #ccc;
   padding: 8px;
 }
+body .revival .mb_0 {
+  margin-bottom: 0 !important;
+}
 body .revival .intro_landing {
   background-image: url(../images/landing_intro.jpg);
   background-position: center center;
@@ -179,6 +182,12 @@ body .revival .intro_history .article__sub {
   color: #fff;
   margin: 0;
   max-width: 1376px;
+}
+body .revival .intro-desc__text {
+  font-size: 48px;
+  line-height: 56px;
+  font-family: "mediumwide", Helvetica;
+  text-align: center;
 }
 body .revival .intro_footer {
   background-image: url(../images/landing_3.jpg);
@@ -332,12 +341,26 @@ body .revival .line__pic_landing-1 {
 body .revival .line__pic_landing-2 {
   background-image: url(../images/landing_2.jpg);
 }
+body .revival .line__pic_history-1 {
+  background-image: url(../images/history_1.jpg);
+}
+body .revival .line__pic_history-2 {
+  background-image: url(../images/history_2.jpg);
+}
+body .revival .line__pic_history-3 {
+  background-image: url(../images/history_3.jpg);
+}
 body .revival .line__desc {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   width: 650px;
+}
+body .revival .line__sup {
+  color: #666C63;
+  font-size: 16px;
+  line-height: 20px;
 }
 body .revival .line__title {
   font-family: "medium", Helvetica;
@@ -460,7 +483,7 @@ body .revival .article__sup {
   text-transform: uppercase;
   font-weight: 400;
   color: #666C63;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 body .revival .article__sub {
   font-size: 24px;
@@ -801,7 +824,6 @@ body .revival .pagination__el_end {
   background-repeat: no-repeat;
   background-position: center center;
 }
-
 .ui-menu .ui-menu-item-wrapper {
   padding: 0 16px !important;
   font-size: 16px !important;
