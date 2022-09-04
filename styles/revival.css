@@ -392,6 +392,9 @@ body .revival .bg_green {
 body .revival .bg_light {
   background: #F5F1ED;
 }
+body .revival .bg_white {
+  background: #fff;
+}
 body .revival .nav-tabs {
   display: flex;
   justify-content: center;
@@ -513,6 +516,16 @@ body .revival .article__sub {
 body .revival .article__sub_full {
   max-width: 100%;
 }
+body .revival .article__text p {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "regular", Helvetica;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+body .revival .article__text p:last-child {
+  margin-bottom: 0;
+}
 body .revival .article__title {
   font-size: 72px;
   line-height: 80px;
@@ -526,6 +539,28 @@ body .revival .article__title_schedule {
   position: relative;
   display: flex;
   justify-content: space-between;
+}
+body .revival .article__quote {
+  font-size: 48px;
+  line-height: 56px;
+  color: #B4B6B3;
+  text-transform: none;
+  text-align: center;
+  position: relative;
+  font-family: "regular", Helvetica;
+}
+body .revival .article__quote:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -61px;
+  left: -97px;
+  width: 106px;
+  height: 82px;
+  background-image: url(../images/quotes.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 body .revival .about-info {
   display: flex;

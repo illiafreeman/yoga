@@ -59,6 +59,7 @@ body .revival {
     $font-color: #394531;
     $bg-green: #CFDDC7;
     $bg-light: #F5F1ED;
+    $bg-white: #fff;
 
     * {
         font-family: $font-regular-wide;
@@ -510,6 +511,9 @@ body .revival {
         &_light {
             background: $bg-light;
         }
+        &_white {
+            background: $bg-white;
+        }
     }
 
     .nav-tabs {
@@ -667,7 +671,18 @@ body .revival {
                 max-width: 100%;
             }
         }
-
+        &__text{
+            p{
+                font-size: 16px;
+                line-height: 24px;
+                font-family: $font-regular;
+                font-weight: 400;
+                margin-bottom: 10px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
         &__title {
             font-size: 72px;
             line-height: 80px;
@@ -684,11 +699,32 @@ body .revival {
                 justify-content: space-between;
             }
         }
-
+        &__quote{
+            font-size: 48px;
+            line-height: 56px;
+            color: #B4B6B3;
+            text-transform: none;
+            text-align: center;
+            position: relative;
+            font-family: $font-regular;
+            &:after{
+                content: '';
+                display: block;
+                position: absolute;
+                top: -61px;
+                left: -97px;
+                width: 106px;
+                height: 82px;
+                background-image: url(../images/quotes.png);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
     }
 
     .about-info {
-        display: flex
+        display: flex;
     }
 
     .print {
