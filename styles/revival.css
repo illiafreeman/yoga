@@ -340,6 +340,9 @@ body .revival .line_reverse:after {
   right: auto;
   left: 300px;
 }
+body .revival .line_nobg::after {
+  display: none;
+}
 body .revival .line__pic {
   width: 47%;
   height: 480px;
@@ -368,6 +371,10 @@ body .revival .line__pic_history-2 {
 body .revival .line__pic_history-3 {
   background-image: url(../images/history_3.jpg);
 }
+body .revival .line__pic_yoga-1 {
+  background-image: url(../images/yoga_1.jpg);
+  height: 942px;
+}
 body .revival .line__desc {
   display: flex;
   flex-direction: column;
@@ -386,11 +393,24 @@ body .revival .line__title {
 body .revival .line__text {
   margin-bottom: 30px;
 }
+body .revival .line__subtext p {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "regular", Helvetica !important;
+  font-weight: 400;
+}
+body .revival .line__subtext p:last-child {
+  margin-bottom: 0;
+}
 body .revival .bg_green {
   background: #CFDDC7;
 }
 body .revival .bg_light {
   background: #F5F1ED;
+}
+body .revival .bg_semilight {
+  background: #FAF8F6;
 }
 body .revival .bg_white {
   background: #fff;
@@ -558,6 +578,27 @@ body .revival .article__quote:after {
   width: 106px;
   height: 82px;
   background-image: url(../images/quotes.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+body .revival .article__yoga {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  padding-right: 500px;
+  position: relative;
+  margin-bottom: 40px;
+}
+body .revival .article__yoga:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 500px;
+  background-image: url(../images/figure_2.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;

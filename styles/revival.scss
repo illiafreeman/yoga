@@ -59,6 +59,7 @@ body .revival {
     $font-color: #394531;
     $bg-green: #CFDDC7;
     $bg-light: #F5F1ED;
+    $bg-semilight: #FAF8F6;
     $bg-white: #fff;
 
     * {
@@ -447,7 +448,11 @@ body .revival {
                 left: 300px;
             }
         }
-
+        &_nobg{
+            &::after{
+                display: none;
+            }
+        }
         &__pic {
             width: 47%;
             height: 480px;
@@ -478,6 +483,10 @@ body .revival {
             &_history-3 {
                 background-image: url(../images/history_3.jpg);
             }
+            &_yoga-1{
+                background-image: url(../images/yoga_1.jpg);
+                height: 942px;
+            }
         }
 
         &__desc {
@@ -501,6 +510,19 @@ body .revival {
         &__text {
             margin-bottom: 30px;
         }
+        &__subtext {
+            p{
+                margin-bottom: 16px;
+                font-size: 16px;
+                line-height: 24px;
+                font-family: $font-regular !important;
+                font-weight: 400;
+                &:last-child{
+                    margin-bottom: 0;;
+                }
+            }
+            
+        }
     }
 
     .bg {
@@ -510,6 +532,9 @@ body .revival {
 
         &_light {
             background: $bg-light;
+        }
+        &_semilight {
+            background: $bg-semilight;
         }
         &_white {
             background: $bg-white;
@@ -716,6 +741,27 @@ body .revival {
                 width: 106px;
                 height: 82px;
                 background-image: url(../images/quotes.png);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+        &__yoga{
+            align-items: flex-start;
+            display: flex;
+            flex-direction: column;
+            padding-right: 500px;
+            position: relative;
+            margin-bottom: 40px;
+            &:after{
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                width: 500px;
+                background-image: url(../images/figure_2.png);
                 background-position: center center;
                 background-repeat: no-repeat;
                 background-size: contain;
