@@ -95,7 +95,7 @@ body .revival {
 
     h1,
     h2 {
-        font-family: $font-medium;
+        font-family: $font-medium-wide;
         margin: 0 0 20px;
     }
 
@@ -178,7 +178,9 @@ body .revival {
 
 
     .intro {
-
+        &_min{
+            height: 602px;
+        }
         &_landing {
             background-image: url(../images/landing_intro.jpg);
             background-position: center center;
@@ -265,7 +267,11 @@ body .revival {
             margin-bottom: 100px;
             width: 1100px;
             text-align: center;
-
+            &_min{
+                margin-bottom: 0;
+                font-size: 128px;
+                line-height: 144px;
+            }
             &_footer {
                 font-size: 128px;
                 line-height: 144px;
@@ -477,7 +483,7 @@ body .revival {
         }
 
         &__title {
-            font-family: $font-medium;
+            font-family: $font-medium-wide;
         }
 
         &__text {
@@ -651,7 +657,7 @@ body .revival {
         &__title {
             font-size: 72px;
             line-height: 80px;
-            font-family: $font-medium;
+            font-family: $font-medium-wide;
             margin-bottom: 20px;
 
             &_nomargin {

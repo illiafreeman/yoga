@@ -59,7 +59,7 @@ body .revival h2 {
 }
 body .revival h1,
 body .revival h2 {
-  font-family: "medium", Helvetica;
+  font-family: "mediumwide", Helvetica;
   margin: 0 0 20px;
 }
 body .revival input,
@@ -122,6 +122,9 @@ body .revival table td {
 }
 body .revival .mb_0 {
   margin-bottom: 0 !important;
+}
+body .revival .intro_min {
+  height: 602px;
 }
 body .revival .intro_landing {
   background-image: url(../images/landing_intro.jpg);
@@ -197,6 +200,11 @@ body .revival .intro__header {
   margin-bottom: 100px;
   width: 1100px;
   text-align: center;
+}
+body .revival .intro__header_min {
+  margin-bottom: 0;
+  font-size: 128px;
+  line-height: 144px;
 }
 body .revival .intro__header_footer {
   font-size: 128px;
@@ -363,7 +371,7 @@ body .revival .line__sup {
   line-height: 20px;
 }
 body .revival .line__title {
-  font-family: "medium", Helvetica;
+  font-family: "mediumwide", Helvetica;
 }
 body .revival .line__text {
   margin-bottom: 30px;
@@ -495,7 +503,7 @@ body .revival .article__sub {
 body .revival .article__title {
   font-size: 72px;
   line-height: 80px;
-  font-family: "medium", Helvetica;
+  font-family: "mediumwide", Helvetica;
   margin-bottom: 20px;
 }
 body .revival .article__title_nomargin {
