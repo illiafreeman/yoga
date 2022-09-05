@@ -196,11 +196,20 @@ body .revival .intro_history .article__sub {
 body .revival .intro_ourclasses {
   background-image: url(../images/intro_teachers.jpg);
 }
+body .revival .intro_careers {
+  background-image: url(../images/intro_history.jpg);
+}
 body .revival .intro-desc__text {
   font-size: 48px;
   line-height: 56px;
   font-family: "mediumwide", Helvetica;
   text-align: center;
+}
+body .revival .intro-sub {
+  color: #fff;
+  margin-top: 16px;
+  font-size: 32px;
+  line-height: 40px;
 }
 body .revival .intro_footer {
   background-image: url(../images/landing_3.jpg);
@@ -375,6 +384,9 @@ body .revival .line__pic_yoga-1 {
   background-image: url(../images/yoga_1.jpg);
   height: 942px;
 }
+body .revival .line__pic_careers-1 {
+  background-image: url(../images/careers_1.png);
+}
 body .revival .line__desc {
   display: flex;
   flex-direction: column;
@@ -402,6 +414,11 @@ body .revival .line__subtext p {
 }
 body .revival .line__subtext p:last-child {
   margin-bottom: 0;
+}
+body .revival .line__subtext_big p {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "regularwide", Helvetica !important;
 }
 body .revival .bg_green {
   background: #CFDDC7;

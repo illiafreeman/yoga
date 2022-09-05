@@ -260,7 +260,9 @@ body .revival {
         }
         &_ourclasses{
             background-image: url(../images/intro_teachers.jpg);
-            
+        }
+        &_careers{
+            background-image: url(../images/intro_history.jpg);
         }
         &-desc{
             &__text{
@@ -270,7 +272,12 @@ body .revival {
                 text-align: center;
             }
         }
-
+        &-sub{
+            color: #fff;
+            margin-top: 16px;
+            font-size: 32px;
+            line-height: 40px;
+        }
         &_footer {
             background-image: url(../images/landing_3.jpg);
         }
@@ -487,6 +494,9 @@ body .revival {
                 background-image: url(../images/yoga_1.jpg);
                 height: 942px;
             }
+            &_careers-1{
+                background-image: url(../images/careers_1.png);
+            }
         }
 
         &__desc {
@@ -521,7 +531,13 @@ body .revival {
                     margin-bottom: 0;;
                 }
             }
-            
+            &_big{
+                p{
+                    font-size: 24px;
+                    line-height: 32px;
+                    font-family: $font-regular-wide !important;
+                }
+            }
         }
     }
 
