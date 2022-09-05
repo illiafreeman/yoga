@@ -496,6 +496,7 @@ body .revival {
             }
             &_careers-1{
                 background-image: url(../images/careers_1.png);
+                height: 648px;
             }
         }
 
@@ -762,7 +763,7 @@ body .revival {
                 background-size: contain;
             }
         }
-        &__yoga{
+        &__figure{
             align-items: flex-start;
             display: flex;
             flex-direction: column;
@@ -773,11 +774,11 @@ body .revival {
                 content: '';
                 display: block;
                 position: absolute;
-                top: 0;
                 right: 0;
                 bottom: 0;
+                height: 360px;
                 width: 500px;
-                background-image: url(../images/figure_2.png);
+                background-image: url(../images/figure_1.png);
                 background-position: center center;
                 background-repeat: no-repeat;
                 background-size: contain;
