@@ -286,7 +286,6 @@ body .revival .containr {
 }
 body .revival .containr_full {
   width: 100%;
-  max-width: 1920px;
 }
 body .revival .containr_studio {
   display: flex;
