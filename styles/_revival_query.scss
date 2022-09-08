@@ -3,8 +3,8 @@
 @media only screen and (max-width: 1440px) {
     body .revival{
         .line__pic{
-            width: 500px;
-            min-width: 500px;
+            width: calc(50% - 60px);
+            min-width: calc(50% - 60px);
             height: 380px;
         }
         .line__desc{
@@ -22,11 +22,15 @@
         .line_reverse::after {
             left: 10px;
         }
-          .intro__header {
+        .intro__header {
             width: 100%;
             padding: 0 40px;
         }
-
+        .line::after {
+            width: 200px;
+            height: 200px;
+            top: -100px
+        }
 
 
 
@@ -34,46 +38,19 @@
 
     } 
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1167px) {
     body .revival{
-        h1 {
-            font-size: 56px;
-            line-height: 64px;
+        .line{
+            padding: 72px 0;
         }
-        .line__pic {
-            width: 346px;
-            min-width: 346px;
+        .line__pic{
+            width: calc(50% - 30px);
+            min-width: calc(50% - 30px);
             height: 310px;
         }
-        .line__title{
-            font-size: 48px;
-            line-height: 56px;
-        }
-        * {
-            font-size: 22px;
-            line-height: 28px;
-        }
-        .line::after {
-            width: 200px;
-            height: 200px;
-            top: -100px
-        }
-        .intro__header_footer {
+        h1 {
             font-size: 56px;
             line-height: 64px;
-            margin-bottom: 96px;
-        }
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    body .revival{
-        .intro_landing{
-            height: 550px;
-        }
-        h1 {
-            font-size: 44px;
-            line-height: 52px;
         }
         .intro__header {
             margin-bottom: 70px;
@@ -81,39 +58,28 @@
         .line {
             padding: 60px 0;
         }
-        .line__pic {
-            width: 260px;
-            min-width: 260px;
-            height: 310px;
-            margin-right: 40px;
-        }
         .line__pic_reverse{
             margin: 0 0 0 40px;
         }
         .line__title {
-            font-size: 38px;
-            line-height: 46px;
-        }
-        * {
-            font-size: 20px;
-            line-height: 23px;
+            font-size: 48px;
+            line-height: 56px;
+            margin-bottom: 16px;
         }
         .line::after {
             width: 160px;
             height: 160px;
             top: -80px;
         }
-        .intro_footer {
-            height: 400px;
-        }
         .intro__header_footer{
             margin-bottom: 50px;
+            font-size: 56px;
+            line-height: 64px;
         }
     }
 }
 
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
     body .revival{
         .intro_landing{
             height: 432px;
@@ -166,10 +132,5 @@
         .intro_footer{
             margin-bottom: 0;
         }
-
-
-
-
-
     }
 }

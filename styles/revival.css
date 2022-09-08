@@ -1875,8 +1875,8 @@ body .revival .pagination__el_end {
 }
 @media only screen and (max-width: 1440px) {
   body .revival .line__pic {
-    width: 500px;
-    min-width: 500px;
+    width: calc(50% - 60px);
+    min-width: calc(50% - 60px);
     height: 380px;
   }
   body .revival .line__desc {
@@ -1896,43 +1896,24 @@ body .revival .pagination__el_end {
     width: 100%;
     padding: 0 40px;
   }
-}
-@media only screen and (max-width: 1024px) {
-  body .revival h1 {
-    font-size: 56px;
-    line-height: 64px;
-  }
-  body .revival .line__pic {
-    width: 346px;
-    min-width: 346px;
-    height: 310px;
-  }
-  body .revival .line__title {
-    font-size: 48px;
-    line-height: 56px;
-  }
-  body .revival * {
-    font-size: 22px;
-    line-height: 28px;
-  }
   body .revival .line::after {
     width: 200px;
     height: 200px;
     top: -100px;
   }
-  body .revival .intro__header_footer {
-    font-size: 56px;
-    line-height: 64px;
-    margin-bottom: 96px;
-  }
 }
-@media only screen and (max-width: 768px) {
-  body .revival .intro_landing {
-    height: 550px;
+@media only screen and (max-width: 1167px) {
+  body .revival .line {
+    padding: 72px 0;
+  }
+  body .revival .line__pic {
+    width: calc(50% - 30px);
+    min-width: calc(50% - 30px);
+    height: 310px;
   }
   body .revival h1 {
-    font-size: 44px;
-    line-height: 52px;
+    font-size: 56px;
+    line-height: 64px;
   }
   body .revival .intro__header {
     margin-bottom: 70px;
@@ -1940,36 +1921,26 @@ body .revival .pagination__el_end {
   body .revival .line {
     padding: 60px 0;
   }
-  body .revival .line__pic {
-    width: 260px;
-    min-width: 260px;
-    height: 310px;
-    margin-right: 40px;
-  }
   body .revival .line__pic_reverse {
     margin: 0 0 0 40px;
   }
   body .revival .line__title {
-    font-size: 38px;
-    line-height: 46px;
-  }
-  body .revival * {
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 16px;
   }
   body .revival .line::after {
     width: 160px;
     height: 160px;
     top: -80px;
   }
-  body .revival .intro_footer {
-    height: 400px;
-  }
   body .revival .intro__header_footer {
     margin-bottom: 50px;
+    font-size: 56px;
+    line-height: 64px;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
   body .revival .intro_landing {
     height: 432px;
     margin-bottom: 20px;
