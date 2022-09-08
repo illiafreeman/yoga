@@ -213,7 +213,8 @@
 									2215 Main Street, Santa Monica, CA 90405
 								</div>
 								<div class="intro__info-contacts">
-									<a href="mailto:santamonicamain@yogaworks.com">santamonicamain@yogaworks.com</a> |
+									<a href="mailto:santamonicamain@yogaworks.com">santamonicamain@yogaworks.com</a>
+									<span>|</span>
 									<a href="callto:+4243220229">(424) 322-0229</a>
 								</div>
 							</div>
@@ -285,7 +286,7 @@
 								<div class="containr">
 									<div class="about__desc">
 										<h6 class="article__sup">our heritage</h6>
-										<h2 class="article__title">About the Studio</h2>
+										<h2 class="article__title article__title_mb">About the Studio</h2>
 										<div class="about__sub">Studio Amenities</div>
 										<div class="about__add">
 											<div class="about__add-shower">Showers</div>
@@ -335,7 +336,7 @@
 									<iframe
 										src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1442623307090!6m8!1m7!1sSbAUiDBr5D0AAAQpnTAfWQ!2m2!1d34.00537886152335!2d-118.4868369210866!3f55!4f0!5f0.7820865974627469"
 										width="100%" height="550" frameborder="0" style="border:0"
-										allowfullscreen></iframe>
+										allowfullscreen id="tour"></iframe>
 								</div>
 							</article>
 
@@ -909,19 +910,20 @@
 			$('#datepicker').click(function() {
 				w = $('#datepicker').outerWidth();
 				$('.ui-datepicker').css('width', w)
-				console.log(w);
 			});
 			$(document).ready(function() {
-				if ($(window).width() < 1440) {
-					console.log("1440");
+				if ($(window).width() < 767) {
+					$("#map").height(200);
+				}else if($(window).width() < 1440){
 					$("#map").height(400);
 				}else{
 					$("#map").height(774);
 				}
 			});
 			$(window).resize(function() {
-				if ($(window).width() < 1440) {
-					console.log("1440");
+				if ($(window).width() < 767) {
+					$("#map").height(200);
+				}else if($(window).width() < 1440){
 					$("#map").height(400);
 				}else{
 					$("#map").height(774);

@@ -363,11 +363,12 @@ body .revival {
                 a {
                     font-size: 16px;
                     line-height: 24px;
-                    color: #FF7A00;
+                    text-decoration: underline;
+                    font-weight: 600;
+                    color: #fff;
 
                     &:hover {
-                        color: #FF7A00;
-                        text-decoration: underline;
+                        text-decoration: none;
                     }
                 }
             }
@@ -393,7 +394,7 @@ body .revival {
     .df {
         display: flex;
     }
-    #map{
+    #map, #tour{
         display: block;
     }
     .btn {
@@ -758,7 +759,9 @@ body .revival {
             line-height: 80px;
             font-family: $font-medium-wide;
             margin-bottom: 20px;
-
+            &_mb{
+                margin-bottom: 56px;
+            }
             &_nomargin {
                 margin-bottom: 0;
             }

@@ -274,11 +274,12 @@ body .revival .intro__studio-poster p {
 body .revival .intro__studio-poster p a {
   font-size: 16px;
   line-height: 24px;
-  color: #FF7A00;
+  text-decoration: underline;
+  font-weight: 600;
+  color: #fff;
 }
 body .revival .intro__studio-poster p a:hover {
-  color: #FF7A00;
-  text-decoration: underline;
+  text-decoration: none;
 }
 body .revival .containr {
   margin: 0 auto !important;
@@ -295,7 +296,7 @@ body .revival .containr_studio {
 body .revival .df {
   display: flex;
 }
-body .revival #map {
+body .revival #map, body .revival #tour {
   display: block;
 }
 body .revival .btn {
@@ -598,6 +599,9 @@ body .revival .article__title {
   line-height: 80px;
   font-family: "mediumwide", Helvetica;
   margin-bottom: 20px;
+}
+body .revival .article__title_mb {
+  margin-bottom: 56px;
 }
 body .revival .article__title_nomargin {
   margin-bottom: 0;
@@ -1931,15 +1935,19 @@ body .revival .pagination__el_end {
     height: 200px;
     top: -100px;
   }
-  body .revival .map {
-    height: 500px !important;
-  }
   body .revival .containr {
     width: 100%;
     padding: 0 32px;
   }
   body .revival .containr_full {
     padding: 0;
+  }
+  body .revival .intro__studio-title {
+    font-size: 95px;
+    line-height: 105px;
+  }
+  body .revival .intro__studio-header {
+    margin-right: 50px;
   }
 }
 @media only screen and (max-width: 1167px) {
@@ -1998,6 +2006,91 @@ body .revival .pagination__el_end {
   body .revival .intro-desc__text {
     font-size: 40px;
     line-height: 48px;
+  }
+  body .revival .intro__studio-title {
+    font-size: 56px;
+    line-height: 64px;
+  }
+  body .revival .containr {
+    padding: 0 16px;
+  }
+  body .revival .containr_full {
+    padding: 0;
+  }
+  body .revival .intro__studio-poster {
+    max-width: 352px;
+    padding: 16px;
+  }
+  body .revival .intro_studio {
+    height: 636px;
+  }
+  body .revival .intro__studio-poster h4 {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 24px;
+    font-family: "regular", Helvetica;
+    font-weight: 400;
+  }
+  body .revival .intro__studio-poster h3 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  body .revival .intro__studio-poster p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  body .revival .intro__studio-header {
+    margin-right: 18px;
+  }
+  body .revival .intro__info-address, body .revival .intro__info-contacts a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "regular", Helvetica;
+    margin-bottom: 15px;
+  }
+  body .revival .intro__info-contacts a {
+    display: block;
+  }
+  body .revival .intro__info-contacts span {
+    display: none;
+  }
+  body .revival .infobanner__title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  body .revival .about__desc {
+    min-width: 50%;
+    padding-right: 20px;
+  }
+  body .revival .article__title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  body .revival .about__add-shower {
+    margin-right: 30px;
+  }
+  body .revival .about__text p {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 34px;
+  }
+  body .revival .article {
+    padding: 48px 0;
+  }
+  body .revival .about-info {
+    flex-direction: column;
+  }
+  body .revival .article_about .about__desc {
+    min-width: 100%;
+    padding-right: 0;
+  }
+  body .revival .article_about .article__title {
+    margin-bottom: 16px;
+  }
+  body .revival .article_about .about-info__text {
+    font-size: 22px;
+    line-height: 28px;
   }
 }
 @media only screen and (max-width: 767px) {

@@ -31,9 +31,6 @@
             height: 200px;
             top: -100px
         }
-        .map{
-            height: 500px !important;
-        }
         .containr {
             width: 100%;
             padding: 0 32px;
@@ -41,7 +38,13 @@
                 padding: 0;
             }
         }
-
+        .intro__studio-title{
+            font-size: 95px;
+            line-height: 105px;
+        }
+        .intro__studio-header {
+            margin-right: 50px;
+          }
 
     } 
 }
@@ -103,6 +106,105 @@
             font-size: 40px;
             line-height: 48px;
         }
+        .intro__studio-title {
+            font-size: 56px;
+            line-height: 64px;
+        }
+        .containr {
+            padding: 0 16px;
+            &_full{
+                padding: 0;
+            }
+        }
+        .intro__studio-poster{
+            max-width: 352px;
+            padding: 16px;
+        }
+        .intro_studio{
+            height: 636px;
+        }
+        .intro__studio-poster h4 {
+            font-size: 22px;
+            line-height: 28px;
+            margin-bottom: 24px;
+            font-family: "regular", Helvetica;
+            font-weight: 400;
+        }
+        .intro__studio-poster h3 {
+            font-size: 28px;
+            line-height: 32px;
+        }
+        .intro__studio-poster p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .intro__studio-header {
+            margin-right: 18px;
+        }
+        .intro__info-address, .intro__info-contacts a{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            font-family: "regular", Helvetica;
+            margin-bottom: 15px;
+        }
+        .intro__info-contacts{
+            a{
+                display: block;
+            }
+            span{
+                display: none;
+            }
+        }
+        .infobanner__title {
+            font-size: 22px;
+            line-height: 28px;
+        }
+        .about__desc {
+            min-width: 50%;
+            padding-right: 20px;
+        }
+        .article__title {
+            font-size: 48px;
+            line-height: 56px;
+        }
+        .about__add-shower{
+            margin-right: 30px;
+        }
+        .about__text p {
+            font-size: 22px;
+            line-height: 28px;
+            margin-bottom: 34px;
+        }
+        .article {
+            padding: 48px 0;
+        }
+        .about-info{
+            flex-direction: column;
+        }
+        .article_about{
+            .about__desc {
+                min-width: 100%;
+                padding-right: 0;
+            }
+            .article__title{
+                margin-bottom: 16px;
+            }
+            .about-info__text{
+                font-size: 22px;
+                line-height: 28px;
+            }
+        }
+        
+
+
+
+
+
+
+
+
+
     }
 }
 
@@ -160,8 +262,10 @@
         .intro-desc__text{
             font-size: 22px;
             line-height: 28px;
-        }.intro_history{
+        }
+        .intro_history{
             height: 684px;
         }
+        
     }
 }
