@@ -34,8 +34,14 @@
         .map{
             height: 500px !important;
         }
-
-
+        .containr {
+            width: 100%;
+        }
+        .intro, .intro-desc{
+            .containr {
+                padding: 0 32px;
+            }
+        }
 
 
     } 
@@ -77,6 +83,26 @@
             margin-bottom: 50px;
             font-size: 56px;
             line-height: 64px;
+        }
+        .intro_history{
+            height: 424px;
+        }
+        .intro_history .article__title {
+            font-size: 56px;
+            line-height: 64px;
+            letter-spacing: -2px;
+            margin-bottom: 16px;
+        }
+        .intro_history .article__sub {
+            font-size: 22px;
+            line-height: 28px;
+        }
+        .intro-desc{
+            padding: 48px 0;
+        }
+        .intro-desc__text{
+            font-size: 40px;
+            line-height: 48px;
         }
     }
 }
@@ -131,6 +157,12 @@
         .intro_footer{
             margin-bottom: 0;
             height: 640px;
+        }
+        .intro-desc__text{
+            font-size: 22px;
+            line-height: 28px;
+        }.intro_history{
+            height: 684px;
         }
     }
 }

@@ -1931,6 +1931,12 @@ body .revival .pagination__el_end {
   body .revival .map {
     height: 500px !important;
   }
+  body .revival .containr {
+    width: 100%;
+  }
+  body .revival .intro .containr, body .revival .intro-desc .containr {
+    padding: 0 32px;
+  }
 }
 @media only screen and (max-width: 1167px) {
   body .revival .line {
@@ -1968,6 +1974,26 @@ body .revival .pagination__el_end {
     margin-bottom: 50px;
     font-size: 56px;
     line-height: 64px;
+  }
+  body .revival .intro_history {
+    height: 424px;
+  }
+  body .revival .intro_history .article__title {
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -2px;
+    margin-bottom: 16px;
+  }
+  body .revival .intro_history .article__sub {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  body .revival .intro-desc {
+    padding: 48px 0;
+  }
+  body .revival .intro-desc__text {
+    font-size: 40px;
+    line-height: 48px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -2016,5 +2042,12 @@ body .revival .pagination__el_end {
   body .revival .intro_footer {
     margin-bottom: 0;
     height: 640px;
+  }
+  body .revival .intro-desc__text {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  body .revival .intro_history {
+    height: 684px;
   }
 }/*# sourceMappingURL=revival.css.map */
