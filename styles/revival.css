@@ -2173,7 +2173,9 @@ body .revival .pagination__el_end {
     justify-content: flex-start;
   }
   body .revival .containr_scroll {
+    width: 100%;
     position: relative;
+    overflow: hidden;
   }
   body .revival .containr_scroll:after {
     content: "";
@@ -2182,16 +2184,15 @@ body .revival .pagination__el_end {
     top: 0;
     right: 0;
     bottom: 0;
-    width: 50px; /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+    width: 70px; /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to right, rgba(229, 229, 229, 0) 0%, rgb(255, 255, 255) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00e5e5e5", endColorstr="#ffffff",GradientType=1 ); /* IE6-9 */
     pointer-events: none;
   }
-  body .revival .containr_scroll {
-    width: auto;
-    overflow-x: auto;
-  }
   body .revival .nav-tabs .nav-item {
     white-space: nowrap;
+  }
+  body .revival .nav-tabs .nav-link.active {
+    border-bottom: 3px solid #FF7A00;
   }
 }/*# sourceMappingURL=revival.css.map */
