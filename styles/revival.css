@@ -2201,4 +2201,38 @@ body .revival .pagination__el_end {
   body .revival .intro__studio-poster {
     max-width: 100%;
   }
+  body .revival .infobanner {
+    padding: 30px 12px;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .revival .infobanner__pic {
+    margin: 0 0 16px;
+  }
+  body .revival .infobanner__title {
+    text-align: center;
+    margin-bottom: 26px;
+  }
+  body .revival .about-banner {
+    height: 260px;
+  }
+  body .revival .about .containr {
+    flex-direction: column;
+  }
+  body .revival .article__title_mb {
+    margin-bottom: 24px;
+  }
+  body .revival .about__add {
+    margin-bottom: 24px;
+  }
+  body .revival .about__text p {
+    margin-bottom: 24px;
+  }
+  body .revival .about__add * {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  body .revival .about__add-shower {
+    margin-right: 22px;
+  }
 }/*# sourceMappingURL=revival.css.map */
