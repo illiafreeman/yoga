@@ -2196,6 +2196,9 @@ body .revival .pagination__el_end {
     border-bottom: 3px solid #FF7A00;
   }
   body .revival .nav-link {
-    margin: 0 15px;
+    margin: 0 16px;
+  }
+  body .revival .intro__studio-poster {
+    max-width: 100%;
   }
 }/*# sourceMappingURL=revival.css.map */
