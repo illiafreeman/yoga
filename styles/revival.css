@@ -2195,4 +2195,7 @@ body .revival .pagination__el_end {
   body .revival .nav-tabs .nav-link.active {
     border-bottom: 3px solid #FF7A00;
   }
+  body .revival .nav-link {
+    margin: 0 15px;
+  }
 }/*# sourceMappingURL=revival.css.map */
