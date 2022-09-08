@@ -31,7 +31,9 @@
             height: 200px;
             top: -100px
         }
-
+        .map{
+            height: 500px !important;
+        }
 
 
 
@@ -107,7 +109,7 @@
             margin: 0;
         }
         .line__title::after{
-            display: none;
+            display: none !important;
         }
         .line_reverse{
             .line__desc {

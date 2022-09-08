@@ -1915,6 +1915,9 @@ body .revival .pagination__el_end {
     height: 200px;
     top: -100px;
   }
+  body .revival .map {
+    height: 500px !important;
+  }
 }
 @media only screen and (max-width: 1167px) {
   body .revival .line {
@@ -1981,7 +1984,7 @@ body .revival .pagination__el_end {
     margin: 0;
   }
   body .revival .line__title::after {
-    display: none;
+    display: none !important;
   }
   body .revival .line_reverse .line__desc {
     padding: 0 16px;
