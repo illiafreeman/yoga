@@ -295,6 +295,9 @@ body .revival .containr_studio {
 body .revival .df {
   display: flex;
 }
+body .revival #map {
+  display: block;
+}
 body .revival .btn {
   height: 52px;
   padding: 0 48px;
@@ -1933,9 +1936,10 @@ body .revival .pagination__el_end {
   }
   body .revival .containr {
     width: 100%;
-  }
-  body .revival .intro .containr, body .revival .intro-desc .containr {
     padding: 0 32px;
+  }
+  body .revival .containr_full {
+    padding: 0;
   }
 }
 @media only screen and (max-width: 1167px) {
@@ -2012,7 +2016,7 @@ body .revival .pagination__el_end {
     flex-direction: column;
   }
   body .revival .line__desc {
-    padding: 0 16px;
+    padding: 0 32px;
     margin-bottom: 36px;
     align-items: center;
     text-align: center;

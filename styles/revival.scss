@@ -393,7 +393,9 @@ body .revival {
     .df {
         display: flex;
     }
-
+    #map{
+        display: block;
+    }
     .btn {
         height: 52px;
         padding: 0 48px;

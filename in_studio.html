@@ -911,10 +911,20 @@
 				$('.ui-datepicker').css('width', w)
 				console.log(w);
 			});
-			$(window).scroll(function() {
+			$(document).ready(function() {
 				if ($(window).width() < 1440) {
-					сщ
-					$("#map").height('400 px');
+					console.log("1440");
+					$("#map").height(400);
+				}else{
+					$("#map").height(774);
+				}
+			});
+			$(window).resize(function() {
+				if ($(window).width() < 1440) {
+					console.log("1440");
+					$("#map").height(400);
+				}else{
+					$("#map").height(774);
 				}
 			});
 		</script>
