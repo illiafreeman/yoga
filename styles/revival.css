@@ -2095,6 +2095,22 @@ body .revival .pagination__el_end {
   body .revival .nav-link {
     margin: 0 30px;
   }
+  body .revival .result-total-wrap {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  body .revival .schedule-filters-wrap .row div:first-child {
+    padding-left: 0;
+  }
+  body .revival .schedule-filters-wrap .row div:last-child {
+    padding-right: 0;
+  }
+  body .revival .schedule-actions-wrap .row div:first-child {
+    padding-left: 0;
+  }
+  body .revival .schedule-actions-wrap .row div:last-child {
+    padding-right: 0;
+  }
 }
 @media only screen and (max-width: 767px) {
   body .revival .intro_landing {

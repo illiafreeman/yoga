@@ -198,9 +198,30 @@
         .nav-link {
             margin: 0 30px;
         }
-
-
-
+        .result-total-wrap{
+            font-size: 22px;
+            line-height: 28px;
+        }
+        .schedule-filters-wrap{
+            .row{
+                div:first-child{
+                    padding-left: 0;
+                }
+                div:last-child{
+                    padding-right: 0;
+                }
+            }
+        }
+        .schedule-actions-wrap{
+            .row{
+                div:first-child{
+                    padding-left: 0;
+                }
+                div:last-child{
+                    padding-right: 0;
+                }
+            }
+        }
 
 
 
