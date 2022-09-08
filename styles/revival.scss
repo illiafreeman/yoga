@@ -405,16 +405,27 @@ body .revival {
         transition: $transition;
         background: #fff;
         font-family: $font-medium;
-
         &:hover {
             background: #f1ffe9;
         }
 
         &_green {
             background: #CFDDC7;
-
             &:hover {
-                background: #fff;
+                background: #E1EADC;
+            }
+            &:active{
+                background: #B9C5B2;
+            }
+        }
+        &_orange{
+            background: #FF7A00;
+            color: #fff !important;
+            &:hover{
+                background: #FF9C40;
+            }
+            &:active{
+                background: #D96800;
             }
         }
 

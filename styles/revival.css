@@ -314,7 +314,20 @@ body .revival .btn_green {
   background: #CFDDC7;
 }
 body .revival .btn_green:hover {
-  background: #fff;
+  background: #E1EADC;
+}
+body .revival .btn_green:active {
+  background: #B9C5B2;
+}
+body .revival .btn_orange {
+  background: #FF7A00;
+  color: #fff !important;
+}
+body .revival .btn_orange:hover {
+  background: #FF9C40;
+}
+body .revival .btn_orange:active {
+  background: #D96800;
 }
 body .revival .btn_schedule {
   background: #CFDDC7;
@@ -1973,9 +1986,10 @@ body .revival .pagination__el_end {
     flex-direction: column;
   }
   body .revival .line__desc {
-    order: 1;
     padding: 0 16px;
     margin-bottom: 36px;
+    align-items: center;
+    text-align: center;
   }
   body .revival .line__pic {
     order: 2;

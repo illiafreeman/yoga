@@ -98,9 +98,10 @@
             flex-direction: column;
         }
         .line__desc{
-            order: 1;
             padding: 0 16px;
             margin-bottom: 36px;
+            align-items: center;
+            text-align: center;
         }
         .line__pic {
             order: 2;
