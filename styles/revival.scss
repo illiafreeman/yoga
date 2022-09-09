@@ -436,6 +436,10 @@ body .revival {
 
         &_schedule {
             background: #CFDDC7;
+            i{
+                font-style: normal;
+            }
+            
 
             &:hover {
                 background: #f1ffe9;
@@ -772,6 +776,12 @@ body .revival {
                 position: relative;
                 display: flex;
                 justify-content: space-between;
+                i{
+                    font-style: normal;
+                    font-size: 72px;
+                    line-height: 80px;
+                }
+                
             }
         }
         &__quote{

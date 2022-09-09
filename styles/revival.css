@@ -336,6 +336,9 @@ body .revival .btn_orange:active {
 body .revival .btn_schedule {
   background: #CFDDC7;
 }
+body .revival .btn_schedule i {
+  font-style: normal;
+}
 body .revival .btn_schedule:hover {
   background: #f1ffe9;
 }
@@ -610,6 +613,11 @@ body .revival .article__title_schedule {
   position: relative;
   display: flex;
   justify-content: space-between;
+}
+body .revival .article__title_schedule i {
+  font-style: normal;
+  font-size: 72px;
+  line-height: 80px;
 }
 body .revival .article__quote {
   font-size: 48px;
@@ -2318,6 +2326,17 @@ body .revival .pagination__el_end {
   }
   body .revival .class-row .col-sm-4.class-title-wrap {
     position: relative;
+  }
+  body .revival .article__title_schedule i {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  body .revival .print {
+    width: 32px;
+    height: 32px;
+  }
+  body .revival .print span {
+    display: none;
   }
 }
 @media only screen and (max-width: 575px) {
