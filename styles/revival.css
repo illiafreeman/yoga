@@ -2111,6 +2111,38 @@ body .revival .pagination__el_end {
   body .revival .schedule-actions-wrap .row div:last-child {
     padding-right: 0;
   }
+  body .revival .schedule-day .container {
+    padding: 0;
+  }
+  body .revival .schedule-day .container .col-xs-12 {
+    padding: 0;
+  }
+  body .revival .schedule-day .container .row div:first-child {
+    padding-left: 0;
+  }
+  body .revival .schedule-day .container .class-time-wrap {
+    padding-left: 0;
+  }
+  body .revival .class-title {
+    justify-content: flex-start;
+  }
+  body .revival .class-title div:first-child {
+    flex: 0 1 auto;
+  }
+  body .revival .class-title div:last-child {
+    flex: 2 0 auto;
+  }
+  body .revival .class-title .info-tooltip {
+    width: 20px !important;
+    min-width: 50px !important;
+    height: 20px !important;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  body .revival .schedule-day .class-row:not(.day-header):hover {
+    background: transparent;
+  }
 }
 @media only screen and (max-width: 767px) {
   body .revival .intro_landing {
