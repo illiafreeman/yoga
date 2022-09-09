@@ -241,15 +241,15 @@
         .class-title{
             justify-content: flex-start;
             div:first-child{
-                flex: 0 1 auto;
+                
             }
             div:last-child{
-                flex: 2 0 auto;
+                
             }
         }
         .class-title .info-tooltip {
             width: 20px !important;
-            min-width: 50px !important;
+            min-width: 20px !important;
             height: 20px !important;
             display: flex;
             justify-content: flex-start;
@@ -412,11 +412,50 @@
         .about__add-shower {
             margin-right: 22px;
         }
-
+        .class-row{
+            .col-xs-3 {
+                width: 50%;
+                margin-bottom: 24px;
+            }
+            .col-xs-8 {
+                width: 100%;
+                padding-left: 0;
+                margin-bottom: 24px;
+            }
+            .col-sm-4{
+                max-width: 50%;
+                flex: 0 0 50%;
+                &.class-title-wrap{
+                    max-width: 100%;
+                    flex: 0 0 100%;
+                }
+            }
+            .col-xs-12 {
+                width: 100%;
+                padding-left: 0;
+                max-width: 100%;
+                flex: 0 0 100%;
+                .btn{
+                    width: 100%;
+                    text-align: center;
+                    justify-content: center;
+                }
+            }
+        }
 
 
 
 
         
+    }
+}
+@media only screen and (max-width: 575px) {
+    body .revival{
+        .col-md-8{
+            padding-left: 0;
+        }
+        .col-sm-5{
+            padding: 0;
+        }
     }
 }
