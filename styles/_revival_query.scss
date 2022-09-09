@@ -258,8 +258,13 @@
         .schedule-day .class-row:not(.day-header):hover {
             background: transparent;
         }
-
-
+        .tooltip-text{
+            padding: 16px !important;
+        }
+        .class-title .info-tooltip .tooltip-text{
+            width: 300px;
+            display: none;
+        }
 
     }
 }
@@ -428,6 +433,7 @@
                 &.class-title-wrap{
                     max-width: 100%;
                     flex: 0 0 100%;
+                    padding-right: 0;
                 }
             }
             .col-xs-12 {
@@ -442,8 +448,12 @@
                 }
             }
         }
-
-
+        .class-title .info-tooltip{
+            position: static;
+        }
+        .class-row .col-sm-4.class-title-wrap{
+            position: relative;
+        }
 
 
         

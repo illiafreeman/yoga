@@ -2137,6 +2137,13 @@ body .revival .pagination__el_end {
   body .revival .schedule-day .class-row:not(.day-header):hover {
     background: transparent;
   }
+  body .revival .tooltip-text {
+    padding: 16px !important;
+  }
+  body .revival .class-title .info-tooltip .tooltip-text {
+    width: 300px;
+    display: none;
+  }
 }
 @media only screen and (max-width: 767px) {
   body .revival .intro_landing {
@@ -2293,6 +2300,7 @@ body .revival .pagination__el_end {
   body .revival .class-row .col-sm-4.class-title-wrap {
     max-width: 100%;
     flex: 0 0 100%;
+    padding-right: 0;
   }
   body .revival .class-row .col-xs-12 {
     width: 100%;
@@ -2304,6 +2312,12 @@ body .revival .pagination__el_end {
     width: 100%;
     text-align: center;
     justify-content: center;
+  }
+  body .revival .class-title .info-tooltip {
+    position: static;
+  }
+  body .revival .class-row .col-sm-4.class-title-wrap {
+    position: relative;
   }
 }
 @media only screen and (max-width: 575px) {

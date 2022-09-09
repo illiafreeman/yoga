@@ -913,6 +913,9 @@
 				w = $('#datepicker').outerWidth();
 				$('.ui-datepicker').css('width', w)
 			});
+			$('.info-tooltip').click(function() {
+				$(this).children('.tooltip-text').css('display', 'block')
+			});
 			$(document).ready(function() {
 				if ($(window).width() < 767) {
 					$("#map").height(200);
