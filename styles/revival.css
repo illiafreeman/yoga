@@ -350,6 +350,15 @@ body .revival .line {
   display: flex;
   position: relative;
 }
+body .revival .line_transparent {
+  background: transparent;
+}
+body .revival .line_transparent .line__title:after {
+  display: none;
+}
+body .revival .line_tab {
+  padding-top: 50px;
+}
 body .revival .line_reverse {
   justify-content: flex-end;
 }
@@ -409,6 +418,9 @@ body .revival .line__pic_careers-1 {
   background-image: url(../images/careers_1.png);
   height: 648px;
 }
+body .revival .line__pic_200-2 {
+  background-image: url(../images/200_2.jpg);
+}
 body .revival .line__desc {
   display: flex;
   flex-direction: column;
@@ -440,6 +452,9 @@ body .revival .line__title:after {
 }
 body .revival .line__text {
   margin-bottom: 30px;
+}
+body .revival .line__text:last-child {
+  margin-bottom: 0;
 }
 body .revival .line__subtext p {
   margin-bottom: 16px;
@@ -490,6 +505,7 @@ body .revival .nav-link {
 body .revival .nav-link.active {
   border-color: #FF7A00;
   font-family: "medium", Helvetica;
+  background: transparent;
 }
 body .revival .infobanner-wrap {
   padding: 32px 0;
@@ -570,6 +586,9 @@ body .revival .about__text p:last-child {
 }
 body .revival .article {
   padding: 100px 0;
+}
+body .revival .article_tab {
+  padding-top: 48px;
 }
 body .revival .article__sup {
   font-size: 16px;

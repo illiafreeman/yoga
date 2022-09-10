@@ -455,8 +455,17 @@ body .revival {
         padding: 96px 0;
         display: flex;
         position: relative;
-
-        
+        &_transparent{
+            background: transparent;
+            .line__title {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+        &_tab{
+            padding-top: 50px;
+        }
 
         &_reverse {
             justify-content: flex-end;
@@ -522,6 +531,9 @@ body .revival {
                 background-image: url(../images/careers_1.png);
                 height: 648px;
             }
+            &_200-2{
+                background-image: url(../images/200_2.jpg);
+            }
         }
 
         &__desc {
@@ -558,6 +570,9 @@ body .revival {
 
         &__text {
             margin-bottom: 30px;
+            &:last-child{
+                margin-bottom: 0;
+            }
         }
         &__subtext {
             p{
@@ -619,6 +634,7 @@ body .revival {
         &.active {
             border-color: #FF7A00;
             font-family: $font-medium;
+            background: transparent;
         }
     }
 
@@ -731,7 +747,9 @@ body .revival {
 
     .article {
         padding: 100px 0;
-
+        &_tab{
+            padding-top: 48px;
+        }
         &__sup {
             font-size: 16px;
             line-height: 20px;
