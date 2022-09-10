@@ -165,6 +165,9 @@ body .revival .intro_teachers {
   align-items: center;
   flex-direction: column;
 }
+body .revival .intro_200 {
+  background-image: url(../images/200_1.jpg);
+}
 body .revival .intro_history {
   background-image: url(../images/intro_history.jpg);
   background-position: center center;
@@ -217,7 +220,6 @@ body .revival .intro_footer {
 body .revival .intro__header {
   color: #fff;
   margin-bottom: 100px;
-  width: 1100px;
   text-align: center;
 }
 body .revival .intro__header_min {
@@ -1010,6 +1012,40 @@ body .revival .pagination__el_end {
   background-repeat: no-repeat;
   background-position: center center;
 }
+body .revival .poster-line {
+  display: flex;
+  gap: 16px;
+  margin-top: 50px;
+}
+body .revival .poster-line__item {
+  width: 25%;
+  padding: 38px 16px 32px;
+  background: #fff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+body .revival .poster-line__item-pic {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 16px;
+}
+body .revival .poster-line__item-title {
+  height: 80px;
+  font-size: 32px;
+  line-height: 40px;
+  font-family: "mediumwide", Helvetica;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+body .revival .poster-line__item-text {
+  color: #99A592;
+}
+
 .ui-menu .ui-menu-item-wrapper {
   padding: 0 16px !important;
   font-size: 16px !important;

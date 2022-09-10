@@ -223,6 +223,9 @@ body .revival {
             align-items: center;
             flex-direction: column;
         }
+        &_200{
+            background-image: url(../images/200_1.jpg);
+        }
         &_history{
             background-image: url(../images/intro_history.jpg);
             background-position: center center;
@@ -285,7 +288,7 @@ body .revival {
         &__header {
             color: #fff;
             margin-bottom: 100px;
-            width: 1100px;
+            //width: 1100px;
             text-align: center;
             &_min{
                 margin-bottom: 0;
@@ -1233,11 +1236,43 @@ body .revival {
 			}
 		}
     }   
-.intro-desc{
-    &__text{
+.poster-line {
+    display: flex;
+    gap: 16px;
+    margin-top: 50px;
+    &__item {
+        width: 25%;
+        padding: 38px 16px 32px;
+        background: #fff;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 
+    &__item-pic {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 16px;
+    }
+
+    &__item-title {
+        height: 80px;
+        font-size: 32px;
+        line-height: 40px;
+        font-family: $font-medium-wide;
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+
+    &__item-text {
+        color: #99A592;
     }
 }
+
     
     
 
