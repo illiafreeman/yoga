@@ -544,7 +544,7 @@ body .revival {
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
-            width: 650px;
+            width: 684px;
         }
 
         &__sup {
@@ -1349,6 +1349,19 @@ body .revival {
             flex-direction: column;
             .tablegrid__item{
                 width: 100%;
+                &:after{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: -1px;
+                    left: 0;
+                    width: 40px;
+                    height: 40px;
+                    background-image: url(../images/important.png);
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: cover;
+                }
             }
         }
         .tablegrid{

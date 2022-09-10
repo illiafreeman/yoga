@@ -429,7 +429,7 @@ body .revival .line__desc {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  width: 650px;
+  width: 684px;
 }
 body .revival .line__sup {
   color: #666C63;
@@ -1124,6 +1124,19 @@ body .revival .article_note .containr .tablegrid_33 {
 }
 body .revival .article_note .containr .tablegrid_33 .tablegrid__item {
   width: 100%;
+}
+body .revival .article_note .containr .tablegrid_33 .tablegrid__item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/important.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 body .revival .article_note .containr .tablegrid h3 {
   font-size: 40px;
