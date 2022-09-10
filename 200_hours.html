@@ -396,6 +396,86 @@
 						</div>
 					</div>
 				</article>
+				<article class="article bg_semilight">
+					<div class="containr">
+						<div class="article__figure">
+							<h6 class="article__sup">STUDENT BENEFITS</h6>
+							<h2 class="article__title">Our Teacher Training Is Packed With Perks</h2>
+						</div>
+						<div class="poster-line poster-line_33">
+							<div class="poster-line__item">
+								<img src="./images/icon_200_5.png" alt="" class="poster-line__item-pic">
+								<div class="poster-line__item-text">3 Month Free YogaWorks@Home Membership</div>
+							</div>
+							<div class="poster-line__item">
+								<img src="./images/icon_200_6.png" alt="" class="poster-line__item-pic">
+								<div class="poster-line__item-text">Four robust digital training manuals</div>
+							</div>
+							<div class="poster-line__item">
+								<img src="./images/icon_200_7.png" alt="" class="poster-line__item-pic">
+								<div class="poster-line__item-text">Alumni discounts and benefits</div>
+							</div>
+						</div>
+					</div>
+				</article>
+				<article class="article bg_light">
+					<div class="containr">
+						<div class="article__figure article__figure_nobg">
+							<h6 class="article__sup">3 ways to practice</h6>
+							<h2 class="article__title ">Choose The Path of Most Convinience</h2>
+						</div>
+						<div class="poster-line poster-line_33">
+							<div class="poster-line__item poster-line__item_week">
+								<img src="./images/weekdays.png" alt="" class="poster-line__item-pic">
+								<div class="wrap">
+									<div class="poster-line__item-title">Weekdays</div>
+									<div class="poster-line__item-text">6 Weeks Long Monday through Thursday</div>
+								</div>
+							</div>
+							<div class="poster-line__item poster-line__item_week">
+								<img src="./images/weekends.png" alt="" class="poster-line__item-pic">
+								<div class="wrap">
+									<div class="poster-line__item-title">Weekends</div>
+									<div class="poster-line__item-text">3-6 Month Long Fridays through Sunday or Saturday and Sunday</div>
+								</div>
+							</div>
+							<div class="poster-line__item poster-line__item_week">
+								<img src="./images/allinclusive.png" alt="" class="poster-line__item-pic">
+								<div class="wrap">
+									<div class="poster-line__item-title">All inclusive</div>
+									<div class="poster-line__item-text">4-Weeks Long Room and board is included with tuition.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+				<article class="article bg_green">
+					<div class="containr containr_galright">
+						<div class="article__figure article__figure_galright">
+							<h6 class="article__sup">YOGA CERTIFICATION YOU CAN TRUST</h6>
+							<h2 class="article__title">All Inclusive, Abroad Options</h2>
+							<h4 class="article__sub mb_0">The YogaWorks Teacher Training is more than just a 
+								yoga teacher training program: it’s a life experience. 
+								If you are ready to encounter new depths of practice, establish 
+								lifelong connections and explore unmatched opportunities 
+								for personal growth, our transformative programs will inspire
+								 you to uncover the fundamental layers of yoga while unearthing the deepest layers of yourself.</h4>
+						</div>
+						<div class="gal gal_right">
+							<img src="./images/200_7.jpg" alt="" class="gal__pic">
+							<img src="./images/200_8.jpg" alt="" class="gal__pic">
+							<img src="./images/200_9.jpg" alt="" class="gal__pic">
+						</div>
+					</div>
+				</article>
+				<article class="article">
+					<div class="containr">
+						<div id="datepicker"></div>
+					</div>
+				</article>
+
+
+
 			</div>
 
 		</main>
@@ -552,64 +632,8 @@
 			$( function() {
 			  	$( "#datepicker" ).datepicker();
 			});
-			
-			$('#datepicker').click(function() {
-				w = $('#datepicker').outerWidth();
-				$('.ui-datepicker').css('width', w)
-			});
-			$('.info-tooltip').click(function() {
-				$(this).children('.tooltip-text').css('display', 'block')
-			});
-			$(document).ready(function() {
-				if ($(window).width() < 767) {
-					$("#map").height(200);
-				}else if($(window).width() < 1440){
-					$("#map").height(400);
-				}else{
-					$("#map").height(774);
-				}
-			});
-			$(window).resize(function() {
-				if ($(window).width() < 767) {
-					$("#map").height(200);
-				}else if($(window).width() < 1440){
-					$("#map").height(400);
-				}else{
-					$("#map").height(774);
-				}
-			});
 		</script>
-		<script>
-			$( function() {
-				var availableTags = [
-					"ActionScript",
-					"AppleScript",
-					"Asp",
-					"BASIC",
-					"C",
-					"C++",
-					"Clojure",
-					"COBOL",
-					"ColdFusion",
-					"Erlang",
-					"Fortran",
-					"Groovy",
-					"Haskell",
-					"Java",
-					"JavaScript",
-					"Lisp",
-					"Perl",
-					"PHP",
-					"Python",
-					"Ruby",
-					"Scala",
-					"Scheme"
-				];
-				$( "#filter-instructor-auto, #filter-instructor-auto-2" ).autocomplete({
-					source: availableTags
-				});
-			});
-			</script>
+
 		
 		<!-- end revival scripts -->
 
