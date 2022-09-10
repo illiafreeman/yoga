@@ -1102,6 +1102,37 @@ body .revival .tablegrid__item:after {
   background-position: center center;
   background-size: contain;
 }
+body .revival .article_note {
+  padding-top: 0;
+}
+body .revival .article_note .containr {
+  display: flex;
+}
+body .revival .article_note .containr .tablegrid_66 {
+  width: 66.666%;
+  gap: 32px 32px;
+  border-right: 1px solid #E8E8E8;
+}
+body .revival .article_note .containr .tablegrid_66 .tablegrid__item {
+  width: calc(50% - 16px);
+}
+body .revival .article_note .containr .tablegrid_33 {
+  width: 33.333%;
+  padding-left: 40px;
+  gap: 32px 32px;
+  flex-direction: column;
+}
+body .revival .article_note .containr .tablegrid_33 .tablegrid__item {
+  width: 100%;
+}
+body .revival .article_note .containr .tablegrid h3 {
+  font-size: 40px;
+  line-height: 48px;
+  color: #666C63;
+  font-family: "mediumwide", Helvetica;
+  width: 80%;
+  height: 96px;
+}
 
 .ui-menu .ui-menu-item-wrapper {
   padding: 0 16px !important;
