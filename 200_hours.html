@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+	<title>200 Hours</title>
+	<link rel="stylesheet" href="styles/main.css" />
+	<link rel="stylesheet" href="styles/revival.css" />
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/detectizr/2.2.0/detectizr.min.js"></script>
+</head>
+
+<body>
+	<div class="redesigned-wrapper">
+		<!-- <header>
+		<div class="main-header-wrapper">
+			
+				<div class="top-header-wrapper">
+
+		<nav class="header-external-links">
+			<a class="nav-item  enabled active" id="external-link-1" href="#" >
+				<span class="button-circle"></span>
+				<span class="button-title">Online</span>
+			</a>
+		
+			<a class="nav-item" id="external-link-2" href="#" >
+				<span class="button-circle"></span>
+				<span class="button-title">In Studio</span>
+			</a>
+		
+			<a class="nav-item" id="external-link-3" href="#" >
+				<span class="button-circle"></span>
+				<span class="button-title">About</span>
+			</a>
+
+			<button class="navbar-toggle" type="button" data-menu-btn="">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button> 
+		</nav>
+
+		<div class="navbar-brand">
+			<a class="navbar-brand__wrapper" href="#" title="YogaAtHome">
+				<img class="full-logo" src="images/logo-new.svg" alt="YogaAtHome" />
+				<img class="logo-without-text" src="images/logo-without-text.svg" alt="YogaAtHome" />
+			</a>
+		</div>
+
+		<div class="header-auth-wrapper">
+			<span class="user-greetings__text">Welcome, Jane2</span>
+			<a href="#" class="header__user-icon-button">
+				<img src="images/avatar-profile.jpg" alt="Avatar image">
+			</a>
+		</div>
+
+	</div>
+	
+			
+			
+			
+
+			<div class="dropdown-secondary-menu">
+			<div class="secondary-header-menu" id="secondary-menu-1">
+					<div class="header-menu__content">
+							<div class="header-menu__description">
+									<h5>Online</h5>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+							</div>
+							<nav class="header-menu__navigation">
+									<div class="navigation__button-wrapper">
+											<a href="#" class="button-rectangle-clear-md">Live Stream</a>
+											<a href="#" class="button-rectangle-clear-md">Journey Series</a>
+											<a href="#" class="button-rectangle-clear-md">On Demand</a>
+											<a href="#" class="button-rectangle-clear-md">Gift Cards</a>
+									</div>
+							</nav>
+					</div>
+			
+					<div class="header-menu__image">
+							<img src="images/banner-bg-image.png" alt="Header Image">
+					</div>
+			</div>
+
+			<div class="secondary-header-menu" id="secondary-menu-2">
+
+					<div class="header-menu__content">
+							<div class="header-menu__description">
+									<h5>In Studio</h5>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+							</div>
+							<nav class="header-menu__navigation">
+									<div class="navigation__button-wrapper">
+											<a href="#" class="button-rectangle-clear-md">Santa Monica Studio</a>
+											<a href="#" class="button-rectangle-clear-md">200 Hour</a>
+											<a href="#" class="button-rectangle-clear-md">300 Hour Advanced</a>
+											<a href="#" class="button-rectangle-clear-md">Specialty Trainings</a>
+									</div>
+							</nav>
+					</div>
+			
+					<div class="header-menu__image">
+							<img src="images/banner-bg-image.png" alt="Header Image">
+					</div>
+			</div>
+
+			<div class="secondary-header-menu" id="secondary-menu-3">
+					<div class="header-menu__content">
+							<div class="header-menu__description">
+									<h5>About</h5>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+							</div>
+							<nav class="header-menu__navigation">
+									<div class="navigation__button-wrapper">
+											<a href="#" class="button-rectangle-clear-md">Our History</a>
+											<a href="#" class="button-rectangle-clear-md">Our Classes</a>
+											<a href="#" class="button-rectangle-clear-md">Our Teachers</a>
+									</div>
+							</nav>
+					</div>
+			
+					<div class="header-menu__image">
+							<img src="images/banner-bg-image.png" alt="Header Image">
+					</div>
+			</div>
+
+
+	</div>
+	
+
+		</div>
+		</header> -->
+
+		<script src="scripts/jquery.js"></script>
+
+		<script>
+			var secondaryMenu1 = $("#secondary-menu-1");
+			var secondaryMenu2 = $("#secondary-menu-2");
+			var secondaryMenu3 = $("#secondary-menu-3");
+
+			// Transform 'dropdown' button
+			var mobileNavDropdownBtn = $(".redesigned-wrapper .navbar-toggle");
+			mobileNavDropdownBtn.on("click", function () {
+				$(this).toggleClass("active");
+			});
+
+
+			// Show/hide dropdown secondary menu on tablets and mobiles
+			var showMenuButton = $(
+				".redesigned-wrapper .header-external-links .navbar-toggle"
+			);
+			var secondaryMenu = $(".dropdown-secondary-menu");
+
+			showMenuButton.click(function () {
+				secondaryMenu1.show();
+				secondaryMenu2.show();
+				secondaryMenu3.show();
+				secondaryMenu.slideToggle(500);
+			});
+
+
+			// Show/hide dropdown secondary menu on desktop
+			var showMenu1 = $(
+				".redesigned-wrapper .header-external-links #external-link-1"
+			);
+			var showMenu2 = $(
+				".redesigned-wrapper .header-external-links #external-link-2"
+			);
+			var showMenu3 = $(
+				".redesigned-wrapper .header-external-links #external-link-3"
+			);
+
+
+			showMenu1.click(function () {
+				secondaryMenu1.show();
+				secondaryMenu2.hide();
+				secondaryMenu3.hide();
+				// if ( secondaryMenu.css( 'display' ) !== 'none' || secondaryMenu1.css( 'display' ) !== 'none' ) {
+				secondaryMenu.slideToggle(500);
+				// }
+			},
+
+			);
+
+			showMenu2.click(function () {
+				secondaryMenu1.hide();
+				secondaryMenu2.show();
+				secondaryMenu3.hide();
+				secondaryMenu.slideToggle(500);
+			});
+
+			showMenu3.click(function () {
+				secondaryMenu1.hide();
+				secondaryMenu2.hide();
+				secondaryMenu3.show();
+				secondaryMenu.slideToggle(500);
+			});
+
+		</script>
+
+
+		<main class="wrapper revival">
+			<div class="containr containr_full">
+				<article class="intro intro_studio">
+					<div class="containr containr_studio">
+						<div class="intro__studio-header">
+							<div class="intro__info">
+								<h1 class="intro__studio-title">Santa Monica Main Street</h1>
+								<div class="intro__info-address">
+									2215 Main Street, Santa Monica, CA 90405
+								</div>
+								<div class="intro__info-contacts">
+									<a href="mailto:santamonicamain@yogaworks.com">santamonicamain@yogaworks.com</a>
+									<span>|</span>
+									<a href="callto:+4243220229">(424) 322-0229</a>
+								</div>
+							</div>
+						</div>
+						<div class="intro__studio-poster">
+							<h4>We are open!</h4>
+							<h3>Join Us this Summer for Student and Teacher Membership Specials</h3>
+							<p>Please take a look at the studio schedule for any teacher or time changes.
+								We will continue to monitor new developments related to COVID-19 and any new variants,
+								If you're not ready to come back into the studio, our in-person classes will continue
+								to be streamed live from our digital platform, which can be accessed <a
+									href="">here</a>.
+								See you in Class!</p>
+						</div>
+					</div>
+				</article>
+				<div class="containr containr_full containr_scroll">
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+						<li class="nav-item" role="presentation">
+							<button class="nav-link active" id="tab_about" data-toggle="tab" data-target="#about"
+								type="button" role="tab" aria-controls="about" aria-selected="true">About the
+								studio</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="tab_schedule" data-toggle="tab" data-target="#schedule"
+								type="button" role="tab" aria-controls="schedule" aria-selected="false">Class
+								Schedule</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="tab_pricing" data-toggle="tab" data-target="#pricing"
+								type="button" role="tab" aria-controls="pricing" aria-selected="false">Pricing</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="tab_teachers" data-toggle="tab" data-target="#teachers"
+								type="button" role="tab" aria-controls="teachers"
+								aria-selected="false">Teachers</button>
+						</li>
+					</ul>
+				</div>
+				<div class="containr containr_full"></div>
+					<div class="tab-content" id="myTabContent">
+						<!-- <div class="btn" data-toggle="tab" role="tab" data-target="#about">qwe</div> -->
+						<div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="tab_about">
+							<div class="infobanner-wrap bg_green">
+								<div class="containr">
+									<div class="infobanner">
+										<div class="infobanner__pic"></div>
+										<div class="infobanner__inner">
+											<h4 class="infobanner__title">
+												Your Safety is Important to Us
+											</h4>
+											<div class="infobanner__text">
+												Your health and safety are a top priority, so we ask that those who are
+												not vaccinated,
+												please wear a face covering while in studio. Those with medical and
+												religious exemptions will be honored,
+												please contact us directly for more information.
+												As always, if you aren’t feeling well, have a cough, fever or other
+												symptoms of COVID-19,
+												please refrain from coming in to the studio. Thanks for your help
+												keeping this community safe!
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="containr containr_full">
+								<div class="about-banner"></div>
+							</div>
+							<article class="article about bg_light">
+								<div class="containr">
+									<div class="about__desc">
+										<h6 class="article__sup">our heritage</h6>
+										<h2 class="article__title article__title_mb">About the Studio</h2>
+										<div class="about__sub">Studio Amenities</div>
+										<div class="about__add">
+											<div class="about__add-shower">Showers</div>
+											<div class="about__add-shop">Boutique</div>
+										</div>
+									</div>
+									<div class="about__text">
+										<p>YogaWorks Main Street is one of the world’s pre-eminent yoga studio
+											locations. Offering some of the best yoga classes available by yoga’s most
+											recognized instructors for 30+ years. A yoga institution, be part of the
+											magic that makes Main Street home to incredible classes by incredible
+											teachers. Now livestreaming classes so you can take them from the comfort
+											of your home even when you can’t make it into the studio.</p>
+										<p>YogaWorks Main Street is one of the world’s pre-eminent yoga studio
+											locations. Offering some of the best yoga classes available by yoga’s most
+											recognized instructors for 30+ years. A yoga institution, be part of the
+											magic that makes Main Street home to incredible classes by incredible
+											teachers. Now livestreaming classes so you can take them from the comfort
+											of your home even when you can’t make it into the studio.</p>
+									</div>
+								</div>
+							</article>
+							<article class="article article_about bg_green">
+								<div class="containr">
+									<div class="about-info">
+										<div class="about__desc">
+											<h6 class="article__sup">directions</h6>
+											<h2 class="article__title article__title_nomargin">Getting Here</h2>
+										</div>
+										<div class="about-info__text">
+											The studio is located 3 blocks South of Pico, between Pacific and Strand, on
+											the east side of the street.
+											Two-hour metered parking is also available on the streets and in local city
+											lots.
+										</div>
+									</div>
+								</div>
+							</article>
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.500603889464!2d-118.48902388493659!3d34.005358980618674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a52ace994e8f%3A0xfde3aa86c2ea1200!2s2215%20Main%20St%2C%20Santa%20Monica%2C%20CA%2090405!5e0!3m2!1sen!2sus!4v1621974565782!5m2!1sen!2sus"
+								width="100%" height="774" frameborder="0" style="border:0;" allowfullscreen=""
+								loading="lazy" id="map"></iframe>
+							<article class="article bg_light">
+								<div class="containr">
+									<h6 class="article__sup">Studio gallery</h6>
+									<h2 class="article__title">Virtual Tour</h2>
+									<iframe
+										src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1442623307090!6m8!1m7!1sSbAUiDBr5D0AAAQpnTAfWQ!2m2!1d34.00537886152335!2d-118.4868369210866!3f55!4f0!5f0.7820865974627469"
+										width="100%" height="550" frameborder="0" style="border:0"
+										allowfullscreen id="tour"></iframe>
+								</div>
+							</article>
+
+
+
+
+						</div>
+						<div class="tab-pane fade  " id="schedule" role="tabpanel"
+							aria-labelledby="tab_schedule">
+							<div class="infobanner-wrap bg_green">
+								<div class="containr">
+									<div class="infobanner">
+										<div class="infobanner__pic"></div>
+										<div class="infobanner__inner">
+											<h4 class="infobanner__title">
+												Your Safety is Important to Us
+											</h4>
+											<div class="infobanner__text">
+												Your health and safety are a top priority, so we ask that those who are
+												not vaccinated,
+												please wear a face covering while in studio. Those with medical and
+												religious exemptions will be honored,
+												please contact us directly for more information.
+												As always, if you aren’t feeling well, have a cough, fever or other
+												symptoms of COVID-19,
+												please refrain from coming in to the studio. Thanks for your help
+												keeping this community safe!
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="containr">
+								<article class="article schedule">
+									<h6 class="article__sup">Studio</h6>
+									<h2 class="article__title article__title_schedule">
+										<i>Schedule</i>
+										<span class="print"><span>Print schedule</span></span>
+									</h2>
+									<div class="schedule-filters-wrap">
+										<form class="form">
+											<div class="row">
+												<div class="col-sm-5 col-md-4">
+													<div class="form-group">
+														<label class="form-label label-title" for="filter-date">Choose the date</label>
+														<div class="date-filter-wrap">
+															<input type="text" id="datepicker" class="pick" value="09/16/2022" autocomplete="off" readonly="">
+														</div>
+													</div>
+												</div>
+												<div class="col-sm-7 col-md-8">
+													<div class="select-group">
+														<label class="form-label label-title" for="filter-instructor-auto">Choose instructor</label>
+														<div class="date-filter-wrap">
+															<input name="filter-instructor-auto" id="filter-instructor-auto"
+																class="ui-autocomplete-input pick" autocomplete="off"
+																type="text">
+														</div>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+									<div class="schedule-actions-wrap">
+										<div class="row">
+											<div class="col-xs-12 col-md-6">
+												<div class="result-total-wrap"><span>2</span> Results Match the Search</div>
+											</div>
+
+										</div>
+									</div>
+									<div class="schedule-classes-wrap">
+										<div class="schedule-day" data-date="2022-09-01">
+											<div class="class-row day-header">
+												<div class="container">
+													<div class="row">
+														<div class="col-xs-12">
+															<div class="day-copy">September 01
+																<span class="day-of-week">Thursday | PDT</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="class-row" data-mt-class-id="26318">
+												<div class="container">
+													<div class="row">
+														<div class="col-xs-3 col-sm-4 col-md-2 class-time-wrap">
+															<div class="class-time">7:00 am</div>
+															<div class="class-time-desc">Starts</div>
+														</div>
+														<div class="col-xs-3 col-sm-4 col-md-3 class-time-wrap">
+															<div class="class-time ">8:00 am</div>
+															<div class="class-time-desc">Ends</div>
+														</div>
+														<div class="col-xs-8 col-sm-4 col-md-4 class-title-wrap">
+															<div class="class-title">
+																Vinyasa Flow
+																<div class="info-tooltip">
+																	<div class="tooltip-text">These popular classes keep
+																		you moving, linking breath with sequences of sun
+																		salutes and other postures creating a
+																		beautifully sweaty yoga experience.
+																	</div>
+																</div>
+															</div>
+															<div class="class-teacher-name">Bree Zellis</div>
+														</div>
+														<div class="col-xs-12 col-sm-2 col-md-3 class-actions-wrap">
+															<button	class="btn btn_schedule" data-mt-reserve-btn="" data-class-session-id="26318">Reserve</button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="class-row" data-mt-class-id="26318">
+												<div class="container">
+													<div class="row">
+														<div class="col-xs-3 col-sm-4 col-md-2 class-time-wrap">
+															<div class="class-time">17:00 am</div>
+															<div class="class-time-desc">Starts</div>
+														</div>
+														<div class="col-xs-3 col-sm-4 col-md-3 class-time-wrap">
+															<div class="class-time ">88:00 am</div>
+															<div class="class-time-desc">Ends</div>
+														</div>
+														<div class="col-xs-8 col-sm-4 col-md-4 class-title-wrap">
+															<div class="class-title">
+																<div>Sound Bath Meditation</div>
+																<div class="info-tooltip">
+																	<div class="tooltip-text">These popular classes keep
+																		you moving, linking breath with sequences of sun
+																		salutes and other postures creating a
+																		beautifully sweaty yoga experience.
+																	</div>
+																</div>
+															</div>
+															<div class="class-teacher-name">Heather Nevell</div>
+														</div>
+														<div class="col-xs-12 col-sm-2 col-md-3 class-actions-wrap">
+															<button	class="btn btn_schedule" data-mt-reserve-btn="" data-class-session-id="26318">Reserve</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="schedule-day" data-date="2022-09-01">
+											<div class="class-row day-header">
+												<div class="container">
+													<div class="row">
+														<div class="col-xs-12">
+															<div class="day-copy">May 9
+																<span class="day-of-week">Thursday | PDT</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="class-row" data-mt-class-id="26318">
+												<div class="container">
+													<div class="row">
+														<div class="col-xs-3 col-sm-4 col-md-2 class-time-wrap">
+															<div class="class-time">7:00 am</div>
+															<div class="class-time-desc">Starts</div>
+														</div>
+														<div class="col-xs-3 col-sm-4 col-md-3 class-time-wrap">
+															<div class="class-time ">8:00 am</div>
+															<div class="class-time-desc">Ends</div>
+														</div>
+														<div class="col-xs-8 col-sm-4 col-md-4 class-title-wrap">
+															<div class="class-title">
+																Vinyasa Flow
+																<div class="info-tooltip">
+																	<div class="tooltip-text">These popular classes keep
+																		you moving, linking breath with sequences of sun
+																		salutes and other postures creating a
+																		beautifully sweaty yoga experience.
+																	</div>
+																</div>
+															</div>
+															<div class="class-teacher-name">Bree Zellis</div>
+														</div>
+														<div class="col-xs-12 col-sm-2 col-md-3 class-actions-wrap">
+															<button	class="btn btn_schedule" data-mt-reserve-btn="" data-class-session-id="26318">Reserve</button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="class-row" data-mt-class-id="26318">
+												<div class="container">
+													<div class="row">
+														<div class="col-xs-3 col-sm-4 col-md-2 class-time-wrap">
+															<div class="class-time">17:00 am</div>
+															<div class="class-time-desc">Starts</div>
+														</div>
+														<div class="col-xs-3 col-sm-4 col-md-3 class-time-wrap">
+															<div class="class-time ">18:00 am</div>
+															<div class="class-time-desc">Ends</div>
+														</div>
+														<div class="col-xs-8 col-sm-4 col-md-4 class-title-wrap">
+															<div class="class-title">
+																Flow & Restore
+																<div class="info-tooltip">
+																	<div class="tooltip-text">These popular classes keep
+																		you moving, linking breath with sequences of sun
+																		salutes and other postures creating a
+																		beautifully sweaty yoga experience.
+																	</div>
+																</div>
+															</div>
+															<div class="class-teacher-name">Dan Ward</div>
+														</div>
+														<div class="col-xs-12 col-sm-2 col-md-3 class-actions-wrap">
+															<button	class="btn btn_schedule" data-mt-reserve-btn="" data-class-session-id="26318">Reserve</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</article>
+								
+							</div>
+
+						</div>
+						<div class="tab-pane fade " id="pricing" role="tabpanel" aria-labelledby="tab_pricing">
+							<article class="article bg_light">
+								<div class="containr">
+									<h6 class="article__sup">Subscription</h6>
+									<h2 class="article__title">Select suitable Membership</h2>
+									<h4 class="article__sub">We offer three comfortable types of membership for you to learn Yoga</h4>
+									<div class="member-list">
+										<div class="member">
+											<div class="member__sup">Unlimited Classes per Month</div>
+											<div class="member__name">Unlimited Membership</div>
+											<div class="member__price">$139<span>.00</span></div>
+											<div class="member__note">Monthly recurring charge</div>
+											<a href="" class="btn btn_card">Get Started</a>
+										</div>
+										<div class="member">
+											<div class="member__sup">Unlimited Classes per Month</div>
+											<div class="member__name">Mini-Membership</div>
+											<div class="member__price">$89<span>.00</span></div>
+											<div class="member__note">Monthly recurring charge</div>
+											<a href="" class="btn btn_card">Get Started</a>
+										</div>
+										<div class="member">
+											<div class="member__sup">One Time</div>
+											<div class="member__name">Drop-In</div>
+											<div class="member__price">$27<span>.00</span></div>
+											<div class="member__note">One time charge</div>
+											<a href="" class="btn btn_card">Get Started</a>
+										</div>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="tab-pane fade" id="teachers" role="tabpanel" aria-labelledby="tab_teachers">
+							<article class="article bg_light">
+								<div class="containr">
+									<h6 class="article__sup">Teachers</h6>
+									<h2 class="article__title">Santa Monica Instructors</h2>
+									<h4 class="article__sub">Only highly qualified specialists work in our studio, so you can be sure of the success of your classses</h4>
+									<div class="search-wrap">
+										<div class="date-filter-wrap">
+											<input name="filter-instructor-auto" id="filter-instructor-auto-2"
+												class="ui-autocomplete-input pick pick_search" autocomplete="off"
+												type="text" placeholder="Start typing a name">
+										</div>
+										<div class="sort-wrap">
+											<div class="sort-group">
+												<div class="sort">
+													<div class="sort__name">Sort By:</div>
+													<div class="sort__item">
+														<div class="sort__item-val">
+															First Name(A to Z)
+															<div class="sort__item-drop">
+																<div class="sort__item-option">
+																	First Name(A to Z)
+																</div>
+																<div class="sort__item-option">
+																	First Name(Z to A)
+																</div>
+															</div>
+														</div>
+														
+													</div>
+												</div>
+												<div class="sort">
+													<div class="sort__name">View:</div>
+													<div class="sort__item">
+														<div class="sort__item-val">
+															12
+															<div class="sort__item-drop">
+																<div class="sort__item-option">
+																	12
+																</div>
+																<div class="sort__item-option">
+																	24
+																</div>
+															</div>
+														</div>
+														
+													</div>
+												</div>
+											</div>
+											<div class="result">
+												63 Results Match the Search
+											</div>
+										</div>
+									</div>
+									<div class="instructor-wrap">
+										<div class="instructor">
+											<div class="instructor__pic">
+												<img src="./images/teacher_1.jpg" alt="">
+											</div>
+											<div class="instructor__name">Alison Lindgren</div>
+											<a href="" class="btn btn_card">Learn More</a>
+										</div>
+										<div class="instructor">
+											<div class="instructor__pic">
+												<img src="./images/teacher_2.jpg" alt="">
+											</div>
+											<div class="instructor__name">Anna Hernandez</div>
+											<a href="" class="btn btn_card">Learn More</a>
+										</div>
+										<div class="instructor">
+											<div class="instructor__pic">
+												<img src="./images/teacher_3.jpg" alt="">
+											</div>
+											<div class="instructor__name">Anna Delury</div>
+											<a href="" class="btn btn_card">Learn More</a>
+										</div>
+										<div class="instructor">
+											<div class="instructor__pic">
+												<img src="./images/teacher_4.jpg" alt="">
+											</div>
+											<div class="instructor__name">Annie Carpenter</div>
+											<a href="" class="btn btn_card">Learn More</a>
+										</div>
+										<div class="instructor">
+											<div class="instructor__pic">
+												<img src="./images/teacher_5.jpg" alt="">
+											</div>
+											<div class="instructor__name">Ashley Lorenzo</div>
+											<a href="" class="btn btn_card">Learn More</a>
+										</div>
+										<div class="instructor">
+											<div class="instructor__pic">
+												<img src="./images/teacher_6.jpg" alt="">
+											</div>
+											<div class="instructor__name">Ashley Rideaux</div>
+											<a href="" class="btn btn_card">Learn More</a>
+										</div>
+										<div class="instructor">
+											<div class="instructor__pic">
+												<img src="./images/teacher_7.jpg" alt="">
+											</div>
+											<div class="instructor__name">Becky Nickerson</div>
+											<a href="" class="btn btn_card">Learn More</a>
+										</div>
+										<div class="instructor">
+											<div class="instructor__pic">
+												<img src="./images/teacher_8.jpg" alt="">
+											</div>
+											<div class="instructor__name">Beth Prandini</div>
+											<a href="" class="btn btn_card">Learn More</a>
+										</div>
+										<div class="instructor">
+											<div class="instructor__pic">
+												<img src="./images/teacher_9.jpg" alt="">
+											</div>
+											<div class="instructor__name">Birgitte Kristen</div>
+											<a href="" class="btn btn_card">Learn More</a>
+										</div>
+										<div class="instructor">
+											<div class="instructor__pic">
+												<img src="./images/teacher_10.jpg" alt="">
+											</div>
+											<div class="instructor__name">Camille Moses-Allen Birgitte Kristen</div>
+											<a href="" class="btn btn_card">Learn More</a>
+										</div>
+										<div class="instructor">
+											<div class="instructor__pic">
+												<img src="./images/teacher_11.jpg" alt="">
+											</div>
+											<div class="instructor__name">Channing Hixon</div>
+											<a href="" class="btn btn_card">Learn More</a>
+										</div>
+										<div class="instructor">
+											<div class="instructor__pic">
+												<img src="./images/teacher_12.jpg" alt="">
+											</div>
+											<div class="instructor__name">Chris Stein</div>
+											<a href="" class="btn btn_card">Learn More</a>
+										</div>
+									</div>
+									<div class="pagination">
+										<div class="pagination__el pagination__el_start"></div>
+										<div class="pagination__el pagination__el_prev"></div>
+										<div class="pagination__el">1</div>
+										<div class="pagination__el act">2</div>
+										<div class="pagination__el">3</div>
+										<div class="pagination__el">4</div>
+										<div class="pagination__el">5</div>
+										<div class="pagination__el pagination__el_next"></div>
+										<div class="pagination__el pagination__el_end"></div>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!--<footer>>
+			<div class="footer-internal">
+			<div class="footer-internal-item">
+				<h6 class="subTitle1">YogaWorks at Home</h6>
+				<div class="footer-internal-links">
+					<a href="#" class="common">For You</a><a href="#" class="common">Live</a
+					><a href="#" class="common">Journey series</a
+					><a href="#" class="common">On-demand</a>
+				</div>
+			</div>
+			<div class="footer-internal-wrapper">
+				<div class="footer-internal-item">
+					<h6 class="subTitle1">Community</h6>
+					<div class="footer-internal-links">
+						<a href="#" class="common">Contact Us</a
+						><a href="#" class="common">Help Center</a>
+					</div>
+				</div>
+				<div class="footer-internal-item">
+					<h6 class="subTitle1">More</h6>
+					<div class="footer-internal-links">
+						<a href="#" class="common">Give A Gift</a
+						><a href="#" class="common">ADA Notice</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+			<div class="footer-external">
+			<div class="footer-external-left">
+				<div class="logo-section">
+					<a href="#"><img src="images/logo-desktop-gray.svg" alt="Logo" /></a>
+					<a href="#"><img src="images/logo-without-text.svg" alt="Logo" /></a>
+				</div>
+				<nav>
+					<a href="#" class="nav-item">In studio</a>
+					<a href="#" class="nav-item active">
+						At home
+						<div class="nav-item-active-before-first"></div>
+						<div class="nav-item-active-before-second"></div>
+						<div class="nav-item-active-after-first"></div>
+						<div class="nav-item-active-after-second"></div>
+					</a>
+					<a href="#" class="nav-item">Shop</a>
+				</nav>
+			</div>
+			<div class="footer-external-right">
+				<a href="#" class="social-link"
+					><img src="images/facebook-black.svg" alt="Facebook"
+				/></a>
+				<a href="#" class="social-link"
+					><img src="images/twitter-black.svg" alt="Twitter"
+				/></a>
+				<a href="#" class="social-link"
+					><img src="images/instagram-black.svg" alt="Instagram"
+				/></a>
+				<a href="#" class="social-link"
+					><img src="images/pinterest-black.svg" alt="Pinterest"
+				/></a>
+				<a href="#" class="social-link"
+					><img src="images/youtube-black.svg" alt="Youtube"
+				/></a>
+				<a href="#" class="social-link"
+					><img src="images/linkedin-black.svg" alt="Linkedin"
+				/></a>
+			</div>
+		</div>
+
+			<div class="footer-bottom">
+
+			<div class="footer-bottom_links">
+				<a href="#" class="common">Terms of Use</a>
+				<a href="#" class="common">Privacy Policy</a>
+				<a href="#" class="common">Do Not Sell My Info</a>
+			</div>
+
+			<div class="footer-bottom__social-links">
+				<a href="#" class="social-link"
+					><img src="images/facebook-black.svg" alt="Facebook"
+				/></a>
+				<a href="#" class="social-link"
+					><img src="images/twitter-black.svg" alt="Twitter"
+				/></a>
+				<a href="#" class="social-link"
+					><img src="images/instagram-black.svg" alt="Instagram"
+				/></a>
+				<a href="#" class="social-link"
+					><img src="images/pinterest-black.svg" alt="Pinterest"
+				/></a>
+				<a href="#" class="social-link"
+					><img src="images/youtube-black.svg" alt="Youtube"
+				/></a>
+				<a href="#" class="social-link"
+					><img src="images/linkedin-black.svg" alt="Linkedin"
+				/></a>
+			</div>
+
+
+			<p class="footer-bottom__text">YogaWorks. All Right Reserved</p>
+
+		</div>
+
+
+		</footer>-->
+
+		<script src="scripts/jquery.js"></script>
+		<script src="scripts/jquery.validate.js"></script>
+		<script src="scripts/waypoint.min.js"></script>
+		<script src="scripts/popper.min.js"></script>
+		<script src="scripts/bootstrap.min.js"></script>
+		<script src="scripts/slick-carousel.js"></script>
+		<script src="scripts/moment.min.js"></script>
+		<script src="scripts/jquery.mask.js"></script>
+		<script src="scripts/jquery-ui.min.js"></script>
+		<script src="scripts/jquery-tags-input.min.js"></script>
+		<script src="scripts/gsap.min.js"></script>
+		<script src="scripts/jquery.mousewheel.js"></script>
+		<script src="scripts/jquery.jscrollpane.js"></script>
+		<script src="scripts/jquery.cookie.js"></script>
+		<script src="scripts/jquery.payment.js"></script>
+		<script src="scripts/jquery.scrollmagic.js"></script>
+		<script src="scripts/addtocalendar.js"></script>
+		<script src="scripts/main.js"></script>
+
+		<!-- start revival scripts -->
+		<script>
+			$( function() {
+			  	$( "#datepicker" ).datepicker();
+			});
+			
+			$('#datepicker').click(function() {
+				w = $('#datepicker').outerWidth();
+				$('.ui-datepicker').css('width', w)
+			});
+			$('.info-tooltip').click(function() {
+				$(this).children('.tooltip-text').css('display', 'block')
+			});
+			$(document).ready(function() {
+				if ($(window).width() < 767) {
+					$("#map").height(200);
+				}else if($(window).width() < 1440){
+					$("#map").height(400);
+				}else{
+					$("#map").height(774);
+				}
+			});
+			$(window).resize(function() {
+				if ($(window).width() < 767) {
+					$("#map").height(200);
+				}else if($(window).width() < 1440){
+					$("#map").height(400);
+				}else{
+					$("#map").height(774);
+				}
+			});
+		</script>
+		<script>
+			$( function() {
+				var availableTags = [
+					"ActionScript",
+					"AppleScript",
+					"Asp",
+					"BASIC",
+					"C",
+					"C++",
+					"Clojure",
+					"COBOL",
+					"ColdFusion",
+					"Erlang",
+					"Fortran",
+					"Groovy",
+					"Haskell",
+					"Java",
+					"JavaScript",
+					"Lisp",
+					"Perl",
+					"PHP",
+					"Python",
+					"Ruby",
+					"Scala",
+					"Scheme"
+				];
+				$( "#filter-instructor-auto, #filter-instructor-auto-2" ).autocomplete({
+					source: availableTags
+				});
+			});
+			</script>
+		
+		<!-- end revival scripts -->
+
+
+	</div>
+</body>
+
+</html>
