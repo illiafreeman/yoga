@@ -354,7 +354,7 @@ body .revival .line_transparent {
   background: transparent;
 }
 body .revival .line_transparent .line__title:after {
-  display: none;
+  display: none !important;
 }
 body .revival .line_tab {
   padding-top: 50px;
@@ -420,6 +420,9 @@ body .revival .line__pic_careers-1 {
 }
 body .revival .line__pic_200-2 {
   background-image: url(../images/200_2.jpg);
+}
+body .revival .line__pic_200-6 {
+  background-image: url(../images/200_6.jpg);
 }
 body .revival .line__desc {
   display: flex;
@@ -676,12 +679,15 @@ body .revival .article__figure:after {
   position: absolute;
   right: 0;
   bottom: 0;
-  height: 360px;
   width: 500px;
+  height: 360px;
   background-image: url(../images/figure_1.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+body .revival .article__figure_3:after {
+  background-image: url(../images/figure_3.png);
 }
 body .revival .about-info {
   display: flex;
@@ -1063,6 +1069,38 @@ body .revival .poster-line__item-title {
 }
 body .revival .poster-line__item-text {
   color: #99A592;
+}
+body .revival .gal {
+  display: flex;
+  gap: 18px;
+  margin-top: 48px;
+}
+body .revival .gal__pic {
+  width: 33.333%;
+  border-radius: 8px;
+}
+body .revival .tablegrid {
+  display: flex;
+  gap: 64px 16px;
+  flex-wrap: wrap;
+}
+body .revival .tablegrid__item {
+  width: calc(50% - 8px);
+  padding-left: 46px;
+  position: relative;
+}
+body .revival .tablegrid__item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 27px;
+  height: 20px;
+  background-image: url(../images/ok.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
 }
 
 .ui-menu .ui-menu-item-wrapper {
