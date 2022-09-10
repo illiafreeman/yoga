@@ -1244,6 +1244,9 @@ body .revival .ui-datepicker .ui-widget-header {
   background: transparent;
   color: #394531;
 }
+body .revival .ui-datepicker .ui-widget-header a {
+  position: absolute;
+}
 body .revival .ui-datepicker .ui-datepicker-next .ui-icon {
   border-left: 8px solid #394531;
   border-top: 6px solid transparent;
@@ -1294,15 +1297,15 @@ body .revival .ui-datepicker .ui-datepicker-calendar th {
   border: 0;
 }
 body .revival .ui-datepicker .ui-datepicker-calendar th span {
-  color: #B4B6B3;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
 }
 body .revival .ui-datepicker .ui-datepicker-calendar td {
   border: 0;
+  padding: 12px 8px;
 }
-body .revival .ui-datepicker .ui-datepicker-calendar td a {
+body .revival .ui-datepicker .ui-datepicker-calendar td a, body .revival .ui-datepicker .ui-datepicker-calendar td span {
   text-align: center;
   font-size: 16px;
   line-height: 20px;

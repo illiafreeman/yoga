@@ -1483,6 +1483,9 @@ body .revival {
         border: 0;
         background: transparent;
         color: #394531;
+        a{
+            position: absolute;
+        }
     }
 
     .ui-datepicker-next {
@@ -1542,7 +1545,6 @@ body .revival {
         th {
             border: 0;
             span{
-                color: #B4B6B3;
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 20px;
@@ -1551,7 +1553,8 @@ body .revival {
 
         td {
             border: 0;
-            a {
+            padding: 12px 8px;
+            a, span {
                 text-align: center;
                 font-size: 16px;
                 line-height: 20px;
