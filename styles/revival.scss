@@ -1591,7 +1591,7 @@ body .revival {
     flex-direction: column;
 }
 .checkbox-group {
-    margin-bottom: 66px;
+    margin-bottom: 40px;
     &:last-child{
         margin-bottom: 0;
     }
@@ -1606,7 +1606,7 @@ body .revival {
 .checkbox {
     height: 25px;
     display: flex;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     align-items: center;
     cursor: pointer;
     span{
