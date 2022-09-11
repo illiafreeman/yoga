@@ -1219,7 +1219,8 @@ body .revival .ui-widget.ui-widget-content {
   padding: 0;
 }
 body .revival .hasDatepicker {
-  width: 392px;
+  width: 408px;
+  margin-right: 200px;
 }
 body .revival .ui-datepicker .ui-datepicker-title {
   height: 44px;
@@ -1323,6 +1324,53 @@ body .revival .ui-datepicker .ui-datepicker-calendar .ui-state-default.ui-state-
   background: #FF7A00;
   color: #fff;
   border-radius: 3px;
+}
+body .revival .article_form .containr {
+  display: flex;
+  justify-content: space-between;
+}
+body .revival .checkbox-wrap {
+  display: flex;
+  flex-direction: column;
+}
+body .revival .checkbox-group {
+  margin-bottom: 66px;
+}
+body .revival .checkbox-group:last-child {
+  margin-bottom: 0;
+}
+body .revival .checkbox-group h4 {
+  margin-bottom: 32px;
+  font-family: "mediumwide", Helvetica;
+}
+body .revival .checkbox-group__list {
+  -moz-column-count: 3;
+       column-count: 3;
+}
+body .revival .checkbox {
+  height: 25px;
+  display: flex;
+  margin-bottom: 24px;
+  align-items: center;
+  cursor: pointer;
+}
+body .revival .checkbox span {
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  padding-left: 40px;
+  display: flex;
+  align-items: center;
+}
+body .revival .checkbox input + span {
+  height: 25px;
+  background-image: url(../images/checkbox.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 40px;
+}
+body .revival .checkbox input:checked + span {
+  background-image: url(../images/checkbox_checked.png);
 }
 
 .ui-menu .ui-menu-item-wrapper {

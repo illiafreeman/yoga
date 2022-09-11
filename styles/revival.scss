@@ -1456,7 +1456,8 @@ body .revival {
     padding: 0;
 }
 .hasDatepicker{
-    width: 392px;
+    width: 408px;
+    margin-right: 200px;
 }
 .ui-datepicker .ui-datepicker-title{
     height: 44px;
@@ -1576,6 +1577,55 @@ body .revival {
             color: #fff;
             border-radius: 3px;
         }
+    }
+}
+.article_form{
+    .containr{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
+.checkbox-wrap {
+    display: flex;
+    flex-direction: column;
+}
+.checkbox-group {
+    margin-bottom: 66px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+    h4{
+        margin-bottom: 32px;
+        font-family: $font-medium-wide;
+    }
+    &__list {
+        column-count: 3;
+    }
+}
+.checkbox {
+    height: 25px;
+    display: flex;
+    margin-bottom: 24px;
+    align-items: center;
+    cursor: pointer;
+    span{
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        padding-left: 40px;
+        display: flex;
+        align-items: center;
+    }
+    input+span{
+        height: 25px;
+        background-image: url(../images/checkbox.png);
+        background-repeat: no-repeat;
+        background-position: left center;
+        padding-left: 40px;
+    }
+    input:checked+span{
+        background-image: url(../images/checkbox_checked.png);
     }
 }
 
