@@ -1711,11 +1711,16 @@ body .revival {
     &_schedule {
     }
 }
+.btn_hidden{
+    display: none;
+}
 .table-tr {
     &.act{
         background: $bg-light;
         flex-wrap: wrap;
-
+        .btn_hidden{
+            display: flex;
+        }
         .table-tr__start{
             order: 1;
         }
@@ -1761,9 +1766,13 @@ body .revival {
             width: 48px;
             height: 48px;
         }
+        & + .table-tr_expand{
+            display: flex;
+        }
     }
     &_expand {
         padding: 0 32px 96px;
+        display: none;
     }
 }
 .expand {

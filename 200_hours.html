@@ -548,7 +548,7 @@
 								<span class="day-of-week">Thursday | PDT</span>
 							</div>
 						</div>
-						<div class="table-tr act">
+						<div class="table-tr">
 							<div class="table-tr__start">
 								<div class="table-tr__start-date">Sep 10</div>
 								<div class="table-tr__start-desc">Starts</div>
@@ -570,9 +570,9 @@
 								<div class="table-tr__schedule-name">Weekdays</div>
 							</div>
 							<div class="table-tr__btn">
-								<button class="btn btn_orange">Pay in full</button>
-								<button class="btn btn_green">Pay deposit</button>
-								<button class="btn btn_transparent">Contact us</button>
+								<button class="btn btn_orange btn_hidden">Pay in full</button>
+								<button class="btn btn_green btn_hidden">Pay deposit</button>
+								<button class="btn btn_transparent btn_hidden">Contact us</button>
 								<button class="btn btn_green btn_expand">Expand details</button>
 							</div>
 						</div>
@@ -860,6 +860,15 @@
 					$this.text('Read More');
 				}
 			});
+			$('.btn_expand').click(function() {
+				$(this).parents('.table-tr').toggleClass('act');
+				
+			});
+
+
+
+
+			
 		</script>
 
 		

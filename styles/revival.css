@@ -1435,9 +1435,15 @@ body .revival .table-tr__btn {
   display: flex;
   align-items: center;
 }
+body .revival .btn_hidden {
+  display: none;
+}
 body .revival .table-tr.act {
   background: #F5F1ED;
   flex-wrap: wrap;
+}
+body .revival .table-tr.act .btn_hidden {
+  display: flex;
 }
 body .revival .table-tr.act .table-tr__start {
   order: 1;
@@ -1484,8 +1490,12 @@ body .revival .table-tr.act .table-tr__schedule-weekday {
   width: 48px;
   height: 48px;
 }
+body .revival .table-tr.act + .table-tr_expand {
+  display: flex;
+}
 body .revival .table-tr_expand {
   padding: 0 32px 96px;
+  display: none;
 }
 body .revival .expand {
   width: 100%;
