@@ -1628,6 +1628,80 @@ body .revival {
         background-image: url(../images/checkbox_checked.png);
     }
 }
+.article {
+    &_schedule {
+        padding-top: 0;
+    }
+}
+.table-th {
+}
+.day-copy {
+}
+.day-of-week {
+}
+.table-tr {
+    display: flex;
+    padding: 15px 0;
+    border-bottom: 1px solid #dfdbd6;
+    &__start {
+        padding-right: 20px;
+        width: 160px;
+    }
+
+    &__start-date {
+        margin-bottom: 8px;
+    }
+
+    &__start-desc {
+        font-size: 16px;
+        line-height: 24px;
+        color: #666C63;
+    }
+
+    &__instructor {
+        padding-right: 20px;
+        width: 240px;
+    }
+
+    &__instructor-name {
+        margin-bottom: 8px;
+    }
+
+    &__location {
+        padding-right: 20px;
+        width: 400px;
+    }
+
+    &__location-name {
+        margin-bottom: 8px;
+    }
+
+    &__schedule {
+        padding-right: 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__schedule-weekday {
+        margin-right: 16px;
+    }
+
+    &__schedule-name {
+        color: #666C63;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+    }
+}
+.btn {
+
+    &_schedule {
+    }
+}
 
 
 

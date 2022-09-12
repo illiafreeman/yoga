@@ -1372,7 +1372,57 @@ body .revival .checkbox input + span {
 body .revival .checkbox input:checked + span {
   background-image: url(../images/checkbox_checked.png);
 }
-
+body .revival .article_schedule {
+  padding-top: 0;
+}
+body .revival .table-tr {
+  display: flex;
+  padding: 15px 0;
+  border-bottom: 1px solid #dfdbd6;
+}
+body .revival .table-tr__start {
+  padding-right: 20px;
+  width: 160px;
+}
+body .revival .table-tr__start-date {
+  margin-bottom: 8px;
+}
+body .revival .table-tr__start-desc {
+  font-size: 16px;
+  line-height: 24px;
+  color: #666C63;
+}
+body .revival .table-tr__instructor {
+  padding-right: 20px;
+  width: 240px;
+}
+body .revival .table-tr__instructor-name {
+  margin-bottom: 8px;
+}
+body .revival .table-tr__location {
+  padding-right: 20px;
+  width: 400px;
+}
+body .revival .table-tr__location-name {
+  margin-bottom: 8px;
+}
+body .revival .table-tr__schedule {
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+}
+body .revival .table-tr__schedule-weekday {
+  margin-right: 16px;
+}
+body .revival .table-tr__schedule-name {
+  color: #666C63;
+  font-size: 16px;
+  line-height: 24px;
+}
+body .revival .table-tr__btn {
+  display: flex;
+  align-items: center;
+}
 .ui-menu .ui-menu-item-wrapper {
   padding: 0 16px !important;
   font-size: 16px !important;
