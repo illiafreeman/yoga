@@ -1375,6 +1375,9 @@ body .revival .checkbox input:checked + span {
 body .revival .article_schedule {
   padding-top: 0;
 }
+body .revival .table-th {
+  border-bottom: 1px solid #dfdbd6;
+}
 body .revival .table-tr {
   display: flex;
   padding: 15px 0;
@@ -1382,7 +1385,7 @@ body .revival .table-tr {
 }
 body .revival .table-tr__start {
   padding-right: 20px;
-  width: 160px;
+  width: 130px;
 }
 body .revival .table-tr__start-date {
   margin-bottom: 8px;
@@ -1394,7 +1397,7 @@ body .revival .table-tr__start-desc {
 }
 body .revival .table-tr__instructor {
   padding-right: 20px;
-  width: 240px;
+  width: 310px;
 }
 body .revival .table-tr__instructor-name {
   margin-bottom: 8px;

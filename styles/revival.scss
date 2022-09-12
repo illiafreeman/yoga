@@ -1634,6 +1634,7 @@ body .revival {
     }
 }
 .table-th {
+    border-bottom: 1px solid #dfdbd6;
 }
 .day-copy {
 }
@@ -1645,7 +1646,7 @@ body .revival {
     border-bottom: 1px solid #dfdbd6;
     &__start {
         padding-right: 20px;
-        width: 160px;
+        width: 130px;
     }
 
     &__start-date {
@@ -1660,7 +1661,7 @@ body .revival {
 
     &__instructor {
         padding-right: 20px;
-        width: 240px;
+        width: 310px;
     }
 
     &__instructor-name {
