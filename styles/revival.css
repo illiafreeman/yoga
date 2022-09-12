@@ -1430,6 +1430,9 @@ body .revival .table-tr__btn {
 body .revival .table-tr_expand {
   padding: 0 32px 96px;
 }
+body .revival .expand {
+  width: 100%;
+}
 body .revival .expand h4 {
   font-size: 32px;
   line-height: 40px;
@@ -1545,6 +1548,27 @@ body .revival h6 {
 body .revival h6 span {
   color: #99A592;
 }
+body .revival .slider {
+  width: 100%;
+  margin: 96px 0 40px;
+}
+body .revival .slider .slick-arrow {
+  display: none !important;
+}
+body .revival .slider .slick-dots li button::before {
+  color: #FF7A00;
+}
+body .revival .slider .slick-slide {
+  margin: 0 10px;
+  border-radius: 8px;
+}
+body .revival .slider .slick-dots {
+  bottom: -60px;
+}
+body .revival .slider .slick-list {
+  margin: 0 -10px;
+}
+
 .ui-menu .ui-menu-item-wrapper {
   padding: 0 16px !important;
   font-size: 16px !important;

@@ -1711,6 +1711,7 @@ body .revival {
     }
 }
 .expand {
+    width: 100%;
     h4{
         font-size: 32px;
         line-height: 40px;
@@ -1844,21 +1845,24 @@ h6{
         color: #99A592;
     }
 }
-.gal {
-
-    &__item {
-
-        &_1 {
-        }
-
-        &_2 {
-        }
-
-        &_3 {
-        }
-
-        &_4 {
-        }
+.slider {
+    width: 100%;
+    margin: 96px 0 40px;
+    .slick-arrow{
+        display: none !important;
+    }
+    .slick-dots li button::before{
+        color: #FF7A00;
+    }
+    .slick-slide {
+        margin: 0 10px;
+        border-radius: 8px;
+    }
+    .slick-dots {
+        bottom: -60px;
+    }
+    .slick-list {
+        margin: 0 -10px;
     }
 }
 
