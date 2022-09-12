@@ -2775,6 +2775,81 @@ body .revival .faq .accordion .collapse .card-body p:last-child, body .revival .
     width: 300px;
     display: none;
   }
+  body .revival .intro__header_min {
+    font-size: 56px;
+    line-height: 64px;
+  }
+  body .revival .article__figure {
+    padding-right: 260px;
+  }
+  body .revival .article__figure:after {
+    width: 240px;
+    height: 240px;
+  }
+  body .revival .article__title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  body .revival .article__sub {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  body .revival .article__figure {
+    margin-bottom: 24px;
+  }
+  body .revival .poster-line {
+    padding: 24px 0;
+    margin-top: 0;
+    overflow-x: auto;
+    width: 100%;
+  }
+  body .revival .poster-line__item {
+    width: 312px;
+    min-width: 312px;
+  }
+  body .revival .poster-line__item-text {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  body .revival .containr_scroll {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  body .revival .nav-tabs {
+    flex-wrap: nowrap;
+    width: auto;
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+  body .revival .nav-tabs .nav-item {
+    white-space: nowrap;
+  }
+  body .revival .containr_scroll::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 70px;
+    background: linear-gradient(to right, rgba(30, 87, 153, 0) 0%, rgb(245, 241, 237) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#001e5799", endColorstr="#f5f1ed",GradientType=1 );
+    pointer-events: none;
+  }
+  body .revival .nav-link {
+    margin: 0 20px;
+  }
+  body .revival .tab-pane .line {
+    padding: 48px 0;
+  }
+  body .revival .tab-pane .line__text {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  body .revival .tab-pane .line__pic {
+    height: 548px;
+  }
 }
 @media only screen and (max-width: 767px) {
   body .revival .intro_landing {
