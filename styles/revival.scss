@@ -1731,6 +1731,20 @@ body .revival {
             }
             .btn_expand{
                 background: transparent;
+                position: relative;
+                padding-left: 0;
+                &:after{
+                    content: "";
+                    display: block;
+                    width: 12px;
+                    height: 120px;
+                    background-image: url(../images/shevron_up.png);
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    top: -33px;
+                    right: 8px;
+                }
             }
         }
         .table-tr__location{
