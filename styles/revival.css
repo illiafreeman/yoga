@@ -1642,6 +1642,66 @@ body .revival .slider .slick-dots {
 body .revival .slider .slick-list {
   margin: 0 -10px;
 }
+body .revival .faq .accordion .faq__item h2 .btn {
+  padding: 32px 64px 32px 32px;
+  height: auto;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "regularwide", Helvetica;
+  border-radius: 0;
+  border-bottom: 1px solid #B4B6B3;
+  position: relative;
+}
+body .revival .faq .accordion .faq__item h2 .btn:hover {
+  color: #FF7A00;
+  background: #fff;
+  border-bottom: 1px solid #FF7A00;
+}
+body .revival .faq .accordion .faq__item h2 .btn:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 36px;
+  right: 20px;
+  height: 100%;
+  background-image: url(../images/plus.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+}
+body .revival .faq .accordion .faq__item h2 .btn:not(.collapsed) {
+  color: #FF7A00;
+  background: #fff;
+  border-bottom: 1px solid #FF7A00;
+}
+body .revival .faq .accordion .faq__item h2 .btn:not(.collapsed):after {
+  background-image: url(../images/minus.png);
+}
+body .revival .faq .accordion .faq__item h2 .btn-link:hover {
+  text-decoration: none;
+}
+body .revival .faq .accordion .faq__item_last .btn {
+  margin-bottom: 0;
+  border: 0 !important;
+}
+body .revival .faq .accordion .collapse, body .revival .faq .accordion .collapse.show, body .revival .faq .accordion .collapsing {
+  transition: 0;
+}
+body .revival .faq .accordion .collapse .card-body, body .revival .faq .accordion .collapse.show .card-body, body .revival .faq .accordion .collapsing .card-body {
+  background: #F3F7F1;
+  border-bottom: 1px solid #B4B6B3;
+  padding: 32px;
+  transition: 0;
+}
+body .revival .faq .accordion .collapse .card-body p, body .revival .faq .accordion .collapse.show .card-body p, body .revival .faq .accordion .collapsing .card-body p {
+  color: #666C63;
+  margin-bottom: 32px;
+  transition: none;
+}
+body .revival .faq .accordion .collapse .card-body p:last-child, body .revival .faq .accordion .collapse.show .card-body p:last-child, body .revival .faq .accordion .collapsing .card-body p:last-child {
+  margin-bottom: 0;
+}
 
 .ui-menu .ui-menu-item-wrapper {
   padding: 0 16px !important;

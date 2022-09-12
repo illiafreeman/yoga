@@ -1937,7 +1937,76 @@ h6{
         margin: 0 -10px;
     }
 }
-
+.faq{
+    .accordion{
+        .faq__item{
+            h2{
+                .btn{
+                    padding: 32px 64px 32px 32px;
+                    height: auto;
+                    font-size: 24px;
+                    line-height: 32px;
+                    font-family: $font-regular-wide;
+                    border-radius: 0;
+                    border-bottom: 1px solid #B4B6B3;
+                    position: relative;
+                    &:hover{
+                        color: #FF7A00;
+                        background: #fff;
+                        border-bottom: 1px solid #FF7A00;
+                    }
+                    &:after{
+                        display: block;
+                        content: '';
+                        position: absolute;
+                        top: 36px;
+                        right: 20px;
+                        height: 100%;
+                        background-image: url(../images/plus.png);
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        width: 24px;
+                        height: 24px;
+                    }
+                    &:not(.collapsed){
+                        color: #FF7A00;
+                        background: #fff;
+                        border-bottom: 1px solid #FF7A00;
+                        &:after{
+                            background-image: url(../images/minus.png);
+                        }
+                    }
+                }
+                .btn-link:hover {
+                    text-decoration: none;
+                  }
+            }
+            &_last{
+                .btn{
+                    margin-bottom: 0;
+                    border: 0 !important;
+                }
+            }
+        }
+        .collapse, .collapse.show, .collapsing{
+            transition: 0;
+            .card-body{
+                background: #F3F7F1;
+                border-bottom: 1px solid #B4B6B3;
+                padding: 32px;
+                transition: 0;
+                p{
+                    color: #666C63;
+                    margin-bottom: 32px;
+                    transition: none;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 
