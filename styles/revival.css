@@ -1455,11 +1455,20 @@ body .revival .instruc {
   border-radius: 8px;
   display: flex;
   margin-bottom: 32px;
+  overflow: hidden;
 }
 body .revival .instruc__img {
   width: 480px;
   height: 480px;
   margin-right: 64px;
+}
+body .revival .instruc_reverce .instruc__img {
+  order: 1;
+  margin: 0 0 0 64px;
+}
+body .revival .instruc_reverce .instruc__desc {
+  padding: 32px 0 32px 32px;
+  order: 0;
 }
 body .revival .instruc__desc {
   padding: 32px 32px 32px 0;
@@ -1495,6 +1504,46 @@ body .revival .instruc__desc-more {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+body .revival .col_50-wrap {
+  display: flex;
+}
+body .revival .col_50 {
+  width: 50%;
+}
+body .revival .col_50 h6 {
+  color: #798572;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 32px;
+  text-transform: none;
+  font-weight: 500;
+  letter-spacing: normal;
+}
+body .revival .col_50 p {
+  color: #99A592;
+}
+body .revival .p {
+  color: #99A592;
+  margin-bottom: 0;
+}
+body .revival .p a {
+  text-transform: uppercase;
+  color: #FF7A00;
+}
+body .revival .p a:hover {
+  text-decoration: underline;
+}
+body .revival h6 {
+  margin: 64px 0;
+  color: #394531;
+  text-transform: none;
+  font-weight: 500;
+  letter-spacing: normal;
+  font-family: "mediumwide", Helvetica;
+}
+body .revival h6 span {
+  color: #99A592;
 }
 .ui-menu .ui-menu-item-wrapper {
   padding: 0 16px !important;

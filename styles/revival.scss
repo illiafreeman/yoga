@@ -1742,6 +1742,7 @@ body .revival {
     border-radius: 8px;
     display: flex;
     margin-bottom: 32px;
+    overflow: hidden;
     &__img {
         width: 480px;
         height: 480px;
@@ -1749,6 +1750,14 @@ body .revival {
     }
 
     &_reverce {
+        .instruc__img {
+            order: 1;
+            margin: 0 0 0 64px;
+        }
+        .instruc__desc {
+            padding: 32px 0 32px 32px;
+            order: 0;
+        }
     }
 
     &__desc {
@@ -1794,11 +1803,45 @@ body .revival {
 }
 
 .col {
-
     &_50-wrap {
+        display: flex;
     }
-
     &_50 {
+        width: 50%;
+        h6{
+            color: #798572;
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 32px;
+            text-transform: none;
+            font-weight: 500;
+            letter-spacing: normal;
+        }
+        p{
+            color: #99A592;
+        }
+    }
+}
+.p{
+    color: #99A592;
+    margin-bottom: 0;
+    a{
+        text-transform: uppercase;
+        color: #FF7A00;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+h6{
+    margin: 64px 0;
+    color: #394531;
+    text-transform: none;
+    font-weight: 500;
+    letter-spacing: normal;
+    font-family: $font-medium-wide;
+    span{
+        color: #99A592;
     }
 }
 .gal {
