@@ -548,7 +548,7 @@
 								<span class="day-of-week">Thursday | PDT</span>
 							</div>
 						</div>
-						<div class="table-tr">
+						<div class="table-tr act">
 							<div class="table-tr__start">
 								<div class="table-tr__start-date">Sep 10</div>
 								<div class="table-tr__start-desc">Starts</div>
@@ -570,7 +570,10 @@
 								<div class="table-tr__schedule-name">Weekdays</div>
 							</div>
 							<div class="table-tr__btn">
-								<button class="btn btn_schedule">Expand details</button>
+								<button class="btn btn_orange">Pay in full</button>
+								<button class="btn btn_green">Pay deposit</button>
+								<button class="btn btn_transparent">Contact us</button>
+								<button class="btn btn_green btn_expand">Expand details</button>
 							</div>
 						</div>
 						<div class="table-tr table-tr_expand bg_semilight">
@@ -850,8 +853,8 @@
 			$('.instruc__desc-more').click(function() {
 				$(this).parent('.instruc__desc').find('.instruc__desc-text').toggleClass('act');
 				var $this = $(this);
-				$this.toggleClass('SeeMore2');
-				if($this.hasClass('SeeMore2')){
+				$this.toggleClass('less');
+				if($this.hasClass('less')){
 					$this.text('Less');			
 				} else {
 					$this.text('Read More');

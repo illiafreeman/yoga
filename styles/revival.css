@@ -335,6 +335,14 @@ body .revival .btn_orange:hover {
 body .revival .btn_orange:active {
   background: #D96800;
 }
+body .revival .btn_transparent {
+  background: transparent;
+  border: 1px solid #394531;
+}
+body .revival .btn_transparent:hover {
+  background: #394531;
+  color: #fff;
+}
 body .revival .btn_schedule {
   background: #CFDDC7;
 }
@@ -1426,6 +1434,41 @@ body .revival .table-tr__schedule-name {
 body .revival .table-tr__btn {
   display: flex;
   align-items: center;
+}
+body .revival .table-tr.act {
+  background: #F5F1ED;
+  flex-wrap: wrap;
+}
+body .revival .table-tr.act .table-tr__start {
+  order: 1;
+}
+body .revival .table-tr.act .table-tr__instructor {
+  order: 2;
+}
+body .revival .table-tr.act .table-tr__btn {
+  order: 3;
+  width: calc(100% - 130px - 130px - 310px);
+  justify-content: space-between;
+}
+body .revival .table-tr.act .table-tr__btn .btn {
+  padding: 0 30px;
+}
+body .revival .table-tr.act .table-tr__btn .btn_expand {
+  background: transparent;
+}
+body .revival .table-tr.act .table-tr__location {
+  order: 4;
+  width: auto;
+  margin-top: 32px;
+}
+body .revival .table-tr.act .table-tr__schedule {
+  order: 5;
+  padding: 0;
+  margin-top: 32px;
+}
+body .revival .table-tr.act .table-tr__schedule-weekday {
+  width: 48px;
+  height: 48px;
 }
 body .revival .table-tr_expand {
   padding: 0 32px 96px;

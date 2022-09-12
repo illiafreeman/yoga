@@ -436,7 +436,14 @@ body .revival {
                 background: #D96800;
             }
         }
-
+        &_transparent{
+            background: transparent;
+            border: 1px solid #394531;
+            &:hover{
+                background: #394531;
+                color: #fff;
+            }
+        }
         &_schedule {
             background: #CFDDC7;
             i{
@@ -1705,7 +1712,42 @@ body .revival {
     }
 }
 .table-tr {
+    &.act{
+        background: $bg-light;
+        flex-wrap: wrap;
 
+        .table-tr__start{
+            order: 1;
+        }
+        .table-tr__instructor{
+            order: 2;
+        }
+        .table-tr__btn{
+            order: 3;
+            width: calc(100% - 130px - 130px - 310px);
+            justify-content: space-between;
+            .btn{
+                padding: 0 30px;
+            }
+            .btn_expand{
+                background: transparent;
+            }
+        }
+        .table-tr__location{
+            order: 4;
+            width: auto;
+            margin-top: 32px;
+        }
+        .table-tr__schedule{
+            order: 5;
+            padding: 0; 
+            margin-top: 32px;
+        }
+        .table-tr__schedule-weekday{
+            width: 48px;
+            height: 48px;
+        }
+    }
     &_expand {
         padding: 0 32px 96px;
     }
