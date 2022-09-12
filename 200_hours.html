@@ -669,7 +669,6 @@
 									<img src="./images/expand_4.jpg" alt="">
 									<img src="./images/expand_5.jpg" alt="">
 									<img src="./images/expand_3.jpg" alt="">
-
 								</div>
 							</div>
 						</div>
@@ -847,7 +846,17 @@
 				speed: 300,
 				slidesToShow: 3,
 				slidesToScroll: 1
-			})
+			});
+			$('.instruc__desc-more').click(function() {
+				$(this).parent('.instruc__desc').find('.instruc__desc-text').toggleClass('act');
+				var $this = $(this);
+				$this.toggleClass('SeeMore2');
+				if($this.hasClass('SeeMore2')){
+					$this.text('Less');			
+				} else {
+					$this.text('Read More');
+				}
+			});
 		</script>
 
 		

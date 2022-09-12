@@ -1776,6 +1776,12 @@ body .revival {
         max-height: 300px;
         overflow: hidden;
         position: relative;
+        &.act{
+            max-height: none;
+            &:after{
+                display: none;
+            }
+        }
         &:after{
             display: block;
             content: '';

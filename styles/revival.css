@@ -1487,6 +1487,12 @@ body .revival .instruc__desc-text {
   overflow: hidden;
   position: relative;
 }
+body .revival .instruc__desc-text.act {
+  max-height: none;
+}
+body .revival .instruc__desc-text.act:after {
+  display: none;
+}
 body .revival .instruc__desc-text:after {
   display: block;
   content: "";
