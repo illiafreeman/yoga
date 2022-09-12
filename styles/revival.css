@@ -1377,10 +1377,11 @@ body .revival .article_schedule {
 }
 body .revival .table-th {
   border-bottom: 1px solid #dfdbd6;
+  padding: 0 32px;
 }
 body .revival .table-tr {
   display: flex;
-  padding: 15px 0;
+  padding: 15px 32px;
   border-bottom: 1px solid #dfdbd6;
 }
 body .revival .table-tr__start {
@@ -1404,7 +1405,7 @@ body .revival .table-tr__instructor-name {
 }
 body .revival .table-tr__location {
   padding-right: 20px;
-  width: 400px;
+  width: 338px;
 }
 body .revival .table-tr__location-name {
   margin-bottom: 8px;
@@ -1425,6 +1426,75 @@ body .revival .table-tr__schedule-name {
 body .revival .table-tr__btn {
   display: flex;
   align-items: center;
+}
+body .revival .table-tr_expand {
+  padding: 0 32px 96px;
+}
+body .revival .expand h4 {
+  font-size: 32px;
+  line-height: 40px;
+  margin: 96px 0 32px;
+}
+body .revival .expand h5 {
+  font-size: 24px;
+  line-height: 32px;
+  color: #798572;
+  margin-bottom: 32px;
+}
+body .revival .expand p {
+  margin-bottom: 0;
+}
+body .revival .expand p span {
+  display: block;
+  font-size: 24px;
+  line-height: 32px;
+  color: #99A592;
+}
+body .revival .instruc {
+  background: #FFFFFF;
+  border-radius: 8px;
+  display: flex;
+  margin-bottom: 32px;
+}
+body .revival .instruc__img {
+  width: 480px;
+  height: 480px;
+  margin-right: 64px;
+}
+body .revival .instruc__desc {
+  padding: 32px 32px 32px 0;
+}
+body .revival .instruc__desc-name {
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 16px;
+}
+body .revival .instruc__desc-text {
+  color: #798572;
+  max-height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+body .revival .instruc__desc-text:after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px; /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(30, 87, 153, 0) 0%, rgb(255, 255, 255) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#001e5799", endColorstr="#ffffff",GradientType=0 ); /* IE6-9 */
+}
+body .revival .instruc__desc-more {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 .ui-menu .ui-menu-item-wrapper {
   padding: 0 16px !important;

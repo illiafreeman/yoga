@@ -1635,6 +1635,7 @@ body .revival {
 }
 .table-th {
     border-bottom: 1px solid #dfdbd6;
+    padding: 0 32px;
 }
 .day-copy {
 }
@@ -1642,7 +1643,7 @@ body .revival {
 }
 .table-tr {
     display: flex;
-    padding: 15px 0;
+    padding: 15px 32px;
     border-bottom: 1px solid #dfdbd6;
     &__start {
         padding-right: 20px;
@@ -1670,7 +1671,7 @@ body .revival {
 
     &__location {
         padding-right: 20px;
-        width: 400px;
+        width: 338px;
     }
 
     &__location-name {
@@ -1701,6 +1702,120 @@ body .revival {
 .btn {
 
     &_schedule {
+    }
+}
+.table-tr {
+
+    &_expand {
+        padding: 0 32px 96px;
+    }
+}
+.expand {
+    h4{
+        font-size: 32px;
+        line-height: 40px;
+        margin: 96px 0 32px;
+    }
+    h5{
+        font-size: 24px;
+        line-height: 32px;
+        color: #798572;
+        margin-bottom: 32px;
+    }
+    p{
+        margin-bottom: 0;
+        span{
+            display: block;
+            font-size: 24px;
+            line-height: 32px;
+            color: #99A592;
+        }
+    }
+}
+.bg {
+
+    &_semilight {
+    }
+}
+.instruc {
+    background: #FFFFFF;
+    border-radius: 8px;
+    display: flex;
+    margin-bottom: 32px;
+    &__img {
+        width: 480px;
+        height: 480px;
+        margin-right: 64px;
+    }
+
+    &_reverce {
+    }
+
+    &__desc {
+        padding: 32px 32px 32px 0;
+    }
+
+    &__desc-name {
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 16px;
+    }
+
+    &__desc-text {
+        color: #798572;
+        max-height: 300px;
+        overflow: hidden;
+        position: relative;
+        &:after{
+            display: block;
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+            background: -moz-linear-gradient(top,  rgba(30,87,153,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom,  rgba(30,87,153,0) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+        }
+    }
+
+    &__desc-more {
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        height: 52px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+}
+
+.col {
+
+    &_50-wrap {
+    }
+
+    &_50 {
+    }
+}
+.gal {
+
+    &__item {
+
+        &_1 {
+        }
+
+        &_2 {
+        }
+
+        &_3 {
+        }
+
+        &_4 {
+        }
     }
 }
 
