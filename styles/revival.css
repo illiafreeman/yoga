@@ -3442,6 +3442,18 @@ body .revival .faq .accordion .collapse .card-body p:last-child, body .revival .
     background-repeat: no-repeat;
     background-size: contain;
   }
+  body .revival .tablegrid_careers {
+    gap: 24px;
+  }
+  body .revival .tablegrid_careers .tablegrid__item {
+    width: 100%;
+  }
+  body .revival .article__quote {
+    padding: 0 30px;
+  }
+  body .revival .intro-sub {
+    text-align: center;
+  }
 }
 @media only screen and (max-width: 575px) {
   body .revival .col-md-8 {

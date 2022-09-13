@@ -948,9 +948,18 @@
             }
             
         }
-
-
-
+        .tablegrid_careers{
+            gap: 24px;
+            .tablegrid__item{
+                width: 100%;
+            }
+        }
+        .article__quote {
+            padding: 0 30px;
+        }
+        .intro-sub{
+            text-align: center;
+        }
 
 
 
