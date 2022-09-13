@@ -577,7 +577,20 @@
                 width: 100%;
             }
         }
-
+        .clas-wrap{
+            margin: 24px -16px 0;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            justify-content: flex-start;
+            .clas{
+                width: 312px;
+                min-width: 312px;
+            }
+            .clas__name{
+                font-size: 32px;
+                line-height: 36px;
+            }
+        }
 
 
 

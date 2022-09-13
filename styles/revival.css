@@ -929,6 +929,8 @@ body .revival .sort__item-drop {
   transition: all 0.2s ease-in-out;
   padding: 8px 0;
   border-radius: 0 0 8px 8px;
+  background: #F5F1ED;
+  z-index: 100;
 }
 body .revival .sort__item-option {
   color: #878f84;
@@ -3078,6 +3080,20 @@ body .revival .faq .accordion .collapse .card-body p:last-child, body .revival .
   }
   body .revival .instructor__pic img {
     width: 100%;
+  }
+  body .revival .clas-wrap {
+    margin: 24px -16px 0;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+  body .revival .clas-wrap .clas {
+    width: 312px;
+    min-width: 312px;
+  }
+  body .revival .clas-wrap .clas__name {
+    font-size: 32px;
+    line-height: 36px;
   }
 }
 @media only screen and (max-width: 767px) {
