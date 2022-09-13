@@ -436,8 +436,8 @@
             }
             .table-tr__instructor{
                 order: 2;
-                width: auto;
-                flex: 1 0 auto;
+                width: calc(100% - 220px - 180px);
+
             }
             .table-tr__location{
                 order: 4;
@@ -456,6 +456,87 @@
                 }
             }
         }
+        .day-copy {
+            padding: 60px 0 30px;
+        }
+        .article__sub{
+            margin-bottom: 0;
+        }
+        .table-tr.act{
+            margin: 0 -15px;
+            padding: 15px;
+            flex-wrap: wrap;
+            .table-tr__start{
+                order: 1;
+                width: 25%;
+            }
+            .table-tr__instructor{
+                order: 2;
+                width: 50%;
+            }
+            .table-tr__location{
+                order: 3;
+                width: 50%;
+            }
+            .table-tr__schedule{
+                order: 4;
+            }
+            .table-tr__btn{
+                order: 5;
+                width: 100%;
+                margin-top: 32px;
+            }
+        }
+        .table-tr.act + .table-tr_expand {
+            margin: 0 -15px;
+            padding: 15px;
+        }
+        .expand h4 {
+            font-size: 28px;
+            line-height: 32px;
+            margin: 48px 0 32px;
+        }
+        .expand h5 {
+            font-size: 22px;
+            line-height: 28px;
+        }
+        .expand p span {
+            font-size: 22px;
+            line-height: 28px;
+        }
+        .instruc__img {
+            width: 290px;
+            height: auto;
+            margin-right: 16px;
+        }
+        .instruc{
+            align-items: flex-start;
+        }
+        .instruc__desc-name {
+            font-size: 32px;
+            line-height: 36px;
+        }
+        .instruc__desc-text{
+            font-size: 22px;
+            line-height: 28px;
+        }
+        .slider .slick-dots {
+            bottom: -39px;
+        }
+        .faq .accordion .faq__item h2 .btn {
+            padding: 24px 64px 24px 24px;
+            font-size: 22px;
+            line-height: 26px;
+        }
+        .faq .accordion .collapse .card-body, .faq .accordion .collapse.show .card-body, .faq .accordion .collapsing .card-body{
+            padding: 24px;
+            p{
+                font-size: 22px;
+                line-height: 26px;
+                margin-bottom: 16px;
+            }
+        }
+
 
 
 

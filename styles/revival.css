@@ -2944,8 +2944,7 @@ body .revival .faq .accordion .collapse .card-body p:last-child, body .revival .
   }
   body .revival .table-tr .table-tr__instructor {
     order: 2;
-    width: auto;
-    flex: 1 0 auto;
+    width: calc(100% - 220px - 180px);
   }
   body .revival .table-tr .table-tr__location {
     order: 4;
@@ -2962,6 +2961,86 @@ body .revival .faq .accordion .collapse .card-body p:last-child, body .revival .
   }
   body .revival .table-tr .table-tr__btn .btn {
     padding: 0 32px;
+  }
+  body .revival .day-copy {
+    padding: 60px 0 30px;
+  }
+  body .revival .article__sub {
+    margin-bottom: 0;
+  }
+  body .revival .table-tr.act {
+    margin: 0 -15px;
+    padding: 15px;
+    flex-wrap: wrap;
+  }
+  body .revival .table-tr.act .table-tr__start {
+    order: 1;
+    width: 25%;
+  }
+  body .revival .table-tr.act .table-tr__instructor {
+    order: 2;
+    width: 50%;
+  }
+  body .revival .table-tr.act .table-tr__location {
+    order: 3;
+    width: 50%;
+  }
+  body .revival .table-tr.act .table-tr__schedule {
+    order: 4;
+  }
+  body .revival .table-tr.act .table-tr__btn {
+    order: 5;
+    width: 100%;
+    margin-top: 32px;
+  }
+  body .revival .table-tr.act + .table-tr_expand {
+    margin: 0 -15px;
+    padding: 15px;
+  }
+  body .revival .expand h4 {
+    font-size: 28px;
+    line-height: 32px;
+    margin: 48px 0 32px;
+  }
+  body .revival .expand h5 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  body .revival .expand p span {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  body .revival .instruc__img {
+    width: 290px;
+    height: auto;
+    margin-right: 16px;
+  }
+  body .revival .instruc {
+    align-items: flex-start;
+  }
+  body .revival .instruc__desc-name {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  body .revival .instruc__desc-text {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  body .revival .slider .slick-dots {
+    bottom: -39px;
+  }
+  body .revival .faq .accordion .faq__item h2 .btn {
+    padding: 24px 64px 24px 24px;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  body .revival .faq .accordion .collapse .card-body, body .revival .faq .accordion .collapse.show .card-body, body .revival .faq .accordion .collapsing .card-body {
+    padding: 24px;
+  }
+  body .revival .faq .accordion .collapse .card-body p, body .revival .faq .accordion .collapse.show .card-body p, body .revival .faq .accordion .collapsing .card-body p {
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 16px;
   }
 }
 @media only screen and (max-width: 767px) {
