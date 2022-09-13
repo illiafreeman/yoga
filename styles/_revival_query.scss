@@ -337,6 +337,7 @@
         .tab-pane{
             .line {
                 padding: 48px 0;
+                padding-bottom: 0;
             }
             .line__text{
                 font-size: 22px;
@@ -346,6 +347,128 @@
                 height: 548px;
             }
         }
+        .article__title{
+            margin-bottom: 16px;
+        }
+        .line__pic_200{
+            height: 480px;
+        }
+        .line__text_200{
+            font-size: 22px;
+            line-height: 28px;
+        }
+        .article_note .containr {
+            flex-direction: column;
+        }
+        .article_note .containr .tablegrid_66 {
+            width: 100%;
+            gap: 24px;
+            margin-bottom: 56px;
+            border: 0;
+            h3{
+                height: auto;;
+            }
+        }
+        .article_note .containr .tablegrid_33{
+            width: 100%;
+            gap: 24px;
+            padding: 0;
+            margin-bottom: 0;
+            h3{
+                height: auto;;
+            }
+        }
+        .article_note .containr .tablegrid h3 {
+            font-size: 32px;
+            line-height: 36px;
+            width: 100%;
+        }
+        .containr_galright::after{
+            display: none;
+        }
+        .containr_galright{
+            flex-direction: column;
+        }
+        .article__figure_galright {
+            width: 100%;
+            min-width: 100%;
+            padding: 0;
+            margin: 0 0 48px;
+        }
+        .gal_right{
+            flex-direction: row;
+            overflow-x: auto;
+            width: 100%;
+            gap: 16px;
+        }
+        .gal_right .gal__pic {
+            width: 320px;
+        }
+        .article_form .containr{
+            flex-direction: column;
+        }
+        .hasDatepicker {
+            width: 100%;
+            margin: 0 0 24px;
+        }
+        .ui-datepicker {
+            width: 100%;
+        }
+        .article_schedule{
+            padding-top: 0;
+        }
+        .article_form{
+            padding-bottom: 24px;
+        }
+        .table-th {
+            padding: 0;
+        }
+        .day-copy {
+            font-size: 32px;
+            line-height: 36px;
+        }
+        .table-tr {
+            padding: 15px 0;
+            flex-wrap: wrap;
+            .table-tr__start{
+                order: 1;
+                width: 110px;
+            }
+            .table-tr__instructor{
+                order: 2;
+                width: auto;
+                flex: 1 0 auto;
+            }
+            .table-tr__location{
+                order: 4;
+                margin-top: 32px;
+                width: 50%;
+            }
+            .table-tr__schedule{
+                order: 5;
+                margin-top: 32px;
+            }
+            .table-tr__btn{
+                order: 3;
+                width: 180px;
+                .btn{
+                    padding: 0 32px;
+                }
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     }
 }

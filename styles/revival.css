@@ -443,6 +443,9 @@ body .revival .line__sup {
   color: #666C63;
   font-size: 16px;
   line-height: 20px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  margin-top: 0;
 }
 body .revival .line__title {
   font-family: "mediumwide", Helvetica;
@@ -2842,6 +2845,7 @@ body .revival .faq .accordion .collapse .card-body p:last-child, body .revival .
   }
   body .revival .tab-pane .line {
     padding: 48px 0;
+    padding-bottom: 0;
   }
   body .revival .tab-pane .line__text {
     font-size: 22px;
@@ -2849,6 +2853,115 @@ body .revival .faq .accordion .collapse .card-body p:last-child, body .revival .
   }
   body .revival .tab-pane .line__pic {
     height: 548px;
+  }
+  body .revival .article__title {
+    margin-bottom: 16px;
+  }
+  body .revival .line__pic_200 {
+    height: 480px;
+  }
+  body .revival .line__text_200 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  body .revival .article_note .containr {
+    flex-direction: column;
+  }
+  body .revival .article_note .containr .tablegrid_66 {
+    width: 100%;
+    gap: 24px;
+    margin-bottom: 56px;
+    border: 0;
+  }
+  body .revival .article_note .containr .tablegrid_66 h3 {
+    height: auto;
+  }
+  body .revival .article_note .containr .tablegrid_33 {
+    width: 100%;
+    gap: 24px;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  body .revival .article_note .containr .tablegrid_33 h3 {
+    height: auto;
+  }
+  body .revival .article_note .containr .tablegrid h3 {
+    font-size: 32px;
+    line-height: 36px;
+    width: 100%;
+  }
+  body .revival .containr_galright::after {
+    display: none;
+  }
+  body .revival .containr_galright {
+    flex-direction: column;
+  }
+  body .revival .article__figure_galright {
+    width: 100%;
+    min-width: 100%;
+    padding: 0;
+    margin: 0 0 48px;
+  }
+  body .revival .gal_right {
+    flex-direction: row;
+    overflow-x: auto;
+    width: 100%;
+    gap: 16px;
+  }
+  body .revival .gal_right .gal__pic {
+    width: 320px;
+  }
+  body .revival .article_form .containr {
+    flex-direction: column;
+  }
+  body .revival .hasDatepicker {
+    width: 100%;
+    margin: 0 0 24px;
+  }
+  body .revival .ui-datepicker {
+    width: 100%;
+  }
+  body .revival .article_schedule {
+    padding-top: 0;
+  }
+  body .revival .article_form {
+    padding-bottom: 24px;
+  }
+  body .revival .table-th {
+    padding: 0;
+  }
+  body .revival .day-copy {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  body .revival .table-tr {
+    padding: 15px 0;
+    flex-wrap: wrap;
+  }
+  body .revival .table-tr .table-tr__start {
+    order: 1;
+    width: 110px;
+  }
+  body .revival .table-tr .table-tr__instructor {
+    order: 2;
+    width: auto;
+    flex: 1 0 auto;
+  }
+  body .revival .table-tr .table-tr__location {
+    order: 4;
+    margin-top: 32px;
+    width: 50%;
+  }
+  body .revival .table-tr .table-tr__schedule {
+    order: 5;
+    margin-top: 32px;
+  }
+  body .revival .table-tr .table-tr__btn {
+    order: 3;
+    width: 180px;
+  }
+  body .revival .table-tr .table-tr__btn .btn {
+    padding: 0 32px;
   }
 }
 @media only screen and (max-width: 767px) {
