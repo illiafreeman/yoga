@@ -3265,6 +3265,7 @@ body .revival .faq .accordion .collapse .card-body p:last-child, body .revival .
     order: 2;
     width: 100%;
     padding: 0;
+    margin: 24px 0;
   }
   body .revival .table-tr .table-tr__schedule {
     order: 4;
@@ -3279,6 +3280,39 @@ body .revival .faq .accordion .collapse .card-body p:last-child, body .revival .
     order: 5;
     width: 100%;
     margin-top: 32px;
+  }
+  body .revival .table-tr.act .table-tr__start {
+    order: 1;
+    width: 50%;
+  }
+  body .revival .table-tr.act .table-tr__instructor {
+    order: 3;
+    width: 50%;
+  }
+  body .revival .table-tr.act .table-tr__location {
+    order: 2;
+    width: 100%;
+    padding: 0;
+    margin: 24px 0;
+  }
+  body .revival .table-tr.act .table-tr__schedule {
+    order: 4;
+    padding: 0;
+    width: 50%;
+    margin: 0;
+  }
+  body .revival .table-tr.act .table-tr__schedule .table-tr__schedule-name {
+    white-space: nowrap;
+  }
+  body .revival .table-tr.act .table-tr__btn {
+    order: 5;
+    width: 100%;
+    margin-top: 32px;
+    flex-direction: column;
+    gap: 16px;
+  }
+  body .revival .table-tr.act .table-tr__btn .btn_expand {
+    padding: 0 30px;
   }
   body .revival .poster-line__item {
     width: 212px;
@@ -3295,6 +3329,23 @@ body .revival .faq .accordion .collapse .card-body p:last-child, body .revival .
     text-align: left;
     align-items: flex-start;
     justify-content: flex-start;
+  }
+  body .revival .table-tr .table-tr__btn .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  body .revival .instruc {
+    flex-direction: column;
+  }
+  body .revival .instruc_reverce .instruc__img {
+    order: 0;
+    margin: 0;
+  }
+  body .revival .col_50 {
+    width: 100%;
+  }
+  body .revival .col_50-wrap {
+    flex-wrap: wrap;
   }
 }
 @media only screen and (max-width: 575px) {

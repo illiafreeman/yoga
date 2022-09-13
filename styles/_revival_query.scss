@@ -785,6 +785,7 @@
                 order: 2;
                 width: 100%;
                 padding: 0;
+                margin: 24px 0;
             }
             .table-tr__schedule{
                 order: 4;
@@ -799,6 +800,41 @@
                 order: 5;
                 width: 100%;
                 margin-top: 32px;
+            }
+        }
+        .table-tr.act{
+            .table-tr__start{
+                order: 1;
+                width: 50%;
+            }
+            .table-tr__instructor{
+                order: 3;
+                width: 50%;
+            }
+            .table-tr__location{
+                order: 2;
+                width: 100%;
+                padding: 0;
+                margin: 24px 0;
+            }
+            .table-tr__schedule{
+                order: 4;
+                padding: 0;
+                width: 50%;
+                margin: 0;
+                .table-tr__schedule-name{
+                    white-space: nowrap;
+                }
+            }
+            .table-tr__btn{
+                order: 5;
+                width: 100%;
+                margin-top: 32px;
+                flex-direction: column;
+                gap: 16px;
+                .btn_expand{
+                    padding: 0 30px;
+                }
             }
         }
         .poster-line__item {
@@ -816,12 +852,24 @@
             text-align: left;
             align-items: flex-start;
             justify-content: flex-start;
-          }
-
-
-
-
-
+        }
+        .table-tr .table-tr__btn .btn {
+            width: 100%;
+            justify-content: center;
+        }
+        .instruc{
+            flex-direction: column;
+        }
+        .instruc_reverce .instruc__img {
+            order: 0;
+            margin: 0;
+        }
+        .col_50 {
+            width: 100%;
+        }
+        .col_50-wrap{
+            flex-wrap: wrap;
+        }
 
 
 
