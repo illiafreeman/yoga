@@ -641,20 +641,6 @@
             //overflow-x: auto;
             position: relative;
             overflow: hidden;
-            &:after{
-                content: '';
-                display: block;
-                position: absolute;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                width: 70px;
-                background: -moz-linear-gradient(left,  rgba(229,229,229,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
-                background: -webkit-linear-gradient(left,  rgba(229,229,229,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
-                background: linear-gradient(to right,  rgba(229,229,229,0) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e5e5e5', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
-                pointer-events: none;
-            };
         }
         .nav-tabs .nav-item {
             white-space: nowrap;
@@ -750,6 +736,114 @@
                 display: none;
             }
         }
+        .intro_min {
+            height: 367px;
+            .intro__header{
+                margin-bottom: 0;
+            }
+        }
+        .article {
+            padding: 48px 0;
+        }
+        .article__figure {
+            padding: 0;
+            &:after{
+                display: none;
+            }
+        }
+        .article_tab {
+            padding-top: 0;
+        }
+        .poster-line {
+            padding: 24px 0 0;
+        }
+        .article_note {
+            padding-top: 0;
+        }
+        .article_note .containr .tablegrid_66 .tablegrid__item {
+            width: 100%;
+        }
+        .checkbox-group__list {
+            column-count: 1;
+        }
+        .article_form {
+            padding-bottom: 0;
+        }
+        .article_schedule{
+            padding-top: 0;
+        }
+        .table-tr{
+            .table-tr__start{
+                order: 1;
+                width: 50%;
+            }
+            .table-tr__instructor{
+                order: 3;
+                width: 50%;
+            }
+            .table-tr__location{
+                order: 2;
+                width: 100%;
+                padding: 0;
+            }
+            .table-tr__schedule{
+                order: 4;
+                padding: 0;
+                width: 50%;
+                margin: 0;
+                .table-tr__schedule-name{
+                    white-space: nowrap;
+                }
+            }
+            .table-tr__btn{
+                order: 5;
+                width: 100%;
+                margin-top: 32px;
+            }
+        }
+        .poster-line__item {
+            width: 212px;
+            min-width: 212px;
+        }
+        .poster-line_33{
+            flex-direction: column;
+        }
+        .poster-line_33 .poster-line__item {
+            width: 100%;
+        }
+        .poster-line__item_week {
+            flex-direction: row;
+            text-align: left;
+            align-items: flex-start;
+            justify-content: flex-start;
+          }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         
     }
 }

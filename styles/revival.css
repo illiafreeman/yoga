@@ -3124,18 +3124,6 @@ body .revival .faq .accordion .collapse .card-body p:last-child, body .revival .
     position: relative;
     overflow: hidden;
   }
-  body .revival .containr_scroll:after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 70px; /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(229, 229, 229, 0) 0%, rgb(255, 255, 255) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00e5e5e5", endColorstr="#ffffff",GradientType=1 ); /* IE6-9 */
-    pointer-events: none;
-  }
   body .revival .nav-tabs .nav-item {
     white-space: nowrap;
   }
@@ -3227,6 +3215,86 @@ body .revival .faq .accordion .collapse .card-body p:last-child, body .revival .
   }
   body .revival .print span {
     display: none;
+  }
+  body .revival .intro_min {
+    height: 367px;
+  }
+  body .revival .intro_min .intro__header {
+    margin-bottom: 0;
+  }
+  body .revival .article {
+    padding: 48px 0;
+  }
+  body .revival .article__figure {
+    padding: 0;
+  }
+  body .revival .article__figure:after {
+    display: none;
+  }
+  body .revival .article_tab {
+    padding-top: 0;
+  }
+  body .revival .poster-line {
+    padding: 24px 0 0;
+  }
+  body .revival .article_note {
+    padding-top: 0;
+  }
+  body .revival .article_note .containr .tablegrid_66 .tablegrid__item {
+    width: 100%;
+  }
+  body .revival .checkbox-group__list {
+    -moz-column-count: 1;
+         column-count: 1;
+  }
+  body .revival .article_form {
+    padding-bottom: 0;
+  }
+  body .revival .article_schedule {
+    padding-top: 0;
+  }
+  body .revival .table-tr .table-tr__start {
+    order: 1;
+    width: 50%;
+  }
+  body .revival .table-tr .table-tr__instructor {
+    order: 3;
+    width: 50%;
+  }
+  body .revival .table-tr .table-tr__location {
+    order: 2;
+    width: 100%;
+    padding: 0;
+  }
+  body .revival .table-tr .table-tr__schedule {
+    order: 4;
+    padding: 0;
+    width: 50%;
+    margin: 0;
+  }
+  body .revival .table-tr .table-tr__schedule .table-tr__schedule-name {
+    white-space: nowrap;
+  }
+  body .revival .table-tr .table-tr__btn {
+    order: 5;
+    width: 100%;
+    margin-top: 32px;
+  }
+  body .revival .poster-line__item {
+    width: 212px;
+    min-width: 212px;
+  }
+  body .revival .poster-line_33 {
+    flex-direction: column;
+  }
+  body .revival .poster-line_33 .poster-line__item {
+    width: 100%;
+  }
+  body .revival .poster-line__item_week {
+    flex-direction: row;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 }
 @media only screen and (max-width: 575px) {
