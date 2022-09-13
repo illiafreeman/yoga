@@ -496,8 +496,10 @@ body .revival {
             }
         }
         &_nobg{
-            &::after{
-                display: none;
+            .line__title{
+                &::after{
+                    display: none;
+                }
             }
         }
         &__pic {
@@ -760,6 +762,12 @@ body .revival {
 
     .article {
         padding: 100px 0;
+        &__yoga{
+            margin-bottom: 40px;
+            .btn{
+                display: inline-flex;
+            }
+        }
         &_tab{
             padding-top: 48px;
         }
@@ -827,12 +835,13 @@ body .revival {
             text-align: center;
             position: relative;
             font-family: $font-regular;
+            padding: 0 120px;   
             &:after{
                 content: '';
                 display: block;
                 position: absolute;
                 top: -61px;
-                left: -97px;
+                left: 0px;
                 width: 106px;
                 height: 82px;
                 background-image: url(../images/quotes.png);

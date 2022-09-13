@@ -387,7 +387,7 @@ body .revival .line_reverse .line__title:after {
   bottom: 70%;
   left: 0;
 }
-body .revival .line_nobg::after {
+body .revival .line_nobg .line__title::after {
   display: none;
 }
 body .revival .line__pic {
@@ -601,6 +601,12 @@ body .revival .about__text p:last-child {
 body .revival .article {
   padding: 100px 0;
 }
+body .revival .article__yoga {
+  margin-bottom: 40px;
+}
+body .revival .article__yoga .btn {
+  display: inline-flex;
+}
 body .revival .article_tab {
   padding-top: 48px;
 }
@@ -663,13 +669,14 @@ body .revival .article__quote {
   text-align: center;
   position: relative;
   font-family: "regular", Helvetica;
+  padding: 0 120px;
 }
 body .revival .article__quote:after {
   content: "";
   display: block;
   position: absolute;
   top: -61px;
-  left: -97px;
+  left: 0px;
   width: 106px;
   height: 82px;
   background-image: url(../images/quotes.png);
@@ -3095,6 +3102,15 @@ body .revival .faq .accordion .collapse .card-body p:last-child, body .revival .
     font-size: 32px;
     line-height: 36px;
   }
+  body .revival .article__quote {
+    margin: 40px 0 0;
+    padding: 0 70px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+  body .revival .article__quote:after {
+    width: 65px;
+  }
 }
 @media only screen and (max-width: 767px) {
   body .revival .intro_landing {
@@ -3408,6 +3424,23 @@ body .revival .faq .accordion .collapse .card-body p:last-child, body .revival .
   }
   body .revival .sort {
     margin-bottom: 16px;
+  }
+  body .revival .article__quote {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  body .revival .article__quote::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -61px;
+    left: 0px;
+    width: 50px;
+    height: 82px;
+    background-image: url(../images/quotes.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 @media only screen and (max-width: 575px) {

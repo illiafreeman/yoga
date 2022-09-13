@@ -591,6 +591,15 @@
                 line-height: 36px;
             }
         }
+        .article__quote{
+            margin: 40px 0 0;
+            padding: 0 70px;
+            font-size: 40px;
+            line-height: 48px;
+            &:after{
+                width: 65px;
+            }
+        }
 
 
 
@@ -677,8 +686,6 @@
             width: auto;
             overflow-x: auto;
             justify-content: flex-start;
-            
-            
         }
         .containr_scroll{
             width: 100%;
@@ -923,7 +930,24 @@
         .sort{
             margin-bottom: 16px;
         }
-
+        .article__quote{
+            font-size: 40px;
+            line-height: 48px;
+            &::after{
+                content: "";
+                display: block;
+                position: absolute;
+                top: -61px;
+                left: 0px;
+                width: 50px;
+                height: 82px;
+                background-image: url(../images/quotes.png);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            
+        }
 
 
 
