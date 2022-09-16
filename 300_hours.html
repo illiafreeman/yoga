@@ -5,7 +5,7 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="x-ua-compatible" content="ie=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
-	<title>200 Hours</title>
+	<title>300 Hours</title>
 	<link rel="stylesheet" href="styles/main.css" />
 	<link rel="stylesheet" href="styles/revival.css" />
 
@@ -468,7 +468,7 @@
 						</div>
 					</div>
 				</article>
-				<!-- <article class="article article_form">
+				<article class="article article_form">
 					<div class="containr">
 						<div id="datepicker"></div>
 						<div class="checkbox-wrap">
@@ -540,10 +540,14 @@
 							</div>
 						</div>
 					</div>
-				</article> -->
+				</article>
 				<article class="article article_schedule">
 					<div class="containr">
-						<h2 class="article__title">Teacher Training Schedule</h2>
+						<div class="table-th">
+							<div class="day-copy">September 01
+								<span class="day-of-week">Thursday | PDT</span>
+							</div>
+						</div>
 						<div class="table-tr">
 							<div class="table-tr__start">
 								<div class="table-tr__start-date">Sep 10</div>
@@ -671,6 +675,9 @@
 								</div>
 							</div>
 						</div>
+
+
+
 						<div class="table-tr">
 							<div class="table-tr__start">
 								<div class="table-tr__start-date">Oct 12</div>
@@ -694,6 +701,11 @@
 							</div>
 							<div class="table-tr__btn">
 								<button class="btn btn_schedule">Expand details</button>
+							</div>
+						</div>
+						<div class="table-th">
+							<div class="day-copy">October 17
+								<span class="day-of-week">Thursday | PDT</span>
 							</div>
 						</div>
 						<div class="table-tr">
@@ -914,39 +926,6 @@
 					showOtherMonths: true
 				});
 			});
-
-			$('.instruc__desc-more').click(function () {
-				$(this).parent('.instruc__desc').find('.instruc__desc-text').toggleClass('act');
-				var $this = $(this);
-				$this.toggleClass('less');
-				if ($this.hasClass('less')) {
-					$this.text('Less');
-				} else {
-					$this.text('Read More');
-				}
-			});
-			$('.btn_expand').click(function () {
-				$(this).parents('.table-tr').toggleClass('act');
-				var $this = $(this);
-				$this.toggleClass('less');
-				if ($this.hasClass('less')) {
-					$this.text('Collapse');
-				} else {
-					$this.text('Expand details');
-				};
-				$('.slider').slick({
-					dots: true,
-					infinite: true,
-					speed: 300,
-					slidesToShow: 3,
-					slidesToScroll: 1
-				});
-			});
-
-
-
-
-
 		</script>
 
 

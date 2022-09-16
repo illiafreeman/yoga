@@ -1393,8 +1393,8 @@ body .revival .checkbox input + span {
 body .revival .checkbox input:checked + span {
   background-image: url(../images/checkbox_checked.png);
 }
-body .revival .article_schedule {
-  padding-top: 0;
+body .revival .article_schedule .article__title {
+  margin-bottom: 40px;
 }
 body .revival .table-th {
   border-bottom: 1px solid #dfdbd6;

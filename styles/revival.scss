@@ -1652,7 +1652,9 @@ body .revival {
 }
 .article {
     &_schedule {
-        padding-top: 0;
+        .article__title{
+            margin-bottom: 40px;
+        }
     }
 }
 .table-th {
