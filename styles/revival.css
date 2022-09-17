@@ -1764,6 +1764,7 @@ body .revival .faq .accordion .collapse .card-body p:last-child, body .revival .
 body .revival .goback {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 body .revival .goback__home {
   display: flex;
@@ -1802,8 +1803,93 @@ body .revival .goback__picto_comment {
 }
 body .revival .goback__picto_share {
   background-image: url(../images/pic_share.png);
-  background-size: 22px;
+  background-size: 20px;
 }
+body .revival .profile {
+  display: flex;
+  justify-content: space-between;
+}
+body .revival .profile__pic {
+  width: 550px;
+  min-width: 550px;
+  height: 550px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  margin-right: 32px;
+}
+body .revival .profile__desc {
+  flex-grow: 1;
+}
+body .revival .profile__name {
+  font-size: 72px;
+  line-height: 80px;
+  margin-bottom: 32px;
+}
+body .revival .profile__card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 32px 16px;
+  margin-bottom: 32px;
+}
+body .revival .profile__card:last-child {
+  margin-bottom: 0;
+}
+body .revival .profile__sup {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #B4B6B3;
+  margin: 0 0 16px;
+}
+body .revival .profile__title {
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -1px;
+  color: #666C63;
+  margin: 0 0 24px;
+}
+body .revival .profile__labelgroup {
+  display: flex;
+}
+body .revival .profile__label {
+  height: 24px;
+  background: #CFDDC7;
+  border-radius: 16px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px;
+  font-family: "mediumwide", Helvetica;
+  font-weight: 500;
+}
+body .revival .profile__info {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 30px;
+  margin-top: 48px;
+}
+body .revival .profile__info-col {
+  width: 33.333%;
+}
+body .revival .profile__info-title {
+  color: #666C63;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+body .revival .profile__info-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: #666C63;
+}
+
 .ui-menu .ui-menu-item-wrapper {
   padding: 0 16px !important;
   font-size: 16px !important;
