@@ -226,6 +226,9 @@ body .revival {
         &_200{
             background-image: url(../images/200_1.jpg);
         }
+        &_300{
+            background-image: url(../images/300_1.jpg);
+        }
         &_history{
             background-image: url(../images/intro_history.jpg);
             background-position: center center;
@@ -280,6 +283,7 @@ body .revival {
             margin-top: 16px;
             font-size: 32px;
             line-height: 40px;
+            padding: 0 16px;
         }
         &_footer {
             background-image: url(../images/landing_3.jpg);
@@ -785,7 +789,7 @@ body .revival {
             font-size: 24px;
             line-height: 32px;
             font-weight: 400;
-            max-width: 680px;
+            max-width: 860px;
             margin-bottom: 48px;
             &_full{
                 max-width: 100%;
@@ -870,14 +874,39 @@ body .revival {
                 background-repeat: no-repeat;
                 background-size: contain;
             }
+            &_2{
+                &:after{
+                    background-image: url(../images/figure_2.png);
+                }
+                
+            }
             &_3{
                 &:after{
                     background-image: url(../images/figure_3.png);
                 }
             }
+            &_4{
+                &:after{
+                    background-image: url(../images/figure_4.png);
+                }
+            }
         }
     }
-
+    .article_circle{
+        position: relative;
+        overflow: hidden;
+        &:before{
+            content: '';
+            display: block;
+            position: absolute;
+            right: -200px;
+            bottom: 80px;
+            width: 590px;
+            height: 590px;
+            background: #F5F1ED;
+            border-radius: 50%;
+        }
+    }
     .about-info {
         display: flex;
     }
@@ -1381,6 +1410,18 @@ body .revival {
             background-size: contain;
         }
     }
+    &_100{
+        margin-top: 48px;
+        .tablegrid__item {
+            width: 788px;
+        }
+    }
+    &_33{
+        margin-top: 48px;
+        .tablegrid__item {
+            width: 32%;
+        }
+    }
 }
 .article_note{
     padding-top: 0;
@@ -1687,19 +1728,29 @@ body .revival {
     &__instructor {
         padding-right: 20px;
         width: 310px;
+        &_full{
+            width: 536px;
+        }
     }
 
     &__instructor-name {
         margin-bottom: 8px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
 
     &__location {
         padding-right: 20px;
         width: 332px;
+        
     }
 
     &__location-name {
         margin-bottom: 8px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
 
     &__schedule {

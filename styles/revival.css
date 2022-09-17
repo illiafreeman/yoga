@@ -168,6 +168,9 @@ body .revival .intro_teachers {
 body .revival .intro_200 {
   background-image: url(../images/200_1.jpg);
 }
+body .revival .intro_300 {
+  background-image: url(../images/300_1.jpg);
+}
 body .revival .intro_history {
   background-image: url(../images/intro_history.jpg);
   background-position: center center;
@@ -213,6 +216,7 @@ body .revival .intro-sub {
   margin-top: 16px;
   font-size: 32px;
   line-height: 40px;
+  padding: 0 16px;
 }
 body .revival .intro_footer {
   background-image: url(../images/landing_3.jpg);
@@ -623,7 +627,7 @@ body .revival .article__sub {
   font-size: 24px;
   line-height: 32px;
   font-weight: 400;
-  max-width: 680px;
+  max-width: 860px;
   margin-bottom: 48px;
 }
 body .revival .article__sub_full {
@@ -705,8 +709,29 @@ body .revival .article__figure:after {
   background-repeat: no-repeat;
   background-size: contain;
 }
+body .revival .article__figure_2:after {
+  background-image: url(../images/figure_2.png);
+}
 body .revival .article__figure_3:after {
   background-image: url(../images/figure_3.png);
+}
+body .revival .article__figure_4:after {
+  background-image: url(../images/figure_4.png);
+}
+body .revival .article_circle {
+  position: relative;
+  overflow: hidden;
+}
+body .revival .article_circle:before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -200px;
+  bottom: 80px;
+  width: 590px;
+  height: 590px;
+  background: #F5F1ED;
+  border-radius: 50%;
 }
 body .revival .about-info {
   display: flex;
@@ -1148,6 +1173,18 @@ body .revival .tablegrid__item:after {
   background-position: center center;
   background-size: contain;
 }
+body .revival .tablegrid_100 {
+  margin-top: 48px;
+}
+body .revival .tablegrid_100 .tablegrid__item {
+  width: 788px;
+}
+body .revival .tablegrid_33 {
+  margin-top: 48px;
+}
+body .revival .tablegrid_33 .tablegrid__item {
+  width: 32%;
+}
 body .revival .article_note {
   padding-top: 0;
 }
@@ -1421,8 +1458,14 @@ body .revival .table-tr__instructor {
   padding-right: 20px;
   width: 310px;
 }
+body .revival .table-tr__instructor_full {
+  width: 536px;
+}
 body .revival .table-tr__instructor-name {
   margin-bottom: 8px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 body .revival .table-tr__location {
   padding-right: 20px;
@@ -1430,6 +1473,9 @@ body .revival .table-tr__location {
 }
 body .revival .table-tr__location-name {
   margin-bottom: 8px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 body .revival .table-tr__schedule {
   padding-right: 30px;
