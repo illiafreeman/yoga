@@ -891,6 +891,11 @@ body .revival {
                     background-image: url(../images/figure_4.png);
                 }
             }
+            &_5{
+                &:after{
+                    background-image: url(../images/figure_5.png);
+                }
+            }
         }
     }
     .article_circle{
@@ -2223,6 +2228,82 @@ h6{
         font-size: 16px;
         line-height: 24px;
         color: #666C63;
+    }
+}
+.pay {
+    display: flex;
+    justify-content: space-between;
+    &__date {
+        width: 25%;
+        padding-right: 40px;
+    }
+
+    &__title {
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -0.5px;
+        color: #798572;
+        font-family: $font-medium-wide;
+        font-weight: 500;
+        margin-bottom: 16px;
+    }
+
+    &__text {
+    }
+
+    &__form {
+        width: 50%;
+    }
+
+    &__formgroup {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__formgroup-select {
+        position: relative;
+        width: 512px;
+        height: 44px;
+        background: #FFFFFF;
+        border: 1px solid #E8E8E8;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        padding: 0 50px 0 12px;
+        background-position: calc(100% - 15px) center;
+        background-repeat: no-repeat;
+        background-image: url(../images/pic_chevron.png);
+        span{
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &:hover .pay__formgroup-select-drop{
+            opacity: 1;
+            visibility: visible;
+            top: 100%;
+            box-shadow: 0px 8px 21px 2px rgba(255, 122, 0, 0.15);
+        }
+    }
+
+    &__formgroup-select-drop {
+        position: absolute;
+        top: 140%;
+        left: 0;
+        right: 0;
+        background: #F5F1ED;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.2s ease-in-out;
+        padding: 8px 0;
+        border-radius: 0 0 8px 8px;
+        background: #F5F1ED;
+        z-index: 100;
+    }
+
+    &__formgroup-selectoption {
+    }
+
+    &__formgroup-btn {
     }
 }
 
