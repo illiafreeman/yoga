@@ -2262,26 +2262,33 @@ h6{
 
     &__formgroup-select {
         position: relative;
-        width: 512px;
+        //width: 512px;
         height: 44px;
         background: #FFFFFF;
         border: 1px solid #E8E8E8;
         border-radius: 8px;
         display: flex;
         align-items: center;
+        flex-grow: 1;
         padding: 0 50px 0 12px;
         background-position: calc(100% - 15px) center;
         background-repeat: no-repeat;
         background-image: url(../images/pic_chevron.png);
+        margin-right: 16px;
+        transition: $transition;
+        border: 2px solid transparent;
         span{
             font-size: 16px;
             line-height: 24px;
         }
-        &:hover .pay__formgroup-select-drop{
-            opacity: 1;
-            visibility: visible;
-            top: 100%;
-            box-shadow: 0px 8px 21px 2px rgba(255, 122, 0, 0.15);
+        &:hover{
+            .pay__formgroup-select-drop{
+                opacity: 1;
+                visibility: visible;
+                top: 115%;
+                box-shadow: 0px 8px 21px 2px rgba(255, 122, 0, 0.15);
+            }
+            border: 2px solid #FF7A00;
         }
     }
 
@@ -2295,18 +2302,49 @@ h6{
         visibility: hidden;
         transition: all 0.2s ease-in-out;
         padding: 8px 0;
-        border-radius: 0 0 8px 8px;
-        background: #F5F1ED;
+        border-radius: 8px;
+        background: #fff;
         z-index: 100;
+        box-shadow: 0px 2px 2px rgba(57, 69, 49, 0.15), 0px 4px 12px rgba(0, 0, 0, 0.2) !important;
     }
 
     &__formgroup-selectoption {
+        font-size: 24px;
+        line-height: 32px;
+        display: flex;
+        align-items: center;
+        padding: 0 24px;
+        cursor: pointer;
+        height: 64px;
+        transition: $transition;
+        &:hover{
+            background: #F3F7F1;
+        }
     }
 
     &__formgroup-btn {
+        height: 44px;
     }
 }
+.content{
+    h4{
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 16px;
+    }
+    p{
+        margin-bottom: 32px;
+        font-size: 24px;
+        line-height: 32px;
+        color: #798572;
 
+        span{
+            font-size: 24px;
+            line-height: 32px;
+            color: #798572;
+        }
+    }
+}
 
 
 
