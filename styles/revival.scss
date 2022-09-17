@@ -2075,6 +2075,82 @@ h6{
         }
     }
 }
+.goback {
+    display: flex;
+    justify-content: space-between;
+    &__home {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 35px;
+        background-image: url(../images/back.png);
+        background-position: 5px center;
+        background-repeat: no-repeat;
+        transition: $transition;
+        &:hover{
+            background-position: 0px center;
+        }
+    }
+
+    &__group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__picto {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 26px;
+        width: 34px;
+        height: 34px;
+        margin-left: 20px;
+        &_print {
+            background-image: url(../images/pic_print.png);
+        }
+
+        &_comment {
+            background-image: url(../images/pic_comment.png);
+        }
+
+        &_share {
+            background-image: url(../images/pic_share.png);
+            background-size: 22px;
+        }
+    }
+}
+.profile {
+
+    &__pic {
+    }
+
+    &__desc {
+    }
+
+    &__name {
+    }
+
+    &__card {
+    }
+
+    &__sup {
+    }
+
+    &__title {
+    }
+
+    &__text {
+    }
+
+    &__labelgroup {
+    }
+
+    &__label {
+    }
+}
 
 
 

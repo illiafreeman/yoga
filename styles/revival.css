@@ -1761,7 +1761,49 @@ body .revival .faq .accordion .collapse .card-body p, body .revival .faq .accord
 body .revival .faq .accordion .collapse .card-body p:last-child, body .revival .faq .accordion .collapse.show .card-body p:last-child, body .revival .faq .accordion .collapsing .card-body p:last-child {
   margin-bottom: 0;
 }
-
+body .revival .goback {
+  display: flex;
+  justify-content: space-between;
+}
+body .revival .goback__home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 35px;
+  background-image: url(../images/back.png);
+  background-position: 5px center;
+  background-repeat: no-repeat;
+  transition: all 0.2s ease-in-out;
+}
+body .revival .goback__home:hover {
+  background-position: 0px center;
+}
+body .revival .goback__group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .revival .goback__picto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 26px;
+  width: 34px;
+  height: 34px;
+  margin-left: 20px;
+}
+body .revival .goback__picto_print {
+  background-image: url(../images/pic_print.png);
+}
+body .revival .goback__picto_comment {
+  background-image: url(../images/pic_comment.png);
+}
+body .revival .goback__picto_share {
+  background-image: url(../images/pic_share.png);
+  background-size: 22px;
+}
 .ui-menu .ui-menu-item-wrapper {
   padding: 0 16px !important;
   font-size: 16px !important;
