@@ -217,6 +217,7 @@ body .revival .intro-sub {
   font-size: 32px;
   line-height: 40px;
   padding: 0 16px;
+  text-align: center;
 }
 body .revival .intro_footer {
   background-image: url(../images/landing_3.jpg);
@@ -2976,9 +2977,6 @@ body .revival .faq .accordion .collapse .card-body p:last-child, body .revival .
   body .revival .ui-datepicker {
     width: 100%;
   }
-  body .revival .article_schedule {
-    padding-top: 0;
-  }
   body .revival .article_form {
     padding-bottom: 24px;
   }
@@ -3156,6 +3154,12 @@ body .revival .faq .accordion .collapse .card-body p:last-child, body .revival .
   }
   body .revival .article__quote:after {
     width: 65px;
+  }
+  body .revival .tablegrid_33 .tablegrid__item {
+    width: 100%;
+  }
+  body .revival .about__desc .btn {
+    margin-bottom: 24px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -3365,16 +3369,13 @@ body .revival .faq .accordion .collapse .card-body p:last-child, body .revival .
   body .revival .article_form {
     padding-bottom: 0;
   }
-  body .revival .article_schedule {
-    padding-top: 0;
-  }
   body .revival .table-tr .table-tr__start {
     order: 1;
     width: 50%;
   }
   body .revival .table-tr .table-tr__instructor {
     order: 3;
-    width: 50%;
+    width: 100%;
   }
   body .revival .table-tr .table-tr__location {
     order: 2;
@@ -3499,6 +3500,9 @@ body .revival .faq .accordion .collapse .card-body p:last-child, body .revival .
   }
   body .revival .intro-sub {
     text-align: center;
+  }
+  body .revival .tablegrid {
+    gap: 48px 16px;
   }
 }
 @media only screen and (max-width: 575px) {

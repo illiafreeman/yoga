@@ -415,7 +415,7 @@
             width: 100%;
         }
         .article_schedule{
-            padding-top: 0;
+            //padding-top: 0;
         }
         .article_form{
             padding-bottom: 24px;
@@ -600,8 +600,14 @@
                 width: 65px;
             }
         }
-
-
+        .tablegrid_33 .tablegrid__item {
+            width: 100%;
+        }
+        .about__desc{
+            .btn{
+                margin-bottom: 24px;
+            }
+        }
 
 
     }
@@ -821,7 +827,7 @@
             padding-bottom: 0;
         }
         .article_schedule{
-            padding-top: 0;
+            //padding-top: 0;
         }
         .table-tr{
             .table-tr__start{
@@ -830,7 +836,7 @@
             }
             .table-tr__instructor{
                 order: 3;
-                width: 50%;
+                width: 100%;
             }
             .table-tr__location{
                 order: 2;
@@ -960,7 +966,9 @@
         .intro-sub{
             text-align: center;
         }
-
+        .tablegrid{
+            gap: 48px 16px;
+        }
 
 
 
