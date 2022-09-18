@@ -3527,6 +3527,12 @@ body .revival .captcha {
   body .revival .fform__w50 .fform__label {
     width: 100%;
   }
+  body .revival .tablegrid_50 {
+    gap: 44px;
+  }
+  body .revival .tablegrid_50 .tablegrid__item {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 767px) {
   body .revival .intro_landing {
