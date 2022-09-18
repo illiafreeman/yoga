@@ -1082,6 +1082,35 @@
             font-size: 22px;
             line-height: 28px;
         }
+        .fform__label {
+            margin-bottom: 16px;
+        }
+        .tablegrid {
+            gap: 32px 16px;
+        }
+        .content .tablegrid__item{
+            font-size: 22px;
+            line-height: 28px;
+        }
+        .content h4 {
+            margin: 48px 0 24px;
+            &:first-child{
+                margin-top: 0;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

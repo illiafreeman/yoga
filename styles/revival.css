@@ -3919,6 +3919,22 @@ body .revival .captcha {
     font-size: 22px;
     line-height: 28px;
   }
+  body .revival .fform__label {
+    margin-bottom: 16px;
+  }
+  body .revival .tablegrid {
+    gap: 32px 16px;
+  }
+  body .revival .content .tablegrid__item {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  body .revival .content h4 {
+    margin: 48px 0 24px;
+  }
+  body .revival .content h4:first-child {
+    margin-top: 0;
+  }
 }
 @media only screen and (max-width: 575px) {
   body .revival .col-md-8 {
