@@ -3510,6 +3510,23 @@ body .revival .captcha {
     width: 50%;
     margin-bottom: 40px;
   }
+  body .revival .formdesc {
+    width: 100%;
+    margin-right: 0;
+  }
+  body .revival .containr_form {
+    flex-direction: column;
+  }
+  body .revival .formwrap {
+    margin-top: 40px;
+  }
+  body .revival .fform__w50 {
+    gap: 0;
+    flex-direction: column;
+  }
+  body .revival .fform__w50 .fform__label {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 767px) {
   body .revival .intro_landing {

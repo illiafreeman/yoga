@@ -642,11 +642,23 @@
             width: 50%;
             margin-bottom: 40px;
         }
-
-
-
-
-
+        .formdesc {
+            width: 100%;
+            margin-right: 0;
+        }
+        .containr_form {
+            flex-direction: column;
+        }
+        .formwrap{
+            margin-top: 40px;
+        }
+        .fform__w50 {
+            gap: 0;
+            flex-direction: column;
+        }
+        .fform__w50 .fform__label {
+            width: 100%;
+        }
 
 
 
