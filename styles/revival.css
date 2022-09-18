@@ -2007,6 +2007,76 @@ body .revival .content .tablegrid__item {
 body .revival .content .tablegrid_100 .tablegrid__item {
   width: 100%;
 }
+body .revival .containr_form {
+  display: flex;
+}
+body .revival .formdesc {
+  width: 450px;
+  margin-right: 48px;
+}
+body .revival .fform__w50 {
+  display: flex;
+  gap: 16px;
+}
+body .revival .fform__w50 .fform__label {
+  width: 50%;
+}
+body .revival .fform__label {
+  margin-bottom: 24px;
+  width: 100%;
+}
+body .revival .fform__label_errore .fform__label-error {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  color: #E46070;
+  margin-top: 6px;
+}
+body .revival .fform__label_errore .fform__label-title {
+  color: #E46070;
+}
+body .revival .fform__label_errore .fform__label-input {
+  border-color: #E46070;
+}
+body .revival .fform__label-title {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 4px;
+  display: flex;
+}
+body .revival .fform__label-title span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-image: url(../images/required.png);
+  margin-left: 5px;
+}
+body .revival .fform__label-input {
+  padding: 10px 12px;
+  height: 44px;
+  background: #FFFFFF;
+  border: 1px solid #E8E8E8;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  width: 100%;
+}
+body .revival .fform__label-input::-moz-placeholder {
+  color: #394531;
+}
+body .revival .fform__label-input:-ms-input-placeholder {
+  color: #394531;
+}
+body .revival .fform__label-input::placeholder {
+  color: #394531;
+}
+body .revival .fform__label-error {
+  display: none;
+}
+body .revival .captcha {
+  margin-bottom: 24px;
+}
 .ui-menu .ui-menu-item-wrapper {
   padding: 0 16px !important;
   font-size: 16px !important;

@@ -2362,31 +2362,79 @@ h6{
     }
 }
 .containr_form{
-
+    display: flex;
 }
 .formdesc{
-    
+    width: 450px;
+    margin-right: 48px;
 }
 .formwrap {
 }
 .fform {
 
 		&__w50 {
+            display: flex;
+            gap: 16px;
+            .fform__label{
+                width: 50%;
+            }
 		}
 
 		&__label {
+            margin-bottom: 24px;
+            width: 100%;
+            &_errore{
+                .fform__label-error{
+                    display: block;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #E46070;
+                    margin-top: 6px;
+                }
+                .fform__label-title{
+                    color: #E46070;
+                }
+                .fform__label-input{
+                    border-color: #E46070;
+                }
+            }
 		}
 
 		&__label-title {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 4px;
+            display: flex;
+            span{
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                background-repeat: no-repeat;
+                background-image: url(../images/required.png);
+                margin-left: 5px;
+            }
 		}
 
 		&__label-input {
+            padding: 10px 12px;
+            height: 44px;
+            background: #FFFFFF;
+            border: 1px solid #E8E8E8;
+            border-radius: 8px;
+            font-size: 16px;
+            line-height: 24px;
+            width: 100%;
+            &::placeholder{
+                color: #394531;
+            }
 		}
 
 		&__label-error {
+            display: none;
 		}
 }
 .captcha {
+    margin-bottom: 24px;   
 }
 .btn {
 
