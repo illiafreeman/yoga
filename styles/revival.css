@@ -1980,7 +1980,7 @@ body .revival .pay__formgroup-btn {
 body .revival .content h4 {
   font-size: 32px;
   line-height: 40px;
-  margin-bottom: 16px;
+  margin: 60px 0 16px;
 }
 body .revival .content p {
   margin-bottom: 32px;
@@ -1992,6 +1992,20 @@ body .revival .content p span {
   font-size: 24px;
   line-height: 32px;
   color: #798572;
+}
+body .revival .content a {
+  color: #FF7A00;
+}
+body .revival .content a:hover {
+  text-decoration: underline;
+}
+body .revival .content .tablegrid__item {
+  font-size: 24px;
+  line-height: 32px;
+  color: #798572;
+}
+body .revival .content .tablegrid_100 .tablegrid__item {
+  width: 100%;
 }
 
 .ui-menu .ui-menu-item-wrapper {
