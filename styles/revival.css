@@ -3016,7 +3016,7 @@ body .revival .captcha {
   }
   body .revival .intro__header {
     width: 100%;
-    padding: 0 40px;
+    padding: 0 25px;
   }
   body .revival .line::after {
     width: 200px;
@@ -3544,6 +3544,24 @@ body .revival .captcha {
     font-size: 32px;
     line-height: 36px;
   }
+  body .revival .clas-wrap .clas_corporate .clas__name {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  body .revival .line__desc .tablegrid_100 .tablegrid__item {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  body .revival .poster-line__item_comment::after {
+    top: 6px;
+    left: 15px;
+    width: 47px;
+    height: 36px;
+  }
+  body .revival .clas_corporate .btn {
+    opacity: 1;
+    visibility: visible;
+  }
   body .revival .article__quote {
     margin: 40px 0 0;
     padding: 0 70px;
@@ -3618,6 +3636,16 @@ body .revival .captcha {
   }
 }
 @media only screen and (max-width: 767px) {
+  body .revival .line__desc .tablegrid_100 {
+    margin-top: 20px;
+  }
+  body .revival .line__desc .tablegrid_100 .tablegrid__item {
+    text-align: left;
+  }
+  body .revival .clas-wrap .clas_corporate .clas__name {
+    font-size: 22px;
+    line-height: 28px;
+  }
   body .revival .intro_landing {
     height: 432px;
   }
