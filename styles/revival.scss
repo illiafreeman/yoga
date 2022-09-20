@@ -463,6 +463,9 @@ body .revival {
                 background: #f1ffe9;
             }
         }
+        &_demo{
+            margin: 15px 0;
+        }
     }
 
     .line {
@@ -2513,12 +2516,10 @@ h6{
 .captcha {
     margin-bottom: 24px;   
 }
-.btn {
-
-		&_green {
-		}
+.modal-dialog {
+    max-width: 736px;
+    margin: 1.75rem auto;
 }
-
 
 
 
@@ -2573,7 +2574,10 @@ h6{
 .ui-menu .ui-state-focus {
     margin: 0;
 }
-
+.modal-backdrop.show.modal-backdrop_revival{
+    background: #262E20;
+    opacity: 0.8;
+}
 
 
 
