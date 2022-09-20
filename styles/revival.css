@@ -437,12 +437,24 @@ body .revival .line__pic_200-2 {
 body .revival .line__pic_200-6 {
   background-image: url(../images/200_6.jpg);
 }
+body .revival .line__pic_corporate-1 {
+  background-image: url(../images/corporate_5.jpg);
+}
+body .revival .line__pic_corporate-2 {
+  background-image: url(../images/corporate_6.jpg);
+}
 body .revival .line__desc {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   width: 684px;
+}
+body .revival .line__desc .tablegrid_100 {
+  gap: 28px;
+}
+body .revival .line__desc .tablegrid_100 .tablegrid__item {
+  width: 100%;
 }
 body .revival .line__sup {
   color: #666C63;
@@ -1147,6 +1159,20 @@ body .revival .poster-line__item {
   align-items: center;
   text-align: center;
 }
+body .revival .poster-line__item-comment {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 16px 0;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+body .revival .poster-line__item-name {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #B4B6B3;
+}
 body .revival .poster-line__item_week {
   flex-direction: row;
   text-align: left;
@@ -1165,6 +1191,22 @@ body .revival .poster-line__item_week .poster-line__item-title {
 }
 body .revival .poster-line__item_week .poster-line__item-text {
   color: #99A592;
+}
+body .revival .poster-line__item_comment {
+  position: relative;
+}
+body .revival .poster-line__item_comment:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -29px;
+  left: 9px;
+  width: 107px;
+  height: 82px;
+  background-image: url(../images/quotes.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
 }
 body .revival .poster-line__item-pic {
   width: 48px;

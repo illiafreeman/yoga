@@ -551,6 +551,12 @@ body .revival {
             &_200-6{
                 background-image: url(../images/200_6.jpg);
             }
+            &_corporate-1{
+                background-image: url(../images/corporate_5.jpg);
+            }
+            &_corporate-2{
+                background-image: url(../images/corporate_6.jpg);
+            }
         }
 
         &__desc {
@@ -559,6 +565,12 @@ body .revival {
             justify-content: center;
             align-items: flex-start;
             width: 684px;
+            .tablegrid_100{
+                gap: 28px;
+                .tablegrid__item {
+                    width: 100%;
+                }
+            }
         }
 
         &__sup {
@@ -1376,6 +1388,20 @@ body .revival {
         justify-content: center;
         align-items: center;
         text-align: center;
+        &-comment{
+            font-size: 16px;
+            line-height: 24px;
+            margin: 16px 0;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+        }
+        &-name{
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            color: #B4B6B3;
+        }
         &_week{
             flex-direction: row;
             text-align: left;
@@ -1394,9 +1420,22 @@ body .revival {
             .poster-line__item-text{
                 color: #99A592;
             }
-
-
-            
+        }
+        &_comment{
+            position: relative;
+            &:after{
+                content: '';
+                display: block;
+                position: absolute;
+                top: -29px;
+                left: 9px;
+                width: 107px;
+                height: 82px;
+                background-image: url(../images/quotes.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: contain;
+            }
         }
     }
 
