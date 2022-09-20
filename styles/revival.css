@@ -2301,6 +2301,7 @@ body .revival .modal-over {
   background-image: url(../images/preload.svg);
   background-repeat: no-repeat;
   background-position: center center;
+  border-radius: 8px;
 }
 
 .ui-menu .ui-menu-item-wrapper {
