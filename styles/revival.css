@@ -2211,13 +2211,13 @@ body .revival .modal-title {
   line-height: 56px;
   font-family: "mediumwide", Helvetica;
 }
-body .revival .formwrap {
+body .revival .formwrapper {
   border: 1px solid #E8E8E8;
   border-radius: 4px;
   padding: 14px;
   margin-bottom: 32px;
 }
-body .revival .formwrap .checkbox input + span {
+body .revival .formwrapper .checkbox input + span {
   height: auto;
   background-image: url(../images/checkbox.png);
   background-repeat: no-repeat;
@@ -2228,27 +2228,27 @@ body .revival .formwrap .checkbox input + span {
   line-height: 20px;
   color: #666C63;
 }
-body .revival .formwrap .checkbox input + span a {
+body .revival .formwrapper .checkbox input + span a {
   font-size: 14px;
   line-height: 20px;
   color: #666C63;
   text-decoration: underline;
   font-family: "mediumwide", Helvetica;
 }
-body .revival .formwrap .checkbox input + span a:hover {
+body .revival .formwrapper .checkbox input + span a:hover {
   text-decoration: none;
 }
-body .revival .formwrap .checkbox input:checked + span {
+body .revival .formwrapper .checkbox input:checked + span {
   background-image: url(../images/checkbox_checked.png);
 }
-body .revival .formwrap .checkbox {
+body .revival .formwrapper .checkbox {
   height: auto;
   display: block;
 }
-body .revival .formwrap .fform__label {
+body .revival .formwrapper .fform__label {
   margin-bottom: 16px;
 }
-body .revival .formwrap label:last-child {
+body .revival .formwrapper label:last-child {
   margin-bottom: 0;
 }
 body .revival .modal-footer {
@@ -2280,7 +2280,7 @@ body .revival .promo {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 body .revival .promo .profile__label {
   margin: 5px 0 0;
@@ -3170,6 +3170,12 @@ body .revival .promo .profile__label {
   }
 }
 @media only screen and (max-width: 1167px) {
+  body .revival .modal-dialog {
+    max-width: calc(100% - 32px);
+  }
+  body .revival .formwrapper .fform__w50 {
+    margin-bottom: 16px;
+  }
   body .revival .line {
     padding: 72px 0;
   }
@@ -3767,6 +3773,9 @@ body .revival .promo .profile__label {
   }
 }
 @media only screen and (max-width: 767px) {
+  body .revival .modal-content {
+    padding: 32px 16px;
+  }
   body .revival .line__desc .tablegrid_100 {
     margin-top: 20px;
   }

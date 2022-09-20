@@ -50,6 +50,14 @@
 }
 @media only screen and (max-width: 1167px) {
     body .revival{
+        .modal-dialog {
+            max-width: calc(100% - 32px);
+        }
+        .formwrapper{
+            .fform__w50{
+                margin-bottom: 16px;
+            }
+        }
         .line{
             padding: 72px 0;
         }
@@ -705,6 +713,9 @@
 
 @media only screen and (max-width: 767px) {
     body .revival{
+        .modal-content {
+            padding: 32px 16px;
+        }
         .line__desc .tablegrid_100{
             margin-top: 20px;
         }
