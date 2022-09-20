@@ -1044,6 +1044,34 @@ body .revival .clas .btn {
   margin: 0 16px 16px;
   width: calc(100% - 32px);
 }
+body .revival .clas_corporate {
+  background: #F5F1ED;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+body .revival .clas_corporate:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+body .revival .clas_corporate:hover .btn {
+  opacity: 1;
+  visibility: visible;
+}
+body .revival .clas_corporate .clas__picto {
+  margin: 32px auto 16px;
+}
+body .revival .clas_corporate .clas__name {
+  font-size: 24px;
+  line-height: 32px;
+  height: auto;
+  flex-grow: 1;
+  padding: 0 16px 32px;
+}
+body .revival .clas_corporate .btn {
+  width: auto;
+  opacity: 0;
+  visibility: hidden;
+}
 body .revival .pagination {
   display: flex;
   align-items: center;
