@@ -205,6 +205,9 @@ body .revival .intro_ourclasses {
 body .revival .intro_careers {
   background-image: url(../images/intro_history.jpg);
 }
+body .revival .intro_corporate {
+  background-image: url(../images/corporate_1.jpg);
+}
 body .revival .intro-desc__text {
   font-size: 48px;
   line-height: 56px;
