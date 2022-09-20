@@ -2211,6 +2211,12 @@ body .revival .modal-title {
   line-height: 56px;
   font-family: "mediumwide", Helvetica;
 }
+body .revival .modal-title_positive {
+  color: #019F44;
+}
+body .revival .modal-title_negative {
+  color: #E46070;
+}
 body .revival .formwrapper {
   border: 1px solid #E8E8E8;
   border-radius: 4px;
@@ -3773,6 +3779,10 @@ body .revival .promo .profile__label {
   }
 }
 @media only screen and (max-width: 767px) {
+  body .revival .modal-title {
+    font-size: 32px;
+    line-height: 36px;
+  }
   body .revival .modal-content {
     padding: 32px 16px;
   }
