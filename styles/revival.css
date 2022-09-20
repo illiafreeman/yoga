@@ -2291,6 +2291,17 @@ body .revival .promo {
 body .revival .promo .profile__label {
   margin: 5px 0 0;
 }
+body .revival .modal-over {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(245, 241, 237, 0.9);
+  background-image: url(../images/preload.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 
 .ui-menu .ui-menu-item-wrapper {
   padding: 0 16px !important;

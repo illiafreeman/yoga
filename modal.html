@@ -206,7 +206,10 @@
 			<div class="containr containr_full">
 				<article class="intro intro_landing">
 					<div class="btn btn_green btn_demo" data-toggle="modal" data-target="#modal_1">Pay</div>
+					<div class="btn btn_green btn_demo" data-toggle="modal" data-target="#modal_12">Pay with delay ajax imitation</div>
 					<div class="btn btn_green btn_demo" data-toggle="modal" data-target="#modal_2">Promo</div>
+					<div class="btn btn_green btn_demo" data-toggle="modal" data-target="#modal_3">Positive</div>
+					<div class="btn btn_green btn_demo" data-toggle="modal" data-target="#modal_4">Negative</div>
 				</article>
 
 			</div>
@@ -255,6 +258,54 @@
 					</div>
 				</div>
 			</div>
+			<div class="modal fade " id="modal_12" tabindex="-1" aria-labelledby="modal_12" aria-hidden="true">
+				<div class="modal-dialog">
+
+					<div class="modal-content">
+						<div class="modal-header">
+							<h6 class="modal-titlesup">Start your checkout</h6>
+							<h5 class="modal-title">Drop-in</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<div class="formwrapper">
+								<label class="fform__label">
+									<div class="fform__label-title">Card Number<span></span></div>
+									<input type="text" class="fform__label-input" placeholder="Card Number">
+									<div class="fform__label-error">Wrong Card Number</div>
+								</label>
+								<div class="fform__w50">
+									<label class="fform__label fform__label_errore">
+										<div class="fform__label-title">Expiration date<span></span></div>
+										<input type="text" class="fform__label-input" placeholder="Expiration date">
+										<div class="fform__label-error">Wrong Expiration date</div>
+									</label>
+									<label class="fform__label">
+										<div class="fform__label-title">Security code (CVV)<span></span></div>
+										<input type="text" class="fform__label-input" placeholder="Security code (CVV)">
+										<div class="fform__label-error">Security code (CVV)</div>
+									</label>
+								</div>
+								<div class="promo">
+									$19.80 discount with promo code
+									<div class="profile__label">Coral</div>
+								</div>
+								<label class="checkbox fform__label_errore">
+									<input type="checkbox" hidden="">
+									<span>Please take a moment to read and agree to our <a href="">membership agreement</a>. This must be signed in order to complete your purchase!</span>
+									<div class="fform__label-error">You must agree to the terms of service before continuing.</div>
+								</label>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<div class="btn btn_green">Pay now $27.00</div>
+							<div class="btn btn_link">Promo code</div>
+						</div>
+					</div>
+					<div class="modal-over"></div>
+				</div>
+					
+			</div>
 			<div class="modal fade " id="modal_2" tabindex="-1" aria-labelledby="modal_2" aria-hidden="true">
 				<div class="modal-dialog">
 					<div class="modal-content">
@@ -295,7 +346,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="modal fade show" style="display: block;" id="modal_4" tabindex="-1" aria-labelledby="modal_4" aria-hidden="true">
+			<div class="modal fade " id="modal_4" tabindex="-1" aria-labelledby="modal_4" aria-hidden="true">
 				<div class="modal-dialog">
 					<div class="modal-content">
 						<div class="modal-header">
