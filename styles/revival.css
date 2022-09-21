@@ -123,6 +123,24 @@ body .revival table td {
 body .revival .mb_0 {
   margin-bottom: 0 !important;
 }
+body .revival .intro {
+  position: relative;
+}
+body .revival .intro * {
+  position: relative;
+  z-index: 2;
+}
+body .revival .intro:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
 body .revival .intro_min {
   height: 602px;
   background-position: center center;
@@ -225,10 +243,16 @@ body .revival .intro-sub {
 body .revival .intro_footer {
   background-image: url(../images/landing_3.jpg);
 }
+body .revival .intro_footer .btn, body .revival .intro_footer h1 {
+  position: relative;
+  z-index: 2;
+}
 body .revival .intro__header {
   color: #fff;
   margin-bottom: 100px;
+  max-width: 1440px;
   text-align: center;
+  text-shadow: 0px 0px 64px rgba(57, 69, 49, 0.5);
 }
 body .revival .intro__header_min {
   margin-bottom: 0;
