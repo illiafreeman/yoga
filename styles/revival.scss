@@ -216,6 +216,13 @@ body .revival {
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            h1{
+                span{
+                    white-space: nowrap;
+                    font-size: inherit;
+                    color: inherit;
+                }
+            }
         }
 
         &_studio {

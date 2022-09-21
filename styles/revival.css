@@ -162,6 +162,11 @@ body .revival .intro_landing {
   align-items: center;
   flex-direction: column;
 }
+body .revival .intro_landing h1 span {
+  white-space: nowrap;
+  font-size: inherit;
+  color: inherit;
+}
 body .revival .intro_studio {
   background-image: url(../images/landing_3.jpg);
   background-position: center center;
@@ -3859,11 +3864,7 @@ body .revival .modal-over {
     line-height: 28px;
   }
   body .revival .intro_landing {
-    height: 432px;
-  }
-  body .revival h1 {
-    font-size: 32px;
-    line-height: 36px;
+    height: 640px;
   }
   body .revival .line_green {
     background: #fff;
