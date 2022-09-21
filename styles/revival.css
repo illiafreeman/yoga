@@ -357,6 +357,23 @@ body .revival .btn_green:hover {
 body .revival .btn_green:active {
   background: #B9C5B2;
 }
+body .revival .btn_green.disabled {
+  background: #CFDDC7;
+  opacity: 0.5;
+}
+body .revival .btn_white {
+  background: #fff;
+}
+body .revival .btn_white:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+body .revival .btn_white:active {
+  background: rgba(255, 255, 255, 0.75);
+}
+body .revival .btn_white.disabled {
+  background: #FFFFFF;
+  opacity: 0.5;
+}
 body .revival .btn_orange {
   background: #FF7A00;
   color: #fff !important;
@@ -367,13 +384,22 @@ body .revival .btn_orange:hover {
 body .revival .btn_orange:active {
   background: #D96800;
 }
+body .revival .btn_orange.disabled {
+  background: #FF7A00;
+  opacity: 0.5;
+}
 body .revival .btn_transparent {
   background: transparent;
   border: 1px solid #394531;
 }
 body .revival .btn_transparent:hover {
-  background: #394531;
-  color: #fff;
+  background: rgba(185, 197, 178, 0.25);
+}
+body .revival .btn_transparent:active {
+  border: 2px solid #394531;
+}
+body .revival .btn_transparent.disabled {
+  opacity: 0.5;
 }
 body .revival .btn_schedule {
   background: #CFDDC7;

@@ -455,6 +455,23 @@ body .revival {
             &:active{
                 background: #B9C5B2;
             }
+            &.disabled{
+                background: #CFDDC7;
+                opacity: 0.5;
+            }
+        }
+        &_white {
+            background: #fff;
+            &:hover {
+                background: rgba(255, 255, 255, 0.6);
+            }
+            &:active{
+                background: rgba(255, 255, 255, 0.75);
+            }
+            &.disabled{
+                background: #FFFFFF;
+                opacity: 0.5;
+            }
         }
         &_orange{
             background: #FF7A00;
@@ -465,13 +482,22 @@ body .revival {
             &:active{
                 background: #D96800;
             }
+            &.disabled{
+                background: #FF7A00;
+                opacity: 0.5;
+            }
         }
         &_transparent{
             background: transparent;
             border: 1px solid #394531;
             &:hover{
-                background: #394531;
-                color: #fff;
+                background: rgba(185, 197, 178, 0.25);
+            }
+            &:active{
+                border: 2px solid #394531;
+            }
+            &.disabled{
+                opacity: 0.5;
             }
         }
         &_schedule {
