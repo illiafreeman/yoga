@@ -1191,10 +1191,11 @@ body .revival {
         background-position: calc(100% - 15px) center;
         background-repeat: no-repeat;
         margin-bottom: 30px;
-        border: 2px solid #E8E8E8;
+        border: 1px solid #E8E8E8;
         transition: $transition;
         &:focus{
-            border: 2px solid #FF7A00;
+            border: 1px solid #FF7A00;
+            box-shadow: 0 0 0 1px #FF7A00 inset;
         }
     }
     .sort-wrap {

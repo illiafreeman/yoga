@@ -977,11 +977,12 @@ body .revival .pick_search {
   background-position: calc(100% - 15px) center;
   background-repeat: no-repeat;
   margin-bottom: 30px;
-  border: 2px solid #E8E8E8;
+  border: 1px solid #E8E8E8;
   transition: all 0.2s ease-in-out;
 }
 body .revival .pick_search:focus {
-  border: 2px solid #FF7A00;
+  border: 1px solid #FF7A00;
+  box-shadow: 0 0 0 1px #FF7A00 inset;
 }
 body .revival .sort-wrap {
   display: flex;
