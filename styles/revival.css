@@ -977,7 +977,7 @@ body .revival .pick_search {
   background-position: calc(100% - 15px) center;
   background-repeat: no-repeat;
   margin-bottom: 30px;
-  border: 2px solid transparent;
+  border: 2px solid #E8E8E8;
   transition: all 0.2s ease-in-out;
 }
 body .revival .pick_search:focus {
