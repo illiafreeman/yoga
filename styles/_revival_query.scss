@@ -586,9 +586,9 @@
             }
         }
         .clas-wrap{
-            margin: 24px -16px 0;
+            margin: 24px 0 0;
             flex-wrap: nowrap;
-            overflow-x: auto;
+            //overflow-x: auto;
             justify-content: flex-start;
             .clas{
                 width: 312px;

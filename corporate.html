@@ -224,7 +224,7 @@
 							<h2 class="article__title">What you get</h2>
 						</div>
 						<div class="article__text">
-							<div class="clas-wrap">
+							<div id="slider" class="clas-wrap">
 								<div class="clas clas_corporate">
 									<div class="clas__pic">
 										<img src="./images/corporate_2.jpg" alt="">
@@ -513,34 +513,46 @@
 		<script src="scripts/addtocalendar.js"></script>
 		<script src="scripts/main.js"></script>
 		<script>
-			$( function() {
-				var availableTags = [
-					"ActionScript",
-					"AppleScript",
-					"Asp",
-					"BASIC",
-					"C",
-					"C++",
-					"Clojure",
-					"COBOL",
-					"ColdFusion",
-					"Erlang",
-					"Fortran",
-					"Groovy",
-					"Haskell",
-					"Java",
-					"JavaScript",
-					"Lisp",
-					"Perl",
-					"PHP",
-					"Python",
-					"Ruby",
-					"Scala",
-					"Scheme"
-				];
-				$( "#filter-instructor-auto-2" ).autocomplete({
-					source: availableTags
+			$(document).ready(function () {
+				$('#slider').slick({     
+					slidesToShow: 3,
+					dots: false,
+					arrows: false,
+					centerMode: false,
+					variableWidth: false,
+					infinite: false,
+					focusOnSelect: false,
+					adaptiveHeight: false,
+
+					responsive: [
+						{
+						breakpoint: 1168,
+							settings: {
+								slidesToShow: 1,
+								dots: true,
+								arrows: false,
+								centerMode: true,
+								variableWidth: true,
+								infinite: true,
+								focusOnSelect: true,
+							}
+						},
+						{
+						breakpoint: 590,
+							settings: {
+								dots: true,
+								arrows: false,
+								slidesToShow: 1,
+								slidesToScroll: 1,
+								variableWidth: false,
+								adaptiveHeight: true,
+
+							}
+						}                   
+					]
 				});
+
+
 			});
 			</script>
 

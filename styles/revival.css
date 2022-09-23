@@ -1131,6 +1131,7 @@ body .revival .clas_corporate {
   display: flex;
   align-items: center;
   height: 500px;
+  margin: 0 8px 8px;
 }
 body .revival .clas_corporate:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -2387,7 +2388,6 @@ body .revival .modal-over {
   background-position: center center;
   border-radius: 8px;
 }
-
 .ui-menu .ui-menu-item-wrapper {
   padding: 0 16px !important;
   font-size: 16px !important;
@@ -3776,9 +3776,8 @@ body .revival .modal-over {
     width: 100%;
   }
   body .revival .clas-wrap {
-    margin: 24px -16px 0;
+    margin: 24px 0 0;
     flex-wrap: nowrap;
-    overflow-x: auto;
     justify-content: flex-start;
   }
   body .revival .clas-wrap .clas {
