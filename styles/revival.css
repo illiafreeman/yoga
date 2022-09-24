@@ -1101,15 +1101,17 @@ body .revival .clas-wrap {
   gap: 16px;
   justify-content: center;
 }
+body .revival .slick-slider .clas {
+  margin: 0 8px;
+}
 body .revival .clas {
   background: #fff;
   border-radius: 8px;
   transition: all 0.2s ease-in-out;
   overflow: hidden;
-  width: calc(33.333% - 12px);
 }
 body .revival .clas:hover {
-  box-shadow: 0px 8px 21px 2px rgba(255, 122, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 body .revival .clas__name {
   height: 96px;
@@ -3946,32 +3948,37 @@ body .revival .modal-over {
     background: #fff;
   }
   body .revival .line {
-    padding: 48px 0;
+    padding: 0 0 48px;
     flex-direction: column;
   }
   body .revival .line__desc {
     padding: 0 16px;
-    margin-bottom: 36px;
+    margin-bottom: 0;
     align-items: flex-start;
+    order: 2;
   }
   body .revival .line__pic {
     order: 1;
     width: 100%;
     min-width: 100%;
-    margin: 0;
+    margin: 0 0 30px;
     height: 280px;
     border-radius: 0;
+  }
+  body .revival .line_landing {
+    padding: 48px 0;
   }
   body .revival .line_landing .line__pic {
     order: 2;
     width: calc(100% - 16px);
     min-width: calc(100% - 16px);
-    margin: 0;
+    margin: 0 0 30px;
     height: 280px;
     border-radius: 0 16px 16px 0;
   }
   body .revival .line_landing .line__pic_reverse {
     border-radius: 16px 0 0 16px;
+    margin: 30px 0 0;
   }
   body .revival .line__title::after {
     display: none !important;
@@ -4371,7 +4378,7 @@ body .revival .modal-over {
 }
 @media only screen and (max-width: 480px) {
   body .revival .clas-wrap .clas {
-    width: 360px;
+    width: 344px;
     min-width: auto;
   }
 }/*# sourceMappingURL=revival.css.map */

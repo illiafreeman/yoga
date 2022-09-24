@@ -227,41 +227,41 @@
 							sections also review the types of classes you can find at YogaWorks. 
 							Explore all your options and find the right class for you.</h4>
 
-						<div class="clas-wrap">
+						<div id="slider" class="clas-wrap">
 							<div class="clas">
 								<div class="clas__pic">
 									<img src="./images/class_1.jpg" alt="">
 								</div>
 								<div class="clas__name">Vinyasa</div>
-								<a href="" class="btn btn_card">Learn More</a>
+								<a href="" class="btn btn_transparent">Learn More</a>
 							</div>
 							<div class="clas">
 								<div class="clas__pic">
 									<img src="./images/class_2.jpg" alt="">
 								</div>
 								<div class="clas__name">YogaWors</div>
-								<a href="" class="btn btn_card">Learn More</a>
+								<a href="" class="btn btn_transparent">Learn More</a>
 							</div>
 							<div class="clas">
 								<div class="clas__pic">
 									<img src="./images/class_3.jpg" alt="">
 								</div>
 								<div class="clas__name">Iyengar</div>
-								<a href="" class="btn btn_card">Learn More</a>
+								<a href="" class="btn btn_transparent">Learn More</a>
 							</div>
 							<div class="clas">
 								<div class="clas__pic">
 									<img src="./images/class_4.jpg" alt="">
 								</div>
 								<div class="clas__name">Restorative</div>
-								<a href="" class="btn btn_card">Learn More</a>
+								<a href="" class="btn btn_transparent">Learn More</a>
 							</div>
 							<div class="clas">
 								<div class="clas__pic">
 									<img src="./images/class_5.jpg" alt="">
 								</div>
 								<div class="clas__name">Yin</div>
-								<a href="" class="btn btn_card">Learn More</a>
+								<a href="" class="btn btn_transparent">Learn More</a>
 							</div>
 
 						</div>
@@ -419,36 +419,89 @@
 		<script src="scripts/addtocalendar.js"></script>
 		<script src="scripts/main.js"></script>
 		<script>
-			$( function() {
-				var availableTags = [
-					"ActionScript",
-					"AppleScript",
-					"Asp",
-					"BASIC",
-					"C",
-					"C++",
-					"Clojure",
-					"COBOL",
-					"ColdFusion",
-					"Erlang",
-					"Fortran",
-					"Groovy",
-					"Haskell",
-					"Java",
-					"JavaScript",
-					"Lisp",
-					"Perl",
-					"PHP",
-					"Python",
-					"Ruby",
-					"Scala",
-					"Scheme"
-				];
-				$( "#filter-instructor-auto-2" ).autocomplete({
-					source: availableTags
+			$(document).ready(function () {
+				if($(window).width() < 1168){
+					$('#slider').slick({     
+					slidesToShow: 3,
+					dots: false,
+					arrows: false,
+					centerMode: false,
+					variableWidth: false,
+					infinite: false,
+					focusOnSelect: false,
+					adaptiveHeight: true,
+
+					responsive: [
+						{
+						breakpoint: 1167,
+							settings: {
+								slidesToShow: 1,
+								dots: true,
+								arrows: false,
+								centerMode: true,
+								variableWidth: true,
+								infinite: true,
+								focusOnSelect: true,
+							}
+						},
+						{
+						breakpoint: 590,
+							settings: {
+								dots: true,
+								arrows: false,
+								slidesToShow: 1,
+								slidesToScroll: 1,
+								variableWidth: false,
+								adaptiveHeight: true,
+
+							}
+						}                   
+					]
 				});
+				}
 			});
-			</script>
+			$(window).resize(function () {
+				if($(window).width() < 1168){
+					$('#slider').slick({     
+					slidesToShow: 3,
+					dots: false,
+					arrows: false,
+					centerMode: false,
+					variableWidth: false,
+					infinite: false,
+					focusOnSelect: false,
+					adaptiveHeight: true,
+
+					responsive: [
+						{
+						breakpoint: 1167,
+							settings: {
+								slidesToShow: 1,
+								dots: true,
+								arrows: false,
+								centerMode: true,
+								variableWidth: true,
+								infinite: true,
+								focusOnSelect: true,
+							}
+						},
+						{
+						breakpoint: 590,
+							settings: {
+								dots: true,
+								arrows: false,
+								slidesToShow: 1,
+								slidesToScroll: 1,
+								variableWidth: false,
+								adaptiveHeight: true,
+
+							}
+						}                   
+					]
+				});
+				}
+			});
+		</script>
 
 
 
