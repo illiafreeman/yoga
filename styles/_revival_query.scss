@@ -299,12 +299,12 @@
         .poster-line{
             padding: 24px 0;
             margin-top: 0;
-            overflow-x: auto;
-            width: 100%;
+            //overflow-x: auto;
+            //width: 100%;
             //display: block;
         }
         .poster-line__item{
-            width: 312px;
+            width: 312px !important;
             min-width: 312px;
         }
         .poster-line__item-text {
@@ -1169,6 +1169,14 @@
 
 
 
+        
+    }
+}
+@media only screen and (max-width: 590px) {
+    body .revival{
+        .poster-line__item{
+            width: 100% !important;
+        }
         
     }
 }

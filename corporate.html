@@ -289,25 +289,31 @@
 							<h2 class="article__title">What others say about us</h2>
 							<h4 class="article__sub">Check out what others are saying about our service</h4>
 						</div>
-						<div class="poster-line poster-line_33">
+						<div id="slider2" class="poster-line poster-line_33">
 							<div class="poster-line__item poster-line__item_comment">
-								<div class="poster-line__item-comment">“I’ve been doing this nearly every morning for the 
-									past couple of months. It’s so easy to fit it into my day. With my current work from home 
-									situation I am sitting much more often and have found my back and neck are not hurting me anymore. 
-									I highly recommend it!”
+								<div class="poster-line__item-inner">
+									<div class="poster-line__item-comment">“I’ve been doing this nearly every morning for the 
+										past couple of months. It’s so easy to fit it into my day. With my current work from home 
+										situation I am sitting much more often and have found my back and neck are not hurting me anymore. 
+										I highly recommend it!”
+									</div>
+									<div class="poster-line__item-name">Lynn G (Kaiser Permanente)</div>
 								</div>
-								<div class="poster-line__item-name">Lynn G (Kaiser Permanente)</div>
 							</div>
 							<div class="poster-line__item poster-line__item_comment">
-								<div class="poster-line__item-comment">“I needed this today. It helped me through a rough week.”</div>
-								<div class="poster-line__item-name">Trinette F. (Google)</div>
+								<div class="poster-line__item-inner">
+									<div class="poster-line__item-comment">“I needed this today. It helped me through a rough week.”</div>
+									<div class="poster-line__item-name">Trinette F. (Google)</div>
+								</div>
 							</div>
 							<div class="poster-line__item poster-line__item_comment">
-								<div class="poster-line__item-comment">“I appreciate how important it is to work together 
-									to maintain one's resilience and mental (& physical) health during this time. 
-									Thank you again for helping provide me some outlets to maintain my own well being.”
+								<div class="poster-line__item-inner">
+									<div class="poster-line__item-comment">“I appreciate how important it is to work together 
+										to maintain one's resilience and mental (& physical) health during this time. 
+										Thank you again for helping provide me some outlets to maintain my own well being.”
+									</div>
+									<div class="poster-line__item-name">Michael G (Sutter Health)</div>
 								</div>
-								<div class="poster-line__item-name">Michael G (Sutter Health)</div>
 							</div>
 						</div>
 					</div>
@@ -514,7 +520,7 @@
 		<script src="scripts/main.js"></script>
 		<script>
 			$(document).ready(function () {
-				$('#slider').slick({     
+				$('#slider, #slider2').slick({     
 					slidesToShow: 3,
 					dots: false,
 					arrows: false,
@@ -522,7 +528,7 @@
 					variableWidth: false,
 					infinite: false,
 					focusOnSelect: false,
-					adaptiveHeight: false,
+					adaptiveHeight: true,
 
 					responsive: [
 						{
