@@ -1130,18 +1130,21 @@ body .revival .clas_corporate {
   flex-direction: column;
   display: flex;
   align-items: center;
-  height: 500px;
   margin: 0 8px 8px;
+}
+body .revival .clas_corporate .clas__card {
+  transform: translateY(80px);
 }
 body .revival .clas_corporate:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 body .revival .clas_corporate:hover .clas__card {
-  transform: translateY(-80px);
+  transform: translateY(-20px);
 }
 body .revival .clas_corporate .clas__pic {
-  height: 270px;
+  height: 370px;
   width: 100%;
+  margin-bottom: -80px;
 }
 body .revival .clas_corporate .clas__pic img {
   width: 100%;
@@ -3781,8 +3784,8 @@ body .revival .modal-over {
     justify-content: flex-start;
   }
   body .revival .clas-wrap .clas {
-    width: 312px;
-    min-width: 312px;
+    width: 412px;
+    min-width: 412px;
   }
   body .revival .clas-wrap .clas__name {
     font-size: 32px;
@@ -4308,5 +4311,11 @@ body .revival .modal-over {
   }
   body .revival .col-sm-5 {
     padding: 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  body .revival .clas-wrap .clas {
+    width: 360px;
+    min-width: auto;
   }
 }/*# sourceMappingURL=revival.css.map */

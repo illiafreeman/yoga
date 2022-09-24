@@ -591,8 +591,8 @@
             //overflow-x: auto;
             justify-content: flex-start;
             .clas{
-                width: 312px;
-                min-width: 312px;
+                width: 412px;
+                min-width: 412px;
             }
             .clas__name{
                 font-size: 32px;
@@ -1178,6 +1178,14 @@
         }
         .col-sm-5{
             padding: 0;
+        }
+    }
+}
+@media only screen and (max-width: 480px) {
+    body .revival{
+        .clas-wrap .clas {
+            width: 360px;
+            min-width: auto;
         }
     }
 }
