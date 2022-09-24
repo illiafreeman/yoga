@@ -699,7 +699,41 @@
                 width: 100%;
             }
         }
-
+        .muted{
+            .slick-list{
+                &:before, &:after{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    width: 50px;
+                    z-index: 1000;
+                }
+                &:before{
+                    left: 0;
+                }
+                &:after{
+                    right: 0;
+                }
+            }
+            &-bg_light{
+                .slick-list{
+                    &:before{
+                        background: -moz-linear-gradient(left,  rgba(245,241,237,1) 0%, rgba(229,229,229,0) 100%);
+                        background: -webkit-linear-gradient(left,  rgba(245,241,237,1) 0%,rgba(229,229,229,0) 100%);
+                        background: linear-gradient(to right,  rgba(245,241,237,1) 0%,rgba(229,229,229,0) 100%);
+                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f1ed', endColorstr='#00e5e5e5',GradientType=1 );
+                    }
+                    &:after{
+                        background: -moz-linear-gradient(left,  rgba(229,229,229,0) 0%, rgba(245,241,237,1) 100%);
+                        background: -webkit-linear-gradient(left,  rgba(229,229,229,0) 0%,rgba(245,241,237,1) 100%);
+                        background: linear-gradient(to right,  rgba(229,229,229,0) 0%,rgba(245,241,237,1) 100%);
+                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e5e5e5', endColorstr='#f5f1ed',GradientType=1 );
+                    }
+                }
+            }
+        }
 
 
 
@@ -746,17 +780,23 @@
             flex-direction: column;
         }
         .line__desc{
-            padding: 0 32px;
+            padding: 0 16px;
             margin-bottom: 36px;
-            align-items: center;
-            text-align: center;
+            align-items: flex-start;
         }
         .line__pic {
-            order: 2;
-            width: calc(100% - 16px);
-            min-width: calc(100% - 16px);
+            // order: 2;
+            // width: calc(100% - 16px);
+            // min-width: calc(100% - 16px);
+            // margin: 0;
+            // height: 280px;
+
+            order: 1;
+            width: calc(100%);
+            min-width: calc(100%);
             margin: 0;
             height: 280px;
+            border-radius: 0;
         }
         .line__title::after{
             display: none !important;
