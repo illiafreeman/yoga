@@ -3241,7 +3241,7 @@ body .revival .modal-over {
   body .revival .line__pic {
     width: calc(50% - 60px);
     min-width: calc(50% - 60px);
-    height: 380px;
+    height: auto;
   }
   body .revival .line__desc {
     width: auto;
@@ -3293,7 +3293,7 @@ body .revival .modal-over {
   body .revival .line__pic {
     width: calc(50% - 30px);
     min-width: calc(50% - 30px);
-    height: 310px;
+    height: auto;
   }
   body .revival h1 {
     font-size: 56px;
@@ -3921,6 +3921,7 @@ body .revival .modal-over {
     width: calc(100% - 16px);
     min-width: calc(100% - 16px);
     margin: 0;
+    height: 280px;
   }
   body .revival .line__title::after {
     display: none !important;
