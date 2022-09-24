@@ -798,6 +798,19 @@
             height: 280px;
             border-radius: 0;
         }
+        .line_landing{
+            .line__pic {
+                order: 2;
+                width: calc(100% - 16px);
+                min-width: calc(100% - 16px);
+                margin: 0;
+                height: 280px;
+                border-radius: 0 16px 16px 0;
+            }
+            .line__pic_reverse {
+                border-radius: 16px 0 0 16px;
+            }
+        }
         .line__title::after{
             display: none !important;
         }
