@@ -2415,10 +2415,12 @@ body .revival .modal-over {
   bottom: 0;
   left: 0;
   background-color: rgba(245, 241, 237, 0.9);
-  background-image: url(../images/preload.svg);
   background-repeat: no-repeat;
   background-position: center center;
   border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .ui-menu .ui-menu-item-wrapper {
   padding: 0 16px !important;
