@@ -2274,6 +2274,10 @@ body .revival .fform__label-input:-ms-input-placeholder {
 body .revival .fform__label-input::placeholder {
   color: #394531;
 }
+body .revival .fform__label-input:focus {
+  border-color: #FF7A00;
+  box-shadow: 0 0 0 1px #FF7A00 inset;
+}
 body .revival .fform__label-error {
   display: none;
 }

@@ -2636,6 +2636,10 @@ h6{
             &::placeholder{
                 color: #394531;
             }
+            &:focus{
+                border-color: #FF7A00;
+                box-shadow: 0 0 0 1px #FF7A00 inset;
+            }
 		}
 
 		&__label-error {
