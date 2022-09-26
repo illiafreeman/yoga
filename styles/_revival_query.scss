@@ -44,10 +44,60 @@
         }
         .intro__studio-header {
             margin-right: 50px;
-          }
+        }
+        
 
     } 
 }
+
+
+@media only screen and (max-width: 1439px) {
+    body .revival{
+        .table-tr {
+            padding: 15px 0;
+            flex-wrap: wrap;
+            .table-tr__start{
+                order: 1;
+                width: 110px;
+            }
+            .table-tr__instructor{
+                order: 2;
+                width: calc(100% - 220px - 180px);
+
+            }
+            .table-tr__location{
+                order: 4;
+                margin-top: 32px;
+                width: 50%;
+            }
+            .table-tr__schedule{
+                order: 5;
+                margin-top: 32px;
+                width: 50%;
+                padding: 0 24px 0 0;
+                display: flex;
+                justify-content: flex-end;
+                .table-tr__schedule-weekday{
+                    width: 48px;
+                }
+            }
+            .table-tr__btn{
+                order: 3;
+                width: 180px;
+                .btn{
+                    padding: 0 32px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
 @media only screen and (max-width: 1167px) {
     body .revival{
         .modal-dialog {
@@ -405,7 +455,7 @@
         }
         .gal_right{
             flex-direction: row;
-            overflow-x: auto;
+            overflow-x: visible;
             width: 100%;
             gap: 16px;
         }
@@ -1009,7 +1059,7 @@
             }
             .table-tr__instructor{
                 order: 3;
-                width: 100%;
+                width: 50%;
             }
             .table-tr__location{
                 order: 2;
@@ -1022,6 +1072,7 @@
                 padding: 0;
                 width: 50%;
                 margin: 0;
+                justify-content: flex-start;
                 .table-tr__schedule-name{
                     white-space: nowrap;
                 }

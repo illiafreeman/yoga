@@ -1327,6 +1327,15 @@ body .revival {
             margin: 0 8px;
         }
     }
+    .whte-card{
+        .poster-line__item {
+            width: auto;
+            margin: 0 8px;
+            background: #fff;
+            padding: 16px;
+        }
+    }
+
     .clas {
         background: #fff;
         border-radius: 8px;
@@ -1479,6 +1488,9 @@ body .revival {
             height: unset;
             display: block;
             padding-top: 30px;  
+            &_week{
+                display: flex;
+            }
             &-inner{
                 display: flex;
                 flex-direction: column;
@@ -1562,7 +1574,7 @@ body .revival {
     &__item-pic {
         width: 48px;
         height: 48px;
-        margin-bottom: 16px;
+        margin: 0 auto 16px;
     }
 
     &__item-title {
@@ -1579,13 +1591,15 @@ body .revival {
         color: #99A592;
     }
 }
+
 .gal{
     display: flex;
     gap: 18px;
     margin-top: 48px;
     &__pic{
-        width: 33.333%;
+        //width: 33.333%;
         border-radius: 8px;
+        margin: 0 8px;
     }
 }
 .tablegrid {

@@ -1104,6 +1104,12 @@ body .revival .clas-wrap {
 body .revival .slick-slider .clas {
   margin: 0 8px;
 }
+body .revival .whte-card .poster-line__item {
+  width: auto;
+  margin: 0 8px;
+  background: #fff;
+  padding: 16px;
+}
 body .revival .clas {
   background: #fff;
   border-radius: 8px;
@@ -1247,6 +1253,9 @@ body .revival .poster-line_33 .poster-line__item {
   display: block;
   padding-top: 30px;
 }
+body .revival .poster-line_33 .poster-line__item_week {
+  display: flex;
+}
 body .revival .poster-line_33 .poster-line__item-inner {
   display: flex;
   flex-direction: column;
@@ -1325,7 +1334,7 @@ body .revival .poster-line__item_comment:after {
 body .revival .poster-line__item-pic {
   width: 48px;
   height: 48px;
-  margin-bottom: 16px;
+  margin: 0 auto 16px;
 }
 body .revival .poster-line__item-title {
   height: 80px;
@@ -1345,8 +1354,8 @@ body .revival .gal {
   margin-top: 48px;
 }
 body .revival .gal__pic {
-  width: 33.333%;
   border-radius: 8px;
+  margin: 0 8px;
 }
 body .revival .tablegrid {
   display: flex;
@@ -3300,6 +3309,43 @@ body .revival .modal-over {
     margin-right: 50px;
   }
 }
+@media only screen and (max-width: 1439px) {
+  body .revival .table-tr {
+    padding: 15px 0;
+    flex-wrap: wrap;
+  }
+  body .revival .table-tr .table-tr__start {
+    order: 1;
+    width: 110px;
+  }
+  body .revival .table-tr .table-tr__instructor {
+    order: 2;
+    width: calc(100% - 220px - 180px);
+  }
+  body .revival .table-tr .table-tr__location {
+    order: 4;
+    margin-top: 32px;
+    width: 50%;
+  }
+  body .revival .table-tr .table-tr__schedule {
+    order: 5;
+    margin-top: 32px;
+    width: 50%;
+    padding: 0 24px 0 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  body .revival .table-tr .table-tr__schedule .table-tr__schedule-weekday {
+    width: 48px;
+  }
+  body .revival .table-tr .table-tr__btn {
+    order: 3;
+    width: 180px;
+  }
+  body .revival .table-tr .table-tr__btn .btn {
+    padding: 0 32px;
+  }
+}
 @media only screen and (max-width: 1167px) {
   body .revival .modal-dialog {
     max-width: calc(100% - 32px);
@@ -3624,7 +3670,7 @@ body .revival .modal-over {
   }
   body .revival .gal_right {
     flex-direction: row;
-    overflow-x: auto;
+    overflow-x: visible;
     width: 100%;
     gap: 16px;
   }
@@ -4166,7 +4212,7 @@ body .revival .modal-over {
   }
   body .revival .table-tr .table-tr__instructor {
     order: 3;
-    width: 100%;
+    width: 50%;
   }
   body .revival .table-tr .table-tr__location {
     order: 2;
@@ -4179,6 +4225,7 @@ body .revival .modal-over {
     padding: 0;
     width: 50%;
     margin: 0;
+    justify-content: flex-start;
   }
   body .revival .table-tr .table-tr__schedule .table-tr__schedule-name {
     white-space: nowrap;
