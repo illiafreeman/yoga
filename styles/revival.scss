@@ -591,10 +591,10 @@ body .revival {
                 background-image: url(../images/landing_2.jpg);
             }
             &_history-1 {
-                background-image: url(../images/history_1.jpg);
+                background-image: url(../images/history_1.png);
             }
             &_history-2 {
-                background-image: url(../images/history_2.jpg);
+                background-image: url(../images/history_2.png);
             }
             &_history-3 {
                 background-image: url(../images/history_3.jpg);
@@ -659,6 +659,23 @@ body .revival {
                 position: absolute;
                 bottom: 70%;
                 right: 0;
+            }
+            &_figure{
+                &:after {
+                    width: 240px !important;
+                    height: 240px !important;
+                    bottom: 180px !important;
+                }
+            }
+            &_figure_1{
+                &:after {
+                    background-image: url(../images/figure_1.png);
+                }
+            }
+            &_figure_4{
+                &:after {
+                    background-image: url(../images/figure_4.png) !important;
+                }
             }
         }
 

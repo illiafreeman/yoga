@@ -477,10 +477,10 @@ body .revival .line__pic_landing-2 {
   background-image: url(../images/landing_2.jpg);
 }
 body .revival .line__pic_history-1 {
-  background-image: url(../images/history_1.jpg);
+  background-image: url(../images/history_1.png);
 }
 body .revival .line__pic_history-2 {
-  background-image: url(../images/history_2.jpg);
+  background-image: url(../images/history_2.png);
 }
 body .revival .line__pic_history-3 {
   background-image: url(../images/history_3.jpg);
@@ -542,6 +542,17 @@ body .revival .line__title:after {
   position: absolute;
   bottom: 70%;
   right: 0;
+}
+body .revival .line__title_figure:after {
+  width: 240px !important;
+  height: 240px !important;
+  bottom: 180px !important;
+}
+body .revival .line__title_figure_1:after {
+  background-image: url(../images/figure_1.png);
+}
+body .revival .line__title_figure_4:after {
+  background-image: url(../images/figure_4.png) !important;
 }
 body .revival .line__text {
   margin-bottom: 30px;
@@ -3361,8 +3372,17 @@ body .revival .modal-over {
   body .revival .table-tr .table-tr__btn .btn {
     padding: 0 32px;
   }
+  body .revival .line__title_figure_1::after {
+    bottom: 100px !important;
+    background-size: cover;
+  }
 }
 @media only screen and (max-width: 1167px) {
+  body .revival .line__title_figure::after {
+    width: 160px !important;
+    height: 160px !important;
+    bottom: 120% !important;
+  }
   body .revival .modal-dialog {
     max-width: calc(100% - 32px);
   }
@@ -4004,6 +4024,10 @@ body .revival .modal-over {
   body .revival .muted-bg_semilight .slick-list:after {
     background: linear-gradient(to right, rgba(125, 185, 232, 0) 0%, rgb(250, 248, 246) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#007db9e8", endColorstr="#faf8f6",GradientType=1 );
+  }
+  body .revival .line__text {
+    font-size: 22px;
+    line-height: 28px;
   }
 }
 @media only screen and (max-width: 767px) {
