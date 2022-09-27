@@ -1829,8 +1829,15 @@ body .revival .instruc {
 }
 body .revival .instruc__img {
   width: 480px;
+  min-width: 480px;
   height: 480px;
   margin-right: 64px;
+}
+body .revival .instruc__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 body .revival .instruc_reverce .instruc__img {
   order: 1;
@@ -3860,7 +3867,9 @@ body .revival .modal-over {
   }
   body .revival .instruc__img {
     width: 290px;
-    height: auto;
+    max-width: 290px;
+    min-width: 290px;
+    height: 480px;
     margin-right: 16px;
   }
   body .revival .instruc {
@@ -4562,6 +4571,13 @@ body .revival .modal-over {
     width: 100%;
     margin: 0 0 48px;
     height: 351px;
+  }
+  body .revival .instruc__img {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    height: 362px;
+    margin-right: 0;
   }
 }
 @media only screen and (max-width: 590px) {
