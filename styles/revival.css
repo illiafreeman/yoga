@@ -1264,6 +1264,7 @@ body .revival .poster-line_33 .poster-line__item-inner {
   width: 100%;
   padding: 38px 16px 32px;
   background: #fff;
+  border-radius: 8px;
 }
 body .revival .poster-line_33 .poster-line__item .poster-line__item-comment {
   display: flex;
@@ -1898,7 +1899,7 @@ body .revival .slider .slick-dots li button::before {
   color: #FF7A00;
 }
 body .revival .slider .slick-slide {
-  margin: 0 10px;
+  margin: 8px;
   border-radius: 8px;
 }
 body .revival .slider .slick-dots {
@@ -2264,12 +2265,15 @@ body .revival .fform__label-input {
 }
 body .revival .fform__label-input::-moz-placeholder {
   color: #394531;
+  opacity: 0.5;
 }
 body .revival .fform__label-input:-ms-input-placeholder {
   color: #394531;
+  opacity: 0.5;
 }
 body .revival .fform__label-input::placeholder {
   color: #394531;
+  opacity: 0.5;
 }
 body .revival .fform__label-input:focus {
   border-color: #FF7A00;
@@ -2277,6 +2281,9 @@ body .revival .fform__label-input:focus {
 }
 body .revival .fform__label-error {
   display: none;
+}
+body .revival .slick-dots li button::before {
+  font-size: 8px;
 }
 body .revival .captcha {
   margin-bottom: 24px;
@@ -3963,6 +3970,9 @@ body .revival .modal-over {
   body .revival .slick-current.slick-active.slick-center.clas_corporate .clas__card {
     transform: translateY(-20px);
   }
+  body .revival .slick-current.slick-active.slick-center .poster-line__item-inner {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
   body .revival .muted .slick-list:before, body .revival .muted .slick-list:after {
     content: "";
     display: block;
@@ -3971,6 +3981,7 @@ body .revival .modal-over {
     bottom: 0;
     width: 32px;
     z-index: 1000;
+    pointer-events: none;
   }
   body .revival .muted .slick-list:before {
     left: 0;
