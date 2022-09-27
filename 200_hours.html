@@ -226,7 +226,7 @@
 								To view our 300-Hour schedule, go to the Teacher Training tab above and click on 
 								300-hour to learn more about those exciting offerings.</p>
 						</div>
-						<div id="slider" class="poster-line whte-card">
+						<div id="slider" class="poster-line whte-card muted muted-bg_semilight">
 							<div class="poster-line__item">
 								<img src="./images/icon_200_1.png" alt="" class="poster-line__item-pic">
 								<div class="poster-line__item-title">30+ Years</div>
@@ -355,7 +355,7 @@
 								Think of your trainer as your personal coach, guiding you through every 
 								detail as it unfolds, so you can train with confidence and ease.</p>
 						</div>
-						<div id="slider2" class="gal">
+						<div id="slider2" class="gal muted muted-bg_green">
 							<img src="./images/200_3.jpg" alt="" class="gal__pic">
 							<img src="./images/200_4.jpg" alt="" class="gal__pic">
 							<img src="./images/200_5.jpg" alt="" class="gal__pic">
@@ -402,7 +402,7 @@
 							<h6 class="article__sup">STUDENT BENEFITS</h6>
 							<h2 class="article__title">Our Teacher Training Is Packed With Perks</h2>
 						</div>
-						<div id="slider3" class="poster-line poster-line_33 whte-card">
+						<div id="slider3" class="poster-line poster-line_33 whte-card muted muted-bg_semilight">
 							<div class="poster-line__item">
 								<img src="./images/icon_200_5.png" alt="" class="poster-line__item-pic">
 								<div class="poster-line__item-text">3 Month Free YogaWorks@Home Membership</div>
@@ -424,7 +424,7 @@
 							<h6 class="article__sup">3 ways to practice</h6>
 							<h2 class="article__title ">Choose The Path of Most Convinience</h2>
 						</div>
-						<div id="slider4" class="poster-line poster-line_33">
+						<div id="slider4" class="poster-line poster-line_33 muted muted-bg_light">
 							<div class="poster-line__item poster-line__item_week">
 								<img src="./images/weekdays.png" alt="" class="poster-line__item-pic">
 								<div class="wrap">
@@ -461,7 +461,7 @@
 								for personal growth, our transformative programs will inspire
 								 you to uncover the fundamental layers of yoga while unearthing the deepest layers of yourself.</h4>
 						</div>
-						<div id="slider5" class="gal gal_right">
+						<div id="slider5" class="gal gal_right muted muted-bg_green">
 							<img src="./images/200_7.jpg" alt="" class="gal__pic">
 							<img src="./images/200_8.jpg" alt="" class="gal__pic">
 							<img src="./images/200_9.jpg" alt="" class="gal__pic">
@@ -663,7 +663,7 @@
 								<h4>Class requirments</h4>
 								<p class="p">Students must take 16 yoga classes at any studio to experience different styles, 
 									levels and methodologies. You will receive 16 classes at Yoga Balance to complete this requirement.</p>
-								<div class="slider">
+								<div class="slider muted muted-bg_light">
 									<img src="./images/expand_3.jpg" alt="">
 									<img src="./images/expand_4.jpg" alt="">
 									<img src="./images/expand_5.jpg" alt="">
@@ -934,12 +934,42 @@
 				} else {
 					$this.text('Expand details');
 				};
-				$('.slider').slick({
-					dots: true,
-					infinite: true,
-					speed: 300,
-					slidesToShow: 3,
-					slidesToScroll: 1
+				$('.slider').slick({     
+					slidesToShow: 4,
+					dots: false,
+					arrows: false,
+					centerMode: false,
+					variableWidth: false,
+					infinite: false,
+					focusOnSelect: false,
+					adaptiveHeight: true,
+
+					responsive: [
+						{
+						breakpoint: 1168,
+							settings: {
+								slidesToShow: 1,
+								dots: true,
+								arrows: false,
+								centerMode: true,
+								variableWidth: true,
+								infinite: true,
+								focusOnSelect: true,
+							}
+						},
+						{
+						breakpoint: 590,
+							settings: {
+								dots: true,
+								arrows: false,
+								slidesToShow: 1,
+								slidesToScroll: 1,
+								variableWidth: false,
+								adaptiveHeight: true,
+
+							}
+						}                   
+					]
 				});
 			});
 			$(document).ready(function () {
