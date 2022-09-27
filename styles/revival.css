@@ -419,6 +419,13 @@ body .revival .btn_schedule:hover {
 body .revival .btn_demo {
   margin: 15px 0;
 }
+body .revival .nav-tabs::-webkit-scrollbar {
+  display: none;
+}
+body .revival .nav-tabs {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
 body .revival .line {
   background: #CFDDC7;
   padding: 96px 0;

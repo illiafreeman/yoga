@@ -523,6 +523,14 @@ body .revival {
             margin: 15px 0;
         }
     }
+    .nav-tabs::-webkit-scrollbar {
+        display: none;
+    }
+      
+    .nav-tabs {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
 
     .line {
         background: $bg-green;
