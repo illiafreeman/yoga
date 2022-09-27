@@ -538,7 +538,7 @@ body .revival .line__title:after {
   background-image: url(../images/sun.png);
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   position: absolute;
   bottom: 70%;
   right: 0;
