@@ -419,6 +419,10 @@ body .revival .btn_schedule:hover {
 body .revival .btn_demo {
   margin: 15px 0;
 }
+body .revival .accordion {
+  border-radius: 8px;
+  overflow: hidden;
+}
 body .revival .nav-tabs::-webkit-scrollbar {
   display: none;
 }
@@ -1126,7 +1130,7 @@ body .revival .whte-card .poster-line__item {
   width: auto;
   margin: 8px;
   background: #fff;
-  padding: 16px;
+  padding: 16px 16px 44px;
 }
 body .revival .clas {
   background: #fff;
@@ -1269,11 +1273,10 @@ body .revival .poster-line_33 .poster-line__item {
   margin: 8px;
   height: unset;
   display: block;
-  padding-top: 30px;
+  padding-top: 28px;
 }
 body .revival .poster-line_33 .poster-line__item_week {
   display: flex;
-  background: #fff;
   padding: 32px 16px 16px;
 }
 body .revival .poster-line_33 .poster-line__item-inner {
@@ -1368,6 +1371,14 @@ body .revival .poster-line__item-title {
 }
 body .revival .poster-line__item-text {
   color: #99A592;
+}
+body .revival .poster-line_33.postr {
+  display: flex;
+  gap: 16px;
+}
+body .revival .poster-line_33.postr .poster-line__item {
+  width: 33%;
+  margin: 0;
 }
 body .revival .gal {
   display: flex;
@@ -1712,6 +1723,8 @@ body .revival .table-tr__schedule {
 }
 body .revival .table-tr__schedule-weekday {
   margin-right: 16px;
+  width: 48px;
+  height: 48px;
 }
 body .revival .table-tr__schedule-name {
   color: #666C63;
@@ -1931,6 +1944,8 @@ body .revival .faq .accordion .faq__item h2 .btn {
   border-radius: 0;
   border-bottom: 1px solid #B4B6B3;
   position: relative;
+  text-align: left;
+  justify-content: flex-start;
 }
 body .revival .faq .accordion .faq__item h2 .btn:hover {
   color: #FF7A00;
@@ -4082,6 +4097,30 @@ body .revival .modal-over {
   body .revival .line__text {
     font-size: 22px;
     line-height: 28px;
+  }
+  body .revival .accordion {
+    margin: 0 -16px;
+    border-radius: 0;
+  }
+  body .revival .poster-line_33.postr {
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+    padding: 0;
+  }
+  body .revival .poster-line_33.postr .poster-line__item {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0;
+    justify-content: flex-start;
+    padding: 0 0 16px;
+  }
+  body .revival .poster-line_33.postr .poster-line__item:last-child {
+    padding: 0;
+  }
+  body .revival .poster-line_33.postr .poster-line__item-title {
+    font-size: 28px;
+    line-height: 32px;
   }
 }
 @media only screen and (max-width: 767px) {

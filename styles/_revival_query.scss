@@ -900,8 +900,30 @@
             font-size: 22px;
             line-height: 28px;
         }
-
-
+        .accordion{
+            margin: 0 -16px;
+            border-radius: 0;
+        }
+        .poster-line_33.postr{
+            display: flex;
+            gap: 0;
+            flex-direction: column;
+            padding: 0;
+            .poster-line__item{
+                width: 100% !important;
+                max-width: 100% !important;
+                margin: 0;
+                justify-content: flex-start;
+                padding: 0 0 16px;
+                &:last-child{
+                    padding: 0;
+                }
+            }
+            .poster-line__item-title {
+                font-size: 28px;
+                line-height: 32px;
+            }
+        }
 
 
 

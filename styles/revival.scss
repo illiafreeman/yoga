@@ -523,6 +523,10 @@ body .revival {
             margin: 15px 0;
         }
     }
+    .accordion{
+        border-radius: 8px;
+        overflow: hidden;
+    }
     .nav-tabs::-webkit-scrollbar {
         display: none;
     }
@@ -1357,7 +1361,7 @@ body .revival {
             width: auto;
             margin: 8px;
             background: #fff;
-            padding: 16px;
+            padding: 16px 16px 44px;
         }
     }
 
@@ -1512,10 +1516,10 @@ body .revival {
             margin: 8px;
             height: unset;
             display: block;
-            padding-top: 30px;  
+            padding-top: 28px;  
             &_week{
                 display: flex;
-                background: #fff;
+                //background: #fff;
                 padding: 32px 16px 16px;
             }
             &-inner{
@@ -1619,7 +1623,14 @@ body .revival {
         color: #99A592;
     }
 }
-
+.poster-line_33.postr{
+    display: flex;
+    gap: 16px;
+    .poster-line__item{
+        width: 33%;
+        margin: 0;
+    }
+}
 .gal{
     display: flex;
     gap: 18px;
@@ -2003,6 +2014,8 @@ body .revival {
 
     &__schedule-weekday {
         margin-right: 16px;
+        width: 48px;
+        height: 48px;
     }
 
     &__schedule-name {
@@ -2259,6 +2272,8 @@ h6{
                     border-radius: 0;
                     border-bottom: 1px solid #B4B6B3;
                     position: relative;
+                    text-align: left;
+                    justify-content: flex-start;
                     &:hover{
                         color: #FF7A00;
                         background: #fff;
