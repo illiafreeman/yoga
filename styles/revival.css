@@ -2272,6 +2272,7 @@ body .revival .fform__label-input {
   font-size: 16px;
   line-height: 24px;
   width: 100%;
+  transition: all 0.2s ease-in-out;
 }
 body .revival .fform__label-input::-moz-placeholder {
   color: #394531;
