@@ -1675,15 +1675,34 @@ body .revival .checkbox span {
   display: flex;
   align-items: center;
 }
-body .revival .checkbox input + span {
-  height: 25px;
-  background-image: url(../images/checkbox.png);
-  background-repeat: no-repeat;
-  background-position: left center;
-  padding-left: 40px;
+body .revival .checkbox .check-wrap .check {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #666C63;
+  border-radius: 4px;
+  background: #fff;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-body .revival .checkbox input:checked + span {
-  background-image: url(../images/checkbox_checked.png);
+body .revival .checkbox .check-wrap .check img {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+body .revival .checkbox:hover .check {
+  background: #E1EADC;
+}
+body .revival .checkbox:hover input:checked + .check-wrap .check {
+  border: 1px solid #E1EADC;
+  background: #E1EADC;
+}
+body .revival .checkbox input:checked + .check-wrap .check {
+  border: 1px solid #CFDDC7;
+  background: #CFDDC7;
+}
+body .revival .checkbox input:checked + .check-wrap .check img {
+  opacity: 1;
 }
 body .revival .article_schedule .article__title {
   margin-bottom: 40px;

@@ -1952,15 +1952,46 @@ body .revival {
         display: flex;
         align-items: center;
     }
-    input+span{
-        height: 25px;
-        background-image: url(../images/checkbox.png);
-        background-repeat: no-repeat;
-        background-position: left center;
-        padding-left: 40px;
+    .check-wrap{
+        .check{
+            width: 24px;
+            height: 24px;
+            border: 1px solid #666C63;
+            border-radius: 4px;
+            background: #fff;
+            transition: $transition;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                opacity: 0;
+                transition: $transition;
+            }
+        }
+        span{
+
+        }
     }
-    input:checked+span{
-        background-image: url(../images/checkbox_checked.png);
+    &:hover{
+        .check{
+            background: #E1EADC;
+        }
+        input:checked+.check-wrap{
+            .check{
+                border: 1px solid #E1EADC;
+                background: #E1EADC;
+            }
+        }
+    }
+
+    input:checked+.check-wrap{
+        .check{
+            border: 1px solid #CFDDC7;
+            background: #CFDDC7;
+            img{
+                opacity: 1;
+            }
+        }
     }
 }
 .article {
