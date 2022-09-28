@@ -439,6 +439,13 @@ body .revival {
     #map, #tour{
         display: block;
     }
+    .about-info__link{
+        font-family: $font-medium;
+        text-decoration: underline !important;
+        &:hover{
+            text-decoration: none !important;
+        }
+    }
     .btn {
         height: 52px;
         padding: 0 48px;

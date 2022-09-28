@@ -338,6 +338,13 @@ body .revival .df {
 body .revival #map, body .revival #tour {
   display: block;
 }
+body .revival .about-info__link {
+  font-family: "medium", Helvetica;
+  text-decoration: underline !important;
+}
+body .revival .about-info__link:hover {
+  text-decoration: none !important;
+}
 body .revival .btn {
   height: 52px;
   padding: 0 48px;
@@ -3644,6 +3651,7 @@ body .revival .modal-over {
   body .revival .intro__header_min {
     font-size: 56px;
     line-height: 64px;
+    margin-bottom: 0;
   }
   body .revival .article__figure {
     padding-right: 260px;
@@ -4504,6 +4512,8 @@ body .revival .modal-over {
   }
   body .revival .intro-sub {
     text-align: center;
+    font-size: 28px;
+    line-height: 32px;
   }
   body .revival .tablegrid {
     gap: 48px 16px;
