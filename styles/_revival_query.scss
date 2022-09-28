@@ -916,7 +916,7 @@
                 max-width: 100% !important;
                 margin: 0;
                 justify-content: flex-start;
-                padding: 0 0 16px;
+                padding: 0 0 32px;
                 &:last-child{
                     padding: 0;
                 }
@@ -1407,7 +1407,9 @@
             height: 362px;
             margin-right: 0;
         }
-
+        .instruc__desc {
+            padding: 32px 16px !important;
+        }
 
 
 
