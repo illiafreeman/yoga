@@ -962,6 +962,9 @@
 
 @media only screen and (max-width: 767px) {
     body .revival{
+        .article_accordion{
+            padding-bottom: 0 !important;
+        }
         .modal-title {
             font-size: 32px;
             line-height: 36px;
