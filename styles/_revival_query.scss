@@ -945,7 +945,12 @@
             width: 360px;
             max-width: 360px;
         }
-
+        .line__title_sun {
+            &:after{
+                width: 200px;
+                height: 200px;
+            }
+        }
 
 
 
