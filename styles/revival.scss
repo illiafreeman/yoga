@@ -1944,18 +1944,14 @@ body .revival {
     margin-bottom: 16px;
     align-items: center;
     cursor: pointer;
-    span{
-        font-size: 16px;
-        line-height: 20px;
-        display: flex;
-        padding-left: 40px;
+    .check-wrap{
         display: flex;
         align-items: center;
-    }
-    .check-wrap{
         .check{
             width: 24px;
+            min-width: 24px;
             height: 24px;
+            margin-right: 12px;
             border: 1px solid #666C63;
             border-radius: 4px;
             background: #fff;
@@ -1969,7 +1965,18 @@ body .revival {
             }
         }
         span{
-
+            font-size: 14px;
+            line-height: 20px;
+            display: block;
+            a{
+                font-size: 14px;
+                line-height: 20px;
+                font-family: $font-medium;
+                text-decoration: underline;
+                &:hover{
+                    text-decoration: none;
+                }
+            }
         }
     }
     &:hover{

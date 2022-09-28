@@ -1667,17 +1667,15 @@ body .revival .checkbox {
   align-items: center;
   cursor: pointer;
 }
-body .revival .checkbox span {
-  font-size: 16px;
-  line-height: 20px;
-  display: flex;
-  padding-left: 40px;
+body .revival .checkbox .check-wrap {
   display: flex;
   align-items: center;
 }
 body .revival .checkbox .check-wrap .check {
   width: 24px;
+  min-width: 24px;
   height: 24px;
+  margin-right: 12px;
   border: 1px solid #666C63;
   border-radius: 4px;
   background: #fff;
@@ -1689,6 +1687,20 @@ body .revival .checkbox .check-wrap .check {
 body .revival .checkbox .check-wrap .check img {
   opacity: 0;
   transition: all 0.2s ease-in-out;
+}
+body .revival .checkbox .check-wrap span {
+  font-size: 14px;
+  line-height: 20px;
+  display: block;
+}
+body .revival .checkbox .check-wrap span a {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "medium", Helvetica;
+  text-decoration: underline;
+}
+body .revival .checkbox .check-wrap span a:hover {
+  text-decoration: none;
 }
 body .revival .checkbox:hover .check {
   background: #E1EADC;
