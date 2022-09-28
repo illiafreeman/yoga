@@ -679,6 +679,12 @@ body .revival {
                 bottom: 70%;
                 right: 0;
             }
+            &_sun{
+                width: 100%;
+                &:after {
+                    //right: -200px;
+                }
+            }
             &_figure{
                 &:after {
                     width: 240px !important;
@@ -943,14 +949,19 @@ body .revival {
             }
         }
         &__quote{
-            font-size: 48px;
-            line-height: 56px;
-            color: #B4B6B3;
-            text-transform: none;
-            text-align: center;
+            span{
+                font-size: 48px;
+                line-height: 56px;
+                color: #B4B6B3;
+                text-transform: none;
+                text-align: center;
+                position: relative;
+                font-family: $font-regular;
+                z-index: 2;
+            }
             position: relative;
-            font-family: $font-regular;
-            padding: 0 120px;   
+            padding: 0;   
+            margin: 0;
             &:after{
                 content: '';
                 display: block;
@@ -963,6 +974,7 @@ body .revival {
                 background-position: center center;
                 background-repeat: no-repeat;
                 background-size: contain;
+                z-index: 1;
             }
         }
         &__figure{

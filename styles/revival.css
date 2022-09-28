@@ -561,6 +561,9 @@ body .revival .line__title:after {
   bottom: 70%;
   right: 0;
 }
+body .revival .line__title_sun {
+  width: 100%;
+}
 body .revival .line__title_figure:after {
   width: 240px !important;
   height: 240px !important;
@@ -770,6 +773,11 @@ body .revival .article__title_schedule i {
   line-height: 80px;
 }
 body .revival .article__quote {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+body .revival .article__quote span {
   font-size: 48px;
   line-height: 56px;
   color: #B4B6B3;
@@ -777,7 +785,7 @@ body .revival .article__quote {
   text-align: center;
   position: relative;
   font-family: "regular", Helvetica;
-  padding: 0 120px;
+  z-index: 2;
 }
 body .revival .article__quote:after {
   content: "";
@@ -791,6 +799,7 @@ body .revival .article__quote:after {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
+  z-index: 1;
 }
 body .revival .article__figure {
   align-items: flex-start;
@@ -3980,7 +3989,7 @@ body .revival .modal-over {
   }
   body .revival .article__quote {
     margin: 40px 0 0;
-    padding: 0 70px;
+    padding: 0;
     font-size: 40px;
     line-height: 48px;
   }
@@ -4091,12 +4100,10 @@ body .revival .modal-over {
     right: 0;
   }
   body .revival .muted-bg_light .slick-list:before {
-    background: linear-gradient(to right, rgb(245, 241, 237) 0%, rgba(229, 229, 229, 0) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f5f1ed", endColorstr="#00e5e5e5",GradientType=1 );
+    background: linear-gradient(to right, rgb(250, 248, 246) 0%, rgba(250, 248, 246, 0) 100%);
   }
   body .revival .muted-bg_light .slick-list:after {
-    background: linear-gradient(to right, rgba(229, 229, 229, 0) 0%, rgb(245, 241, 237) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00e5e5e5", endColorstr="#f5f1ed",GradientType=1 );
+    background: linear-gradient(to right, rgba(250, 248, 246, 0) 0%, rgb(250, 248, 246) 100%);
   }
   body .revival .muted-bg_semilight .slick-list:before {
     background: linear-gradient(to right, rgb(250, 248, 246) 0%, rgba(125, 185, 232, 0) 100%);
@@ -4141,6 +4148,14 @@ body .revival .modal-over {
   body .revival .poster-line_33.postr .poster-line__item-title {
     font-size: 28px;
     line-height: 32px;
+  }
+  body .revival .intro-sub {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  body .revival .article__quote span {
+    font-size: 40px;
+    line-height: 48px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -4508,7 +4523,7 @@ body .revival .modal-over {
     width: 100%;
   }
   body .revival .article__quote {
-    padding: 0 30px;
+    padding: 0;
   }
   body .revival .intro-sub {
     text-align: center;
