@@ -1147,6 +1147,7 @@ body .revival .whte-card .poster-line__item {
   margin: 8px;
   background: #fff;
   padding: 16px 16px 44px;
+  height: unset;
 }
 body .revival .clas {
   background: #fff;
@@ -1318,7 +1319,7 @@ body .revival .poster-line__item {
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
 }

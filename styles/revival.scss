@@ -1381,6 +1381,8 @@ body .revival {
             margin: 8px;
             background: #fff;
             padding: 16px 16px 44px;
+            height: unset;
+
         }
     }
 
@@ -1567,7 +1569,7 @@ body .revival {
         border-radius: 8px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         text-align: center;
         
