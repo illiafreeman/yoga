@@ -4189,6 +4189,10 @@ body .revival .modal-over {
     font-size: 40px;
     line-height: 48px;
   }
+  body .revival .gal .gal__pic {
+    width: 360px;
+    max-width: 360px;
+  }
 }
 @media only screen and (max-width: 767px) {
   body .revival .modal-title {
