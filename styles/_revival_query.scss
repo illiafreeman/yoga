@@ -943,7 +943,7 @@
         }
         .gal .gal__pic{
             width: 360px;
-            max-width: 360px;
+            //max-width: 360px;
         }
         .line__title_sun {
             &:after{
@@ -951,6 +951,33 @@
                 height: 200px;
             }
         }
+        .gal-item{
+            width: 360px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1457,7 +1484,9 @@
         .poster-line__item{
             width: 100% !important;
         }
-        
+        .gal-item{
+
+        }
     }
 }
 @media only screen and (max-width: 575px) {
