@@ -1,0 +1,293 @@
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, user-scalable=0"
+  />
+  <title>HTML Layout</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/detectizr/2.2.0/detectizr.min.js"></script>
+</head>
+
+<div class="redesigned-wrapper header-deprecated">
+  <header>
+  <nav class="header-external">
+  <a href="#" class="nav-item">In studio</a>
+  <a href="#" class="nav-item active">
+    At home
+    <div class="nav-item-active-before-first"></div>
+    <div class="nav-item-active-before-second"></div>
+    <div class="nav-item-active-after-first"></div>
+    <div class="nav-item-active-after-second"></div>
+  </a>
+  <a href="#" class="nav-item">Shop</a>
+</nav>
+   <nav class="header-internal header-internal-logout">
+  <div class="nav-items">
+    <a href="#" class="common">
+      <span class="live-indicator"></span>
+      <span>Live</span></a
+    >
+    <a href="#" class="common active">On Demand</a>
+    <a href="#" class="common">About</a>
+  </div>
+  <div class="logo-wrapper">
+    <a href="#"><img src="images/logo-desktop-gray.svg" alt="Logo" /></a>
+    <a href="#"><img src="images/logo-without-text.svg" alt="Logo" /></a>
+  </div>
+  <div class="header-auth-wrapper">
+    <a href="#" class="btn-transparent">Login</a>
+    <a href="#" class="btn-primary">Try for free</a>
+    <button class="navbar-toggle" type="button" data-menu-btn="">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div>
+  <button class="navbar-toggle" type="button" data-menu-btn="">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+  <div class="mobile-nav-dropdown-logout">
+  <nav class="header-external">
+    <a href="#" class="nav-item">In studio</a>
+    <a href="#" class="nav-item active">
+      At home
+      <div class="nav-item-active-before-first"></div>
+      <div class="nav-item-active-before-second"></div>
+      <div class="nav-item-active-after-first"></div>
+      <div class="nav-item-active-after-second"></div>
+    </a>
+    <a href="#" class="nav-item">Shop</a>
+  </nav>
+  <div class="header-dropdown-main">
+    <div class="header-dropdown-main-links">
+      <a href="#" class="common">
+        <span class="live-indicator"></span>
+        <span>Live</span>
+      </a>
+      <a href="#" class="common active">On Demand</a>
+      <a href="#" class="common">About</a>
+    </div>
+    <div class="header-dropdown-btn-wrapper">
+      <a href="#" class="btn-primary">Try for free</a>
+      <a href="#" class="btn-transparent">Login</a>
+    </div>
+  </div>
+  <div class="header-dropdown-social">
+  <a href="#" class="social-link"
+    ><img src="images/facebook-black.svg" alt="Facebook"
+  /></a>
+  <a href="#" class="social-link"
+    ><img src="images/twitter-black.svg" alt="Twitter"
+  /></a>
+  <a href="#" class="social-link"
+    ><img src="images/instagram-black.svg" alt="Instagram"
+  /></a>
+  <a href="#" class="social-link"
+    ><img src="images/pinterest-black.svg" alt="Pinterest"
+  /></a>
+  <a href="#" class="social-link"
+    ><img src="images/youtube-black.svg" alt="Youtube"
+  /></a>
+  <a href="#" class="social-link"
+    ><img src="images/linkedin-black.svg" alt="Linkedin"
+  /></a>
+</div>
+
+</div>
+
+</nav>
+ 
+</header>
+
+<script src="scripts/jquery.js"></script>
+<script>
+  // Show/hide 'user profile' dropdown
+  var avatarBtn = $(".nav-items-wrapper >.avatar-wrapper");
+  var userProfileDropdown = $(".user-profile-dropdown");
+
+  avatarBtn.click(function () {
+    userProfileDropdown.slideToggle(500);
+  });
+
+  // Transform 'mobile dropdown' button
+  var mobileNavDropdownBtn = $(".redesigned-wrapper .navbar-toggle");
+  mobileNavDropdownBtn.on("click", function () {
+    $(this).toggleClass("active");
+  });
+
+  // Show/hide 'mobile nav' dropdown logged in
+  var mobileNavDropdownBtnLogin = $(
+    ".redesigned-wrapper .header-internal-login .navbar-toggle"
+  );
+  var mobileNavDropdown = $(".mobile-nav-dropdown");
+
+  mobileNavDropdownBtnLogin.click(function () {
+    mobileNavDropdown.slideToggle(500);
+  });
+
+  // Show/hide 'mobile nav' dropdown logged out
+  var mobileNavDropdownBtnOut = $(
+    ".redesigned-wrapper .header-internal-logout .navbar-toggle"
+  );
+  var mobileNavDropdownLogout = $(".mobile-nav-dropdown-logout");
+
+  mobileNavDropdownBtnOut.click(function () {
+    mobileNavDropdownLogout.slideToggle(500);
+  });
+
+  $(document).click(function () {
+    // Hide 'user profile' dropdown by clicking outside
+    if (
+      !userProfileDropdown.is(event.target) &&
+      !userProfileDropdown.has(event.target).length &&
+      !avatarBtn.is(event.target) &&
+      !avatarBtn.has(event.target).length
+    ) {
+      userProfileDropdown.fadeOut();
+    }
+
+    // Hide 'mobile-nav' logged in dropdown by clicking outside
+    if (
+      !mobileNavDropdown.is(event.target) &&
+      !mobileNavDropdown.has(event.target).length &&
+      !mobileNavDropdownBtnLogin.is(event.target) &&
+      !mobileNavDropdownBtnLogin.has(event.target).length
+    ) {
+      mobileNavDropdown.fadeOut();
+      mobileNavDropdownBtnLogin.removeClass("active");
+    }
+
+    // Hide 'mobile-nav' logged out dropdown by clicking outside
+    if (
+      !mobileNavDropdownLogout.is(event.target) &&
+      !mobileNavDropdownLogout.has(event.target).length &&
+      !mobileNavDropdownBtnOut.is(event.target) &&
+      !mobileNavDropdownBtnOut.has(event.target).length
+    ) {
+      mobileNavDropdownLogout.fadeOut();
+      mobileNavDropdownBtnOut.removeClass("active");
+    }
+  });
+
+  // Hide header top section onScroll
+  var headerTop = $(".header-external");
+
+  $(window).on("mousewheel", function (e) {
+    if ($(window).width() > 768) {
+      if (e.originalEvent.wheelDelta > 0 && $(this).scrollTop() === 0) {
+        headerTop.show("slow");
+      } else if ($(this).scrollTop() > 0) {
+        headerTop.hide("slow");
+      }
+    }
+  });
+</script>
+
+  <main class="wrapper"></main>
+  <footer>
+  <div class="footer-internal">
+  <div class="footer-internal-item">
+    <h6 class="subTitle1">YogaWorks at Home</h6>
+    <div class="footer-internal-links">
+      <a href="#" class="common">For You</a><a href="#" class="common">Live</a
+      ><a href="#" class="common">Journey series</a
+      ><a href="#" class="common">On-demand</a>
+    </div>
+  </div>
+  <div class="footer-internal-wrapper">
+    <div class="footer-internal-item">
+      <h6 class="subTitle1">Community</h6>
+      <div class="footer-internal-links">
+        <a href="#" class="common">Contact Us</a
+        ><a href="#" class="common">Help Center</a>
+      </div>
+    </div>
+    <div class="footer-internal-item">
+      <h6 class="subTitle1">More</h6>
+      <div class="footer-internal-links">
+        <a href="#" class="common">Give A Gift</a
+        ><a href="#" class="common">ADA Notice</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="footer-external">
+  <div class="footer-external-left">
+    <div class="logo-section">
+      <a href="#"><img src="images/logo-desktop-gray.svg" alt="Logo" /></a>
+      <a href="#"><img src="images/logo-without-text.svg" alt="Logo" /></a>
+    </div>
+    <nav>
+      <a href="#" class="nav-item">In studio</a>
+      <a href="#" class="nav-item active">
+        At home
+        <div class="nav-item-active-before-first"></div>
+        <div class="nav-item-active-before-second"></div>
+        <div class="nav-item-active-after-first"></div>
+        <div class="nav-item-active-after-second"></div>
+      </a>
+      <a href="#" class="nav-item">Shop</a>
+    </nav>
+  </div>
+  <div class="footer-external-right">
+    <a href="#" class="social-link"
+      ><img src="images/facebook-black.svg" alt="Facebook"
+    /></a>
+    <a href="#" class="social-link"
+      ><img src="images/twitter-black.svg" alt="Twitter"
+    /></a>
+    <a href="#" class="social-link"
+      ><img src="images/instagram-black.svg" alt="Instagram"
+    /></a>
+    <a href="#" class="social-link"
+      ><img src="images/pinterest-black.svg" alt="Pinterest"
+    /></a>
+    <a href="#" class="social-link"
+      ><img src="images/youtube-black.svg" alt="Youtube"
+    /></a>
+    <a href="#" class="social-link"
+      ><img src="images/linkedin-black.svg" alt="Linkedin"
+    /></a>
+  </div>
+</div>
+
+  <div class="footer-bottom">
+  <div class="footer-bottom-links">
+    <a href="#" class="common">TERMS OF USE</a
+    ><a href="#" class="common">PRIVACY POLICY</a>
+  </div>
+  <p class="footer-bottom-text">2022 YOGAWORKS. ALL RIGHTS RESERVED.</p>
+</div>
+
+</footer>
+
+<script src="scripts/jquery.js"></script>
+<script src="scripts/jquery.validate.js"></script>
+<script src="scripts/waypoint.min.js"></script>
+<script src="scripts/popper.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/slick-carousel.js"></script>
+<script src="scripts/moment.min.js"></script>
+<script src="scripts/jquery.mask.js"></script>
+<script src="scripts/jquery-ui.min.js"></script>
+<script src="scripts/jquery-tags-input.min.js"></script>
+<script src="scripts/gsap.min.js"></script>
+<script src="scripts/jquery.mousewheel.js"></script>
+<script src="scripts/jquery.jscrollpane.js"></script>
+<script src="scripts/jquery.cookie.js"></script>
+<script src="scripts/jquery.payment.js"></script>
+<script src="scripts/jquery.scrollmagic.js"></script>
+<script src="scripts/addtocalendar.js"></script>
+<script src="scripts/main.js"></script>
+
+</div>

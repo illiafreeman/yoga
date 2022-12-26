@@ -1,0 +1,1352 @@
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, user-scalable=0"
+  />
+  <title>HTML Layout</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/detectizr/2.2.0/detectizr.min.js"></script>
+</head>
+
+<div class="redesigned-wrapper">
+    <header>
+  <div class="main-header-wrapper">
+     
+    
+     
+      <div class="top-header-wrapper">
+
+  <nav class="header-external-links">
+    <a class="nav-item  enabled active" id="external-link-1" href="#" >
+      <span class="button-circle"></span>
+      <span class="button-title">Online</span>
+    </a>
+  
+    <a class="nav-item" id="external-link-2" href="#" >
+      <span class="button-circle"></span>
+      <span class="button-title">In Studio</span>
+    </a>
+  
+    <a class="nav-item" id="external-link-3" href="#" >
+      <span class="button-circle"></span>
+      <span class="button-title">About</span>
+    </a>
+
+    <button class="navbar-toggle" type="button" data-menu-btn="">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button> 
+  </nav>
+
+  <div class="navbar-brand">
+    <a class="navbar-brand__wrapper" href="#" title="YogaAtHome">
+      <img class="full-logo" src="images/logo-new.svg" alt="YogaAtHome" />
+      <img class="logo-without-text" src="images/logo-without-text.svg" alt="YogaAtHome" />
+    </a>
+  </div>
+
+  <div class="header-auth-wrapper">
+    <a href="#" class="header-auth__login-button button-rectangle-clear-md">Login</a>
+    <a href="#" class="header-auth__try-free-button button-rectangle-colored-primary-md">Try for free</a>
+  </div>
+  
+  
+  
+  <nav class="header-internal header-internal-logout">
+  
+    
+    
+    
+    
+    
+    
+    <!-- <div class="nav-items">
+      <a href="#" class="common">
+        <span class="live-indicator"></span>
+        <span>Live</span></a
+      >
+      <a href="#" class="common active">On Demand</a>
+      <a href="#" class="common">About</a>
+    </div>
+    <div class="logo-wrapper">
+      <a href="#"><img src="images/logo-desktop-gray.svg" alt="Logo" /></a>
+      <a href="#"><img src="images/logo-without-text.svg" alt="Logo" /></a>
+    </div>
+    <div class="header-auth-wrapper">
+      <a href="#" class="btn-transparent">Login</a>
+      <a href="#" class="btn-primary">Try for free</a>
+      <button class="navbar-toggle" type="button" data-menu-btn="">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <button class="navbar-toggle" type="button" data-menu-btn="">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button> -->
+    
+  </nav>
+  
+</div>
+ 
+    
+
+    <div class="dropdown-secondary-menu">
+    <div class="secondary-header-menu" id="secondary-menu-1">
+        <div class="header-menu__content">
+            <div class="header-menu__description">
+                <h5>Online</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            </div>
+            <nav class="header-menu__navigation">
+                <div class="navigation__button-wrapper">
+                    <a href="#" class="button-rectangle-clear-md">Live Stream</a>
+                    <a href="#" class="button-rectangle-clear-md">Journey Series</a>
+                    <a href="#" class="button-rectangle-clear-md">On Demand</a>
+                    <a href="#" class="button-rectangle-clear-md">Gift Cards</a>
+                </div>
+            </nav>
+        </div>
+    
+        <div class="header-menu__image">
+            <img src="images/banner-bg-image.png" alt="Header Image">
+        </div>
+    </div>
+
+    <div class="secondary-header-menu" id="secondary-menu-2">
+
+        <div class="header-menu__content">
+            <div class="header-menu__description">
+                <h5>In Studio</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            </div>
+            <nav class="header-menu__navigation">
+                <div class="navigation__button-wrapper">
+                    <a href="#" class="button-rectangle-clear-md">Santa Monica Studio</a>
+                    <a href="#" class="button-rectangle-clear-md">200 Hour</a>
+                    <a href="#" class="button-rectangle-clear-md">300 Hour Advanced</a>
+                    <a href="#" class="button-rectangle-clear-md">Specialty Trainings</a>
+                </div>
+            </nav>
+        </div>
+    
+        <div class="header-menu__image">
+            <img src="images/banner-bg-image.png" alt="Header Image">
+        </div>
+    </div>
+
+    <div class="secondary-header-menu" id="secondary-menu-3">
+        <div class="header-menu__content">
+            <div class="header-menu__description">
+                <h5>About</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            </div>
+            <nav class="header-menu__navigation">
+                <div class="navigation__button-wrapper">
+                    <a href="#" class="button-rectangle-clear-md">Our History</a>
+                    <a href="#" class="button-rectangle-clear-md">Our Classes</a>
+                    <a href="#" class="button-rectangle-clear-md">Our Teachers</a>
+                </div>
+            </nav>
+        </div>
+    
+        <div class="header-menu__image">
+            <img src="images/banner-bg-image.png" alt="Header Image">
+        </div>
+    </div>
+
+
+</div>
+ 
+
+  </div>
+</header>
+
+<script src="scripts/jquery.js"></script>
+
+<script>
+  var secondaryMenu1 = $("#secondary-menu-1");
+  var secondaryMenu2 = $("#secondary-menu-2");
+  var secondaryMenu3 = $("#secondary-menu-3");
+
+  // Transform 'dropdown' button
+  var mobileNavDropdownBtn = $(".redesigned-wrapper .navbar-toggle");
+  mobileNavDropdownBtn.on("click", function () {
+    $(this).toggleClass("active");
+  });
+
+
+  // Show/hide dropdown secondary menu on tablets and mobiles
+  var showMenuButton = $(
+    ".redesigned-wrapper .header-external-links .navbar-toggle"
+  );
+  var secondaryMenu = $(".dropdown-secondary-menu");
+
+  showMenuButton.click(function () {
+    secondaryMenu1.show();
+    secondaryMenu2.show();
+    secondaryMenu3.show();
+    secondaryMenu.slideToggle(500);
+  });
+
+
+  // Show/hide dropdown secondary menu on desktop
+  var showMenu1 = $(
+    ".redesigned-wrapper .header-external-links #external-link-1"
+  );
+  var showMenu2 = $(
+    ".redesigned-wrapper .header-external-links #external-link-2"
+  );
+  var showMenu3 = $(
+    ".redesigned-wrapper .header-external-links #external-link-3"
+  );
+
+
+  showMenu1.click( function () {
+      secondaryMenu1.show();
+      secondaryMenu2.hide();
+      secondaryMenu3.hide();
+      // if ( secondaryMenu.css( 'display' ) !== 'none' || secondaryMenu1.css( 'display' ) !== 'none' ) {
+      secondaryMenu.slideToggle(500);
+      // }
+    }, 
+
+  );
+
+  showMenu2.click(function () {
+    secondaryMenu1.hide();
+    secondaryMenu2.show();
+    secondaryMenu3.hide();
+    secondaryMenu.slideToggle(500);
+  });
+
+  showMenu3.click(function () {
+    secondaryMenu1.hide();
+    secondaryMenu2.hide();
+    secondaryMenu3.show();
+    secondaryMenu.slideToggle(500);
+  });
+
+</script>
+
+    <main class="wrapper">
+        <section class="live-schedule-block live-schedule-table" data-live-schedule="" data-action="get_live_classes"
+    data-use-parallax="0" data-site-ids="" data-hide-canceled="1" data-use-end-date="1" data-classes-per-page="3"
+    data-default-filter-classes="5" data-time-access="600" data-time-coming-soon="599940" data-form-check="c9ece906f7"
+    data-cta-link="#" data-cta-text="" data-tags-input-placeholder="Start typing a teacher, or class name to filter..."
+    data-allowed-access="0" data-cta-join-text="Join Now" data-cta-live-text="Live Now"
+    data-coming-soon-text="Coming Soon" data-cta-upgrade-text="Upgrade" data-cta-upgrade-url="/account?tab=payments"
+    data-live-player-url="https://athome.yogaworks.com/live-player/" data-not-init-text-overflow="true">
+
+      <div class="filter-panel" data-filter-search="">
+  <!-- <ul class="filter-demand-list__wrapper filter-live-list__wrapper wrapper-ml container-fluid">
+        <li class="filter-demand-item dropdown" data-filter-group-items="" data-group-name="duration">
+            <div class="dropdown-toggle" style="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                data-flip="false">Duration
+            </div>
+            <div class="dropdown-menu" style="">
+                <div class="dropdown-item" data-category="duration" data-label="60 mins" data-value="60">60 mins</div>
+            </div>
+        </li>
+        <li class="filter-demand-item dropdown" data-filter-group-items="" data-group-name="level">
+            <div class="dropdown-toggle" style="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                data-flip="false">Level
+            </div>
+            <div class="dropdown-menu" style="">
+                <div class="dropdown-item" data-category="level" data-label="All Levels" data-value="All Levels">All
+                    Levels</div>
+            </div>
+        </li>
+        <li class="filter-demand-item dropdown" data-filter-group-items="" data-group-name="teacherName">
+            <div class="dropdown-toggle" style="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                data-flip="false">Teacher
+            </div>
+            <div class="dropdown-menu" style="">
+                <div class="dropdown-item" data-category="teacherName" data-label="Dani Ibarra"
+                    data-value="Dani Ibarra">Dani Ibarra</div>
+                <div class="dropdown-item" data-category="teacherName" data-label="Tamika Caston-Miller"
+                    data-value="Tamika Caston-Miller">Tamika Caston-Miller</div>
+            </div>
+        </li>
+    </ul> -->
+
+  
+  <div class="live-schedule-filter-wrapper">
+
+    <ul class="filter-demand-list__wrapper">
+      <li
+        class="filter-demand-item dropdown"
+        data-filter-group-items=""
+        data-group-name="duration"
+      >
+        <div
+          class="dropdown-toggle"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          data-flip="false"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.75 5.5C12.75 5.08579 12.4142 4.75 12 4.75C11.5858 4.75 11.25 5.08579 11.25 5.5V12C11.25 12.1989 11.329 12.3897 11.4697 12.5303L14.4697 15.5303C14.7626 15.8232 15.2374 15.8232 15.5303 15.5303C15.8232 15.2374 15.8232 14.7626 15.5303 14.4697L12.75 11.6893V5.5Z"
+              fill="#B4B6B3"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM3.5 12C3.5 7.30558 7.30558 3.5 12 3.5C16.6944 3.5 20.5 7.30558 20.5 12C20.5 16.6944 16.6944 20.5 12 20.5C7.30558 20.5 3.5 16.6944 3.5 12Z"
+              fill="#B4B6B3"
+            />
+          </svg>
+          <span>Duration</span>
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M4.43057 9.51192C4.70014 9.19743 5.17361 9.161 5.48811 9.43057L12 15.0122L18.5119 9.43057C18.8264 9.161 19.2999 9.19743 19.5695 9.51192C19.839 9.82641 19.8026 10.2999 19.4881 10.5695L12.4881 16.5695C12.2072 16.8102 11.7928 16.8102 11.5119 16.5695L4.51192 10.5695C4.19743 10.2999 4.161 9.82641 4.43057 9.51192Z"
+              fill="#394531"
+            />
+          </svg>
+        </div>
+        <div class="dropdown-menu" style="">
+          <div class="dropdown-item" data-filter-slug="5-min">5 min</div>
+          <div class="dropdown-item" data-filter-slug="10-min">10 min</div>
+          <div class="dropdown-item active" data-filter-slug="15-min">15 min</div>
+          <div class="dropdown-item" data-filter-slug="20-min">20 min</div>
+          <div class="dropdown-item" data-filter-slug="30-min">30 min</div>
+          <div class="dropdown-item" data-filter-slug="45-min">45 min</div>
+          <div class="dropdown-item" data-filter-slug="60-min">60 min</div>
+          <div class="dropdown-item" data-filter-slug="90-min">90 min</div>
+        </div>
+      </li>
+      <li
+        class="filter-demand-item dropdown"
+        data-filter-group-items=""
+        data-group-name="level"
+      >
+        <div
+          class="dropdown-toggle"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          data-flip="false"
+        >
+          <svg
+            width="25"
+            height="24"
+            viewBox="0 0 25 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M17.2 3.25C16.2335 3.25 15.45 4.0335 15.45 5V7.26772C15.3683 7.25604 15.2848 7.25 15.2 7.25H13.2C12.2335 7.25 11.45 8.0335 11.45 9V11.2677C11.3683 11.256 11.2848 11.25 11.2 11.25H9.19995C8.23345 11.25 7.44995 12.0335 7.44995 13V15.2677C7.3683 15.256 7.28483 15.25 7.19995 15.25H5.19995C4.23345 15.25 3.44995 16.0335 3.44995 17V19C3.44995 19.9665 4.23345 20.75 5.19995 20.75H19.2C20.1665 20.75 20.95 19.9665 20.95 19V5C20.95 4.0335 20.1665 3.25 19.2 3.25H17.2ZM16.95 19.25H19.2C19.338 19.25 19.45 19.1381 19.45 19V5C19.45 4.86193 19.338 4.75 19.2 4.75H17.2C17.0619 4.75 16.95 4.86193 16.95 5V19.25ZM15.45 19.25V9C15.45 8.86193 15.338 8.75 15.2 8.75H13.2C13.0619 8.75 12.95 8.86193 12.95 9V19.25H15.45ZM11.45 13V19.25H8.94995V13C8.94995 12.8619 9.06188 12.75 9.19995 12.75H11.2C11.338 12.75 11.45 12.8619 11.45 13ZM7.44995 19.25V17C7.44995 16.8619 7.33802 16.75 7.19995 16.75H5.19995C5.06188 16.75 4.94995 16.8619 4.94995 17V19C4.94995 19.1381 5.06188 19.25 5.19995 19.25H7.44995Z"
+              fill="#B4B6B3"
+            />
+          </svg>
+          <span>Level</span>
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M4.43057 9.51192C4.70014 9.19743 5.17361 9.161 5.48811 9.43057L12 15.0122L18.5119 9.43057C18.8264 9.161 19.2999 9.19743 19.5695 9.51192C19.839 9.82641 19.8026 10.2999 19.4881 10.5695L12.4881 16.5695C12.2072 16.8102 11.7928 16.8102 11.5119 16.5695L4.51192 10.5695C4.19743 10.2999 4.161 9.82641 4.43057 9.51192Z"
+              fill="#394531"
+            />
+          </svg>
+        </div>
+        <div class="dropdown-menu" style="">
+          <div class="dropdown-item" data-filter-slug="1-beginner">
+            1 Beginner
+          </div>
+          <div class="dropdown-item active" data-filter-slug="2-intermediate">
+            2 Intermediate
+          </div>
+          <div class="dropdown-item" data-filter-slug="3-advanced">
+            3 Advanced
+          </div>
+          <div class="dropdown-item" data-filter-slug="for-teachers">
+            For Teachers
+          </div>
+        </div>
+      </li>
+      <li
+        class="filter-demand-item dropdown"
+        data-filter-group-items=""
+        data-group-name="teacher"
+      >
+        <div
+          class="dropdown-toggle"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          data-flip="false"
+        >
+          <svg
+            width="25"
+            height="24"
+            viewBox="0 0 25 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M15.4027 11.7483C16.6155 10.836 17.3999 9.38458 17.3999 7.75C17.3999 4.98858 15.1613 2.75 12.3999 2.75C9.63848 2.75 7.3999 4.98858 7.3999 7.75C7.3999 9.38458 8.18426 10.836 9.39714 11.7483C5.76244 12.9951 3.1499 16.4424 3.1499 20.5C3.1499 20.9142 3.48569 21.25 3.8999 21.25C4.31412 21.25 4.6499 20.9142 4.6499 20.5C4.6499 16.2198 8.1197 12.75 12.3999 12.75C16.6801 12.75 20.1499 16.2198 20.1499 20.5C20.1499 20.9142 20.4857 21.25 20.8999 21.25C21.3141 21.25 21.6499 20.9142 21.6499 20.5C21.6499 16.4424 19.0374 12.9951 15.4027 11.7483ZM8.8999 7.75C8.8999 5.817 10.4669 4.25 12.3999 4.25C14.3329 4.25 15.8999 5.817 15.8999 7.75C15.8999 9.683 14.3329 11.25 12.3999 11.25C10.4669 11.25 8.8999 9.683 8.8999 7.75Z"
+              fill="#B4B6B3"
+            />
+          </svg>
+          <span>Teacher</span>
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M4.43057 9.51192C4.70014 9.19743 5.17361 9.161 5.48811 9.43057L12 15.0122L18.5119 9.43057C18.8264 9.161 19.2999 9.19743 19.5695 9.51192C19.839 9.82641 19.8026 10.2999 19.4881 10.5695L12.4881 16.5695C12.2072 16.8102 11.7928 16.8102 11.5119 16.5695L4.51192 10.5695C4.19743 10.2999 4.161 9.82641 4.43057 9.51192Z"
+              fill="#394531"
+            />
+          </svg>
+        </div>
+        <div class="dropdown-menu" style="">
+          <div class="dropdown-item" data-filter-slug="alexandria-crow">
+            Alexandria Crow
+          </div>
+          <div class="dropdown-item" data-filter-slug="alice-maples">
+            Alice Maples
+          </div>
+          <div class="dropdown-item" data-filter-slug="alicia-cheung">
+            Alicia Cheung
+          </div>
+          <div class="dropdown-item" data-filter-slug="andrea-flores">
+            Andrea Flores
+          </div>
+          <div class="dropdown-item" data-filter-slug="andrea-marcum">
+            Andrea Marcum
+          </div>
+          <div class="dropdown-item" data-filter-slug="angela-kukhahn">
+            Angela Kukhahn
+          </div>
+          <div class="dropdown-item" data-filter-slug="anna-zorzou">
+            Anna Zorzou
+          </div>
+          <div class="dropdown-item" data-filter-slug="anne-van-valkenburg">
+            Anne Van Valkenburg
+          </div>
+          <div class="dropdown-item" data-filter-slug="ashley-lorenzo">
+            Ashley Lorenzo
+          </div>
+          <div class="dropdown-item" data-filter-slug="ashley-platz">
+            Ashley Platz
+          </div>
+          <div class="dropdown-item" data-filter-slug="ashley-rideaux">
+            Ashley Rideaux
+          </div>
+          <div class="dropdown-item" data-filter-slug="birgitte-kristen">
+            Birgitte Kristen
+          </div>
+          <div class="dropdown-item" data-filter-slug="brandon-anthony">
+            Brandon Anthony
+          </div>
+          <div class="dropdown-item" data-filter-slug="caley-alyssa">
+            Caley Alyssa
+          </div>
+          <div class="dropdown-item" data-filter-slug="calvin-corzine">
+            Calvin Corzine
+          </div>
+          <div class="dropdown-item" data-filter-slug="carolina-goldberg">
+            Carolina Goldberg
+          </div>
+          <div class="dropdown-item" data-filter-slug="carrie-owerko">
+            Carrie Owerko
+          </div>
+          <div class="dropdown-item" data-filter-slug="chelsey-korus">
+            Chelsey Korus
+          </div>
+          <div class="dropdown-item active" data-filter-slug="chris-stein">
+            Chris Stein
+          </div>
+          <div class="dropdown-item" data-filter-slug="chrissy-canning-beutel">
+            Chrissy Canning Beutel
+          </div>
+          <div class="dropdown-item" data-filter-slug="cj-harvey">CJ Harvey</div>
+          <div class="dropdown-item" data-filter-slug="dan-ward">Dan Ward</div>
+          <div class="dropdown-item" data-filter-slug="dani-ibarra">
+            Dani Ibarra
+          </div>
+          <div class="dropdown-item" data-filter-slug="danni-pomplun">
+            Danni Pomplun
+          </div>
+          <div class="dropdown-item" data-filter-slug="david-kim">David Kim</div>
+          <div class="dropdown-item" data-filter-slug="david-lynch">
+            David Lynch
+          </div>
+          <div class="dropdown-item" data-filter-slug="davina-davidson">
+            Davina Davidson
+          </div>
+          <div class="dropdown-item" data-filter-slug="denelle-numis">
+            Denelle Numis
+          </div>
+          <div class="dropdown-item" data-filter-slug="eduardo-duran">
+            Eduardo Duran
+          </div>
+          <div class="dropdown-item" data-filter-slug="elizabeth-flint">
+            Elizabeth Flint
+          </div>
+          <div class="dropdown-item" data-filter-slug="erika-trice">
+            Erika Trice
+          </div>
+          <div class="dropdown-item" data-filter-slug="erin-cookston">
+            Erin Cookston
+          </div>
+          <div class="dropdown-item" data-filter-slug="gigi-yogini">
+            Gigi Yogini
+          </div>
+          <div class="dropdown-item" data-filter-slug="heather-seiniger">
+            Heather Seiniger
+          </div>
+          <div class="dropdown-item" data-filter-slug="holly-jean-cosner">
+            Holly Jean Cosner
+          </div>
+          <div class="dropdown-item" data-filter-slug="jennifer-elliott">
+            Jennifer Elliott
+          </div>
+          <div class="dropdown-item" data-filter-slug="jenny-aurthur">
+            Jenny Aurthur
+          </div>
+          <div class="dropdown-item" data-filter-slug="jesse-schein">
+            Jesse Schein
+          </div>
+          <div class="dropdown-item" data-filter-slug="jessica-seabern">
+            Jessica Seabern
+          </div>
+          <div class="dropdown-item" data-filter-slug="jillian-bobowicz">
+            Jillian Bobowicz
+          </div>
+          <div class="dropdown-item" data-filter-slug="jillian-pransky">
+            Jillian Pransky
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <div class="filter-panel-bg"></div>
+
+    <!-- Deleted -> style="padding: 0 15px" -->
+    <div class="search-wrapper wrapper-ml" >
+
+      <!-- added class p-0 -->
+      <div class="container-fluid p-0">
+        <div class="row">
+          <div class="col-12 p-0">
+            <form autocomplete="off" data-gtm-form-interact-id="0">
+
+              <div class="form-group">
+
+                <!-- 
+                dropdown tags (moved below) 
+                <div class="additional-tags-box">
+                </div> 
+                -->
+
+                <div class="form-group-wrap tagsinput-wrapper">
+                  <label class="sr-only" for="search">search</label>
+                  <input
+                    class="form-control form-large"
+                    id="search"
+                    type="text"
+                    name="search"
+                    placeholder="Start typing a teacher, or class name to filter..."
+                    data-search-input=""
+                    style="display: none"
+                  />
+
+                  <div
+                    id="search_tagsinput"
+                    class="tagsinput"
+                    style="width: auto; min-height: auto; height: auto"
+                  >
+                  
+                    <!-- 
+                      Search tags 
+                      Warning! Doesn't add these tags. 
+                      Insted of them we have to add dropdown tags (section ".additional-tags-box" above)
+                    -->
+                    <!-- <span class="tag">
+                      <span>Tamika Caston-Miller</span> <a href="#"> </a>
+                    </span>
+                    <span class="tag">
+                      <span>Dani Ibarra</span> <a href="#"> </a>
+                    </span> -->
+
+                    <!-- Search input -->
+                    <!-- deleted style="font-size: 26px" -->
+                    <div id="search_addTag">
+                      <input
+                        id="search_tag"
+                        value=""
+                        placeholder="Start typing a teacher, or class name to filter..."
+                        class="ui-autocomplete-input"
+                        autocomplete="off"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- autocomplete dropdown list -->
+                  <div class="ui-autocomplete-wrapper">
+                    <ul
+                      id="ui-id-1"
+                      tabindex="0"
+                      class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front"
+                      style="
+                        top: 143px;
+                        left: 95px;
+                        width: 952.297px;
+                        max-height: 615.5px;
+                        display: none;
+                      "
+                    >
+                      <li class="ui-autocomplete-category">Teacher</li>
+                      <li
+                        aria-label="Teacher : Danielle Polen"
+                        class="ui-menu-item"
+                      >
+                        <div
+                          id="ui-id-5"
+                          tabindex="-1"
+                          class="ui-menu-item-wrapper"
+                        >
+                          Danielle Polen
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="form-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 4.5C7.63401 4.5 4.5 7.63401 4.5 11.5C4.5 15.366 7.63401 18.5 11.5 18.5C15.366 18.5 18.5 15.366 18.5 11.5C18.5 7.63401 15.366 4.5 11.5 4.5ZM3 11.5C3 6.80558 6.80558 3 11.5 3C16.1944 3 20 6.80558 20 11.5C20 13.5772 19.2549 15.4803 18.0174 16.9568L20.7803 19.7197C21.0732 20.0126 21.0732 20.4874 20.7803 20.7803C20.4874 21.0732 20.0126 21.0732 19.7197 20.7803L16.9568 18.0174C15.4803 19.2549 13.5772 20 11.5 20C6.80558 20 3 16.1944 3 11.5Z" fill="black"/>
+                    </svg>
+                      
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  <!-- the end of live-schedule-filter-wrapper -->
+  </div>  
+
+  <!-- dropdown tags -->
+  <div class="additional-tags-box">
+    <span 
+        class="btn-negative-transparent" 
+        data-reset-filter="" 
+        tabindex="1">
+        Reset filters
+    </span>
+
+    <span
+        class="tag"
+        data-label="60 mins"
+        data-value="60"
+        data-category="duration"
+    >
+      <img src="./images/clock.svg" alt="clock icon">
+      <span>60 min</span> 
+      <img src="./images/close.svg" alt="close icon">
+    </span>
+
+    <span
+        class="tag"
+        data-label="Teacher"
+        data-value="Teacher"
+        data-category="teacher"
+    >
+      <img src="./images/person.svg" alt="person icon">
+      <span>Chris Stein</span> 
+      <img src="./images/close.svg" alt="close icon">
+      <!-- <a href="#">✕</a> -->
+    </span>
+
+    <span
+      class="tag"
+      data-label="All Levels"
+      data-value="All Levels"
+      data-category="level"
+    >
+      <img src="./images/level_up.svg" alt="level icon">
+      <span>All Levels</span> 
+      <img src="./images/close.svg" alt="close icon">
+    </span>
+
+    <span
+      class="tag"
+      data-label="Yoga"
+      data-value="Yoga"
+      data-category="Yoga"
+    >
+      <img src="./images/magnifier.svg" alt="search icon">
+      <span>Yoga</span> 
+      <img src="./images/close.svg" alt="close icon">
+    </span>
+
+  </div>
+
+
+  <!-- Calendar -->
+  <div class="filter-date-wrapper wrapper-ml">
+    <div class="container-fluid">
+      <div class="row filter-wrapper">
+        
+        <!-- "days of week" sections -->
+        <div class="filter-item" title="Thursday" data-select-day="1660196474">
+          <div class="filter-content">
+            <h5>T</h5>
+          </div>
+          <div class="filter-description">
+            <p>Today</p>
+          </div>
+        </div>
+
+        <div
+          class="filter-item active"
+          title="Friday"
+          data-select-day="1660282874"
+        >
+          <div class="filter-content">
+            <h5>F</h5>
+          </div>
+          <div class="filter-description">
+            <p>12th</p>
+          </div>
+        </div>
+
+        <div class="filter-item" title="Saturday" data-select-day="1660369274">
+          <div class="filter-content">
+            <h5>S</h5>
+          </div>
+          <div class="filter-description">
+            <p>13th</p>
+          </div>
+        </div>
+
+        <div class="filter-item" title="Sunday" data-select-day="1660455674">
+          <div class="filter-content">
+            <h5>S</h5>
+          </div>
+          <div class="filter-description">
+            <p>14th</p>
+          </div>
+        </div>
+
+        <div class="filter-item" title="Monday" data-select-day="1660542074">
+          <div class="filter-content">
+            <h5>M</h5>
+          </div>
+          <div class="filter-description">
+            <p>15th</p>
+          </div>
+        </div>
+
+        <div class="filter-item" title="Tuesday" data-select-day="1660628474">
+          <div class="filter-content">
+            <h5>T</h5>
+          </div>
+          <div class="filter-description">
+            <p>16th</p>
+          </div>
+        </div>
+
+        <div class="filter-item" title="Wednesday" data-select-day="1660714874">
+          <div class="filter-content">
+            <h5>W</h5>
+          </div>
+          <div class="filter-description">
+            <p>17th</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- filter control (previous day, show week, next day) -->
+      <div class="row filter-control">
+        <span class="filter-control-prev" data-filter-control="0"
+          >Previous day
+        </span>
+        <span class="" data-select-all="">Show week</span>
+        <span class="filter-control-next" data-filter-control="1"
+          >Next day</span
+        >
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+      <div class="live-schedule-wrapper wrapper-ml">
+  <div class="container-fluid schedule-header">
+    <div class="live-wrapper" id="live-wrapper">
+      <div class="live-content-col">
+        <div class="live-content-wrap" id="live-content-wrap">
+
+          <div class="line-separator"></div>
+
+          <div class="live-content-item__level">Level 2</div> 
+
+          <div class="live-content-item avoid-click"
+            data-target="item-marianatek_25746"
+          >
+
+            <div class="live-content-item__info">
+
+              <div class="live-content-item__description">
+                <h5>Vinyasa Flow</h5>
+
+                <!-- changed tag p to div -->
+                <span class="substitute">Alison Lindgren Salvatore August</span>
+                <div class="context-1 live-content-item__description-row">
+                  <!-- <br> -->
+                  <div class="live-content__avatar">
+                    <img
+                      src="https://mtproduction-files.s3.amazonaws.com/media/public_images/Sarah_Cook_headhsot_1gi3sN8.JPG"
+                      alt=""
+                    />
+                  </div>
+                  
+                  <div class="live-content-item__teacher-name">Melanie Salvatore-August</div>
+                
+                  <!-- changed tag p to div and move to the higher block-->
+                  <div class="context-1 live-content-item__lesson-length">
+                    <!-- moved span with Level to the other section -->
+                    <!-- <img src="./images/clock.svg" alt="clock icon"> -->
+                    <span>60 min</span>
+                  </div>
+                
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="live-content-item__content"
+              data-text-overflow-clamp=""
+              data-line-clamp="3"
+            >
+              <p class="description-paragraph">
+                <span
+                  style="
+                    display: inline-block;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    width: 100%;
+                  "
+                  >These popular classes keep you moving, linking breath with
+                  sequences of sun salutes and other postures creating a
+                  beautifully sweaty yoga experience.</span
+                >
+              </p>
+              <button
+                type="button"
+                class="view-more"
+                data-view-description=""
+                aria-label="See more description"
+              >
+                <span class="inner"> 
+                  <!-- added text ot spans -->
+                  <span>Show more</span> 
+                  <span>Show less</span> 
+              </button>
+            </div>
+            
+            <div class="live-content-item__schedule">
+              <p class="context-3">Ends In</p>
+              <p class="live-content-item__schedule-time">35
+                <!-- added "space" symbol -->
+                <span> min</span>
+              </p>
+
+              <!-- deleted section below -->
+              <!-- <p class="context-3 live-content-item__schedule-zone">+03</p> -->
+
+              <!-- section span.addtocalendar moved to the 4-th column-->
+            </div>
+
+            <div class="live-content-item__description-watch" data-zoom="true">
+              <a
+                href="#"
+                data-zoom="true"
+                data-btn-livestream-join=""
+                data-site-id="marianatek"
+                data-class-id="25746"
+                data-class-schedule-id="5905"
+                data-room-name="Baltimore Live 2"
+                data-loc-id="48717"
+                data-loc-name="Digital"
+                data-title="Vinyasa Flow"
+                data-teacher="Sarah Cook"
+                data-is-free="0"
+                data-level="Level 2"
+                data-yoga-type="Vinyasa Flow - 60 min"
+                data-start-stamp="1660570200"
+                data-duration="60"
+                data-end-stamp="1660573800"
+                data-plugin-name="live-schedule"
+                >
+                  <span class="button-circle"></span>
+                  <span class="button-title">Join Class</span>
+                </a>
+            </div>
+            <div class="col-12 schedule-cta-result d-none"></div>
+          </div>
+
+          <div class="line-separator"></div>
+
+          <div class="live-content-item__level">All Levels</div> 
+
+          <div class="live-content-item avoid-click"
+            data-target="item-marianatek_25733"
+          >
+
+            <div class="live-content-item__info">
+
+              <div class="live-content-item__description">
+                <h5>Vinyasa Flow Live at Main</h5>
+
+                <!-- changed tag p to div -->
+                <div class="context-1 live-content-item__description-row">
+                  <!-- <span class="substitute">Alison Lindgren</span>
+                  <br> -->
+                  <div class="live-content__avatar">
+                    <img
+                      src="https://mtproduction-files.s3.amazonaws.com/media/public_images/Tracy_Bauer_1.jpeg"
+                      alt=""
+                    />
+                  </div>
+                  
+                  <div class="live-content-item__teacher-name">Laura Anderson Melanie Salvatore-August</div>
+                
+                  <!-- changed tag p to div and move to the higher block-->
+                  <div class="context-1 live-content-item__lesson-length">
+                    <!-- moved span with Level to the other section -->
+                    <!-- <img src="./images/clock.svg" alt="clock icon"> -->
+                    <span>120 min</span>
+                  </div>
+                
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div
+              class="live-content-item__content opened-description"
+              data-text-overflow-clamp=""
+              data-line-clamp="3"
+            >
+              <p class="description-paragraph">
+                <span
+                  style="
+                    display: inline-block;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    width: 100%;
+                  "
+                  >This fun yet functional fitness class focuses on muscular
+                  endurance and strength, cardiovascular conditioning, core
+                  stability, balance and flexibility - providing the perfect
+                  compliment to your yoga practice.</span
+                >
+              </p>
+              <button
+                type="button"
+                class="view-more"
+                data-view-description=""
+                aria-label="See more description"
+              >
+                <span class="inner"> 
+                  <!-- added text ot spans -->
+                  <span>Show more</span> 
+                  <span>Show less</span> 
+                </span>
+              </button>
+            </div>
+
+            <div class="live-content-item__schedule">
+              <p class="context-3">Ends In</p>
+              <p class="live-content-item__schedule-time">10
+                <!-- added "space" symbol -->
+                <span> min</span>
+              </p>
+
+              <!-- deleted section below -->
+              <!-- <p class="context-3 live-content-item__schedule-zone">+03</p> -->
+
+              <!-- section span.addtocalendar moved to the 4-th column-->
+            </div>
+
+            <div
+              class="live-content-item__description-watch coming-soon"
+              data-zoom="true"
+            >
+              <a href="#">Coming Soon</a>
+
+              <div class="live-content-item__schedule">
+                <span
+                  class="addtocalendar added"
+                  data-class-id="25745"
+                  data-class-schedule-id="5905"
+                  data-end-timestamp="1660577400"
+                >
+                  <button
+                    type="button"
+                    class="btn-transparent atcb-link"
+                    tabindex="1"
+                    id=""
+                  >
+                    <div class="atcb-checkmark"></div>
+                    Added to Calendar
+                  </button>
+
+                  <var class="atc_event">
+                    <var class="atc_date_start">2022-08-15T07:30:00</var>
+                    <var class="atc_date_end">2022-08-15T08:30:00</var>
+                    <var class="atc_timezone">America/Los_Angeles</var>
+                    <var class="atc_title">Vinyasa Flow</var>
+                    <var class="atc_location">Digital</var>
+                    <var class="atc_organizer">Becky Nickerson</var>
+                    <var class="atc_description"
+                      >https://athome.yogaworks.com/live-player/?id=25745</var
+                    >
+                  </var>
+
+                  <!-- adding automatically -->
+                  <!-- <ul class="atcb-list">
+                  </ul> -->
+                </span>
+              </div>
+            </div>
+
+            <div class="col-12 schedule-cta-result d-none"></div>
+          </div>
+
+          
+          
+          <div class="line-separator"></div>
+
+          <div class="live-content-item__level">Level 2/3</div> 
+
+          <div class="live-content-item avoid-click"
+            data-target="item-marianatek_25745"
+          >
+
+            <div class="live-content-item__info">
+
+              <div class="live-content-item__description">
+                <h5>Vinyasa Flow Live at Main</h5>
+
+                <!-- changed tag p to div -->
+                <div class="context-1 live-content-item__description-row">
+                  <!-- <span class="substitute">Alison Lindgren</span>
+                  <br> -->
+                  <div class="live-content__avatar">
+                    <img 
+                      src="https://mtproduction-files.s3.amazonaws.com/media/public_images/Jess_Crowley_1_QhgSDo7.jpg" 
+                      alt="photo"
+                    >
+                  </div>
+                  
+                  <div class="live-content-item__teacher-name">Jessica Crowley-Ambrose</div>
+                
+                  <!-- changed tag p to div and move to the higher block-->
+                  <div class="context-1 live-content-item__lesson-length">
+                    <!-- moved span with Level to the other section -->
+                    <!-- <img src="./images/clock.svg" alt="clock icon"> -->
+                    <span>45 min</span>
+                  </div>
+                
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="live-content-item__content"
+              data-text-overflow-clamp=""
+              data-line-clamp="3"
+            >
+              <p class="description-paragraph">
+                <span
+                  style="
+                    display: inline-block;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    width: 100%;
+                  "
+                  >These popular classes keep you moving, linking breath with
+                  sequences of sun salutes and other postures creating a
+                  beautifully sweaty yoga experience.</span
+                >
+              </p>
+              <button
+                type="button"
+                class="view-more"
+                data-view-description=""
+                aria-label="See more description"
+              >
+                <span class="inner"> 
+                  <!-- added text ot spans -->
+                  <span>Show more</span> 
+                  <span>Show less</span> 
+              </button>
+            </div>
+
+            <div class="live-content-item__schedule">
+              <p class="context-3">Tomorrow</p>
+              <p class="live-content-item__schedule-time">5:30
+                <!-- added "space" symbol -->
+                <span> pm</span>
+              </p>
+
+              <!-- deleted section below -->
+              <!-- <p class="context-3 live-content-item__schedule-zone">+03</p> -->
+
+              <!-- section span.addtocalendar moved to the 4-th column-->
+            </div>
+
+            <!-- changed the tag p to div (don't ask why)  -->
+            <div
+              class="live-content-item__description-watch coming-soon"
+              data-zoom="true"
+            >
+              <a href="#">Coming Soon</a>
+
+              <div class="live-content-item__schedule">
+                <span
+                  class="addtocalendar"
+                  data-class-id="25745"
+                  data-class-schedule-id="5905"
+                  data-end-timestamp="1660577400"
+                >
+                  <button
+                    type="button"
+                    class="btn-transparent atcb-link"
+                    tabindex="1"
+                    id=""
+                  >
+                    Add to Calendar
+                  </button>
+
+                  <var class="atc_event">
+                    <var class="atc_date_start">2022-08-15T07:30:00</var>
+                    <var class="atc_date_end">2022-08-15T08:30:00</var>
+                    <var class="atc_timezone">America/Los_Angeles</var>
+                    <var class="atc_title">Vinyasa Flow</var>
+                    <var class="atc_location">Digital</var>
+                    <var class="atc_organizer">Becky Nickerson</var>
+                    <var class="atc_description"
+                      >https://athome.yogaworks.com/live-player/?id=25745</var
+                    >
+                  </var>
+
+                  <!-- adding automatically -->
+                  <!-- <ul class="atcb-list">
+                  </ul> -->
+                </span>
+              </div>
+              
+            </div>
+            <div class="col-12 schedule-cta-result d-none"></div>
+          </div>
+
+          <div class="line-separator"></div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+</section>
+
+<script>
+    
+  // adding "active" class to addtocalendar element 
+  var addToCalendarSection = $(".addtocalendar");
+
+  addToCalendarSection.each( function( key, val ) {
+
+    var addToCalendarSpan = $( this );
+
+    $( this ).find('button').click( function( event ) {
+      addToCalendarSpan.toggleClass("active");
+    });
+
+  } );
+
+</script>
+    </main>
+    <footer>
+  <div class="footer-internal">
+  <div class="footer-internal-item">
+    <h6 class="subTitle1">YogaWorks at Home</h6>
+    <div class="footer-internal-links">
+      <a href="#" class="common">For You</a><a href="#" class="common">Live</a
+      ><a href="#" class="common">Journey series</a
+      ><a href="#" class="common">On-demand</a>
+    </div>
+  </div>
+  <div class="footer-internal-wrapper">
+    <div class="footer-internal-item">
+      <h6 class="subTitle1">Community</h6>
+      <div class="footer-internal-links">
+        <a href="#" class="common">Contact Us</a
+        ><a href="#" class="common">Help Center</a>
+      </div>
+    </div>
+    <div class="footer-internal-item">
+      <h6 class="subTitle1">More</h6>
+      <div class="footer-internal-links">
+        <a href="#" class="common">Give A Gift</a
+        ><a href="#" class="common">ADA Notice</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="footer-external">
+  <div class="footer-external-left">
+    <div class="logo-section">
+      <a href="#"><img src="images/logo-desktop-gray.svg" alt="Logo" /></a>
+      <a href="#"><img src="images/logo-without-text.svg" alt="Logo" /></a>
+    </div>
+    <nav>
+      <a href="#" class="nav-item">In studio</a>
+      <a href="#" class="nav-item active">
+        At home
+        <div class="nav-item-active-before-first"></div>
+        <div class="nav-item-active-before-second"></div>
+        <div class="nav-item-active-after-first"></div>
+        <div class="nav-item-active-after-second"></div>
+      </a>
+      <a href="#" class="nav-item">Shop</a>
+    </nav>
+  </div>
+  <div class="footer-external-right">
+    <a href="#" class="social-link"
+      ><img src="images/facebook-black.svg" alt="Facebook"
+    /></a>
+    <a href="#" class="social-link"
+      ><img src="images/twitter-black.svg" alt="Twitter"
+    /></a>
+    <a href="#" class="social-link"
+      ><img src="images/instagram-black.svg" alt="Instagram"
+    /></a>
+    <a href="#" class="social-link"
+      ><img src="images/pinterest-black.svg" alt="Pinterest"
+    /></a>
+    <a href="#" class="social-link"
+      ><img src="images/youtube-black.svg" alt="Youtube"
+    /></a>
+    <a href="#" class="social-link"
+      ><img src="images/linkedin-black.svg" alt="Linkedin"
+    /></a>
+  </div>
+</div>
+
+  <div class="footer-bottom">
+
+  <div class="footer-bottom_links">
+    <a href="#" class="common">Terms of Use</a>
+    <a href="#" class="common">Privacy Policy</a>
+    <a href="#" class="common">Do Not Sell My Info</a>
+  </div>
+
+  <div class="footer-bottom__social-links">
+    <a href="#" class="social-link"
+      ><img src="images/facebook-black.svg" alt="Facebook"
+    /></a>
+    <a href="#" class="social-link"
+      ><img src="images/twitter-black.svg" alt="Twitter"
+    /></a>
+    <a href="#" class="social-link"
+      ><img src="images/instagram-black.svg" alt="Instagram"
+    /></a>
+    <a href="#" class="social-link"
+      ><img src="images/pinterest-black.svg" alt="Pinterest"
+    /></a>
+    <a href="#" class="social-link"
+      ><img src="images/youtube-black.svg" alt="Youtube"
+    /></a>
+    <a href="#" class="social-link"
+      ><img src="images/linkedin-black.svg" alt="Linkedin"
+    /></a>
+  </div>
+
+
+  <p class="footer-bottom__text">YogaWorks. All Right Reserved</p>
+
+</div>
+
+
+</footer>
+
+<script src="scripts/jquery.js"></script>
+<script src="scripts/jquery.validate.js"></script>
+<script src="scripts/waypoint.min.js"></script>
+<script src="scripts/popper.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/slick-carousel.js"></script>
+<script src="scripts/moment.min.js"></script>
+<script src="scripts/jquery.mask.js"></script>
+<script src="scripts/jquery-ui.min.js"></script>
+<script src="scripts/jquery-tags-input.min.js"></script>
+<script src="scripts/gsap.min.js"></script>
+<script src="scripts/jquery.mousewheel.js"></script>
+<script src="scripts/jquery.jscrollpane.js"></script>
+<script src="scripts/jquery.cookie.js"></script>
+<script src="scripts/jquery.payment.js"></script>
+<script src="scripts/jquery.scrollmagic.js"></script>
+<script src="scripts/addtocalendar.js"></script>
+<script src="scripts/main.js"></script>
+
+</div>
